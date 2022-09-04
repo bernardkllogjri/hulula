@@ -155,7 +155,7 @@ const Header = () => {
                     </div>
                 </div>
             </div>
-            {/* <DarkMode /> */}
+            <DarkMode />
         </header>
     );
 }
