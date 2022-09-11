@@ -1779,7 +1779,7 @@
 
 .is_dark .flat-slider .heading .s1 {
   /* color: #14141f; */
-  color: #D00850;
+  color: #CC0000;
   /* background-size: 100% 100%; */
   /* -webkit-background-clip: text;
   -webkit-text-stroke: 3px transparent;
@@ -1981,7 +1981,7 @@
 
 .swiper-slide-active .flat-slider .sub-heading {
   transition-delay: 900ms;
-  color: #D00850;
+  color: #CC0000;
 }
 
 /* .swiper-slide-active .flat-slider .sub-heading {
@@ -2738,7 +2738,7 @@ section.today-picks {
 }
 
 .shape {
-  background: linear-gradient(216.56deg, #CC5A83 5.32%, #D00850 94.32%);
+  background: linear-gradient(216.56deg, #CC5A83 5.32%, #CC0000 94.32%);
 }
 
 .is_dark .shape.style2::before {
