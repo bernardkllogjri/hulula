@@ -1319,7 +1319,7 @@ a:focus {
     /* color */
     --primary-color : #fff;
     --primary-color2: #1F1F2C;
-    --primary-color3: #FF005C;
+    --primary-color3: #CC0000;
     --primary-color4: #7A798A;
     --primary-color5: #F8F8F8;
     --primary-color6: #14141F;
@@ -2230,7 +2230,7 @@ header{
     -ms-border-radius    : 50%;
     -o-border-radius     : 50%;
     cursor               : pointer;
-    background-color: #FF005C;
+    background-color: #CC0000;
 }
 .is_dark #scroll-top {
     background: #fff;
@@ -2245,7 +2245,7 @@ header{
 }
 
 .is_dark #scroll-top:after {
-    color      : #FF005C;
+    color      : #CC0000;
 }
 
 #scroll-top:hover {
@@ -2445,7 +2445,7 @@ header{
 
 .widget-social.style-3 ul li a:hover {
     color: #fff;
-    background-color: #FF005C;
+    background-color: #CC0000;
 }
 
 .widget-social.style-3 ul li {
@@ -2573,7 +2573,7 @@ header{
 }
 
 .widget-subcribe .form-subcribe input:focus{
-    border: 1px solid #FF005C;
+    border: 1px solid #CC0000;
 }
 
 .widget-subcribe .form-subcribe input {

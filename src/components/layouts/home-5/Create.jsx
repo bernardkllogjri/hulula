@@ -7,7 +7,7 @@ const Create = () => {
             title: "Set Up Your Wallet",
             description: "Wallet that is functional for NFT purchasing. You may have a Coinbase account at this point, but very few are actually set up to buy an NFT.",
             icon : "",
-            colorbg : "#FF005C"
+            colorbg : "#CC0000"
         },
         {
             title: "Create Your Collection",
