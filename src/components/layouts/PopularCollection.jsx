@@ -73,12 +73,12 @@ const PopularCollectionItem = props => (
                                 <div className="content">
                                     <h4><Link to="/authors-01">{props.item.title}</Link></h4>
                                     <div className="infor">
-                                        <span>Created by</span>
-                                        <span className="name"><Link to="/authors-02">{props.item.name}</Link></span>
+                                        <span>{props.item.nationality}</span>
                                     </div>
                                 </div>
                             </div>
-                            <Link to="/login" className="wishlist-button public heart"><span className="number-like"> 100</span></Link>
+                            <div className="tags">{props.item.tags}</div>
+                            {/* <Link to="/login" className="wishlist-button public heart"><span className="number-like"> 100</span></Link> */}
                         </div>
                         <Link to="/authors-02">
                             <div className="media-images-collection">

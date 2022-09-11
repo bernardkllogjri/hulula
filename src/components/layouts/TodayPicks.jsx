@@ -34,7 +34,7 @@ const TodayPicks = props => {
                                         <div className="coming-soon">{item.feature}</div>
                                     </div>
                                     <div className="card-title">
-                                        <h5 className="style2"><Link to="/item-details-01">"{item.title}"</Link></h5>
+                                        <h5 className="style2"><Link to="/item-details-01">{item.title}</Link></h5>
                                         <div className="tags">{item.tags}</div>
                                     </div>
                                     <div className="meta-info">
@@ -43,18 +43,18 @@ const TodayPicks = props => {
                                                 <img src={item.imgAuthor} alt="axies" />
                                             </div>
                                             <div className="info">
-                                                <span>Owned By</span>
+                                                <span>{item.ethnicity}</span>
                                                 <h6> <Link to="/authors-02">{item.nameAuthor}</Link> </h6>
                                             </div>
                                         </div>
                                         <div className="price">
-                                            <span>Current Bid</span>
-                                            <h5> {item.price}</h5>
+                                            {/* <span>Current Bid</span> */}
+                                            <h5> {item.age} Years Old</h5>
                                         </div>
                                     </div>
                                     <div className="card-bottom">
-                                        <button className="sc-button style bag fl-button pri-3 no-bg" onClick={() => setModalShow(true)}><span>Place Bid</span></button>
-                                        <Link to="/activity-01" className="view-history reload">View History</Link>
+                                        {/* <button className="sc-button style bag fl-button pri-3 no-bg" onClick={() => setModalShow(true)}><span>Place Bid</span></button> */}
+                                        {/* <Link to="/activity-01" className="view-history reload">View History</Link> */}
                                     </div>
                                 </div>
                             </div>

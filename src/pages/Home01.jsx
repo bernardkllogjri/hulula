@@ -23,7 +23,7 @@ const Home01 = () => {
             <TopSeller data={topSellerData} />
             <TodayPicks data={todayPickData} />
             <PopularCollection data={popularCollectionData} />
-            <Create />
+            {/* <Create /> */}
             <Footer />
         </div>
     );

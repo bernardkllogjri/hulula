@@ -65,12 +65,12 @@ const TopSellerItem = props => (
                 <div className="slider-item">										
                     <div className="sc-author-box style-2">
                         <div className="author-avatar">
-                                <img src={props.item.img} alt="" className="avatar" />
-                            <div className="badge"></div>
+                          <img src={props.item.img} alt="" className="avatar" />
+                          <div className="badge"></div>
                         </div>
                         <div className="author-infor">
-                            <h5><Link to="/authors-02">{props.item.name}</Link></h5>
-                            <span className="price">{props.item.price}</span>
+                          <h5><Link to="/authors-02">{props.item.name}</Link></h5>
+                            {/* <span className="price">{props.item.price}</span> */}
                         </div>
                     </div>    	
                 </div>
