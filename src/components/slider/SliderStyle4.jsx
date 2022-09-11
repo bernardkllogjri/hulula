@@ -18,9 +18,9 @@ const SliderStyle4 = () => {
     return (
         <div>
             <section className="flat-title-page style3 mainslider">
-                <img className="bgr-gradient gradient1" src={shape1} alt="Axies" />
-                <img className="bgr-gradient gradient2" src={shape2} alt="Axies" />
-                <img className="bgr-gradient gradient3" src={shape3} alt="Axies" />
+                <img className="bgr-gradient gradient1" src={shape1} alt="Hulula" />
+                <img className="bgr-gradient gradient2" src={shape2} alt="Hulula" />
+                <img className="bgr-gradient gradient3" src={shape3} alt="Hulula" />
                 <div className="overlay"></div>
                 <div className="themesflat-container ">
                         <div className="wrap-heading flat-slider flex">
@@ -52,11 +52,11 @@ const SliderStyle4 = () => {
                                 }}
                                 speed= {2000}
                             >
-                                <SwiperSlide><img src={img1} alt="Axies" /></SwiperSlide>
-                                <SwiperSlide><img src={img2} alt="Axies" /></SwiperSlide>
-                                <SwiperSlide><img src={img3} alt="Axies" /></SwiperSlide>
-                                <SwiperSlide><img src={img2} alt="Axies" /></SwiperSlide>
-                                <SwiperSlide><img src={img3} alt="Axies" /></SwiperSlide>
+                                <SwiperSlide><img src={img1} alt="Hulula" /></SwiperSlide>
+                                <SwiperSlide><img src={img2} alt="Hulula" /></SwiperSlide>
+                                <SwiperSlide><img src={img3} alt="Hulula" /></SwiperSlide>
+                                <SwiperSlide><img src={img2} alt="Hulula" /></SwiperSlide>
+                                <SwiperSlide><img src={img3} alt="Hulula" /></SwiperSlide>
 
                             </Swiper>
                             <Swiper
@@ -72,11 +72,11 @@ const SliderStyle4 = () => {
                                 }}
                                 speed= {1800}
                             >
-                                <SwiperSlide><img src={img3} alt="Axies" /></SwiperSlide>
-                                <SwiperSlide><img src={img2} alt="Axies" /></SwiperSlide>
-                                <SwiperSlide><img src={img3} alt="Axies" /></SwiperSlide>
-                                <SwiperSlide><img src={img1} alt="Axies" /></SwiperSlide>
-                                <SwiperSlide><img src={img2} alt="Axies" /></SwiperSlide>
+                                <SwiperSlide><img src={img3} alt="Hulula" /></SwiperSlide>
+                                <SwiperSlide><img src={img2} alt="Hulula" /></SwiperSlide>
+                                <SwiperSlide><img src={img3} alt="Hulula" /></SwiperSlide>
+                                <SwiperSlide><img src={img1} alt="Hulula" /></SwiperSlide>
+                                <SwiperSlide><img src={img2} alt="Hulula" /></SwiperSlide>
 
                             </Swiper>
                             <Swiper
@@ -92,11 +92,11 @@ const SliderStyle4 = () => {
                                 }}
                                 speed= {2200}
                             >
-                                <SwiperSlide><img src={img2} alt="Axies" /></SwiperSlide>
-                                <SwiperSlide><img src={img1} alt="Axies" /></SwiperSlide>
-                                <SwiperSlide><img src={img3} alt="Axies" /></SwiperSlide>
-                                <SwiperSlide><img src={img2} alt="Axies" /></SwiperSlide>
-                                <SwiperSlide><img src={img1} alt="Axies" /></SwiperSlide>
+                                <SwiperSlide><img src={img2} alt="Hulula" /></SwiperSlide>
+                                <SwiperSlide><img src={img1} alt="Hulula" /></SwiperSlide>
+                                <SwiperSlide><img src={img3} alt="Hulula" /></SwiperSlide>
+                                <SwiperSlide><img src={img2} alt="Hulula" /></SwiperSlide>
+                                <SwiperSlide><img src={img1} alt="Hulula" /></SwiperSlide>
 
                             </Swiper>
                         </div>
