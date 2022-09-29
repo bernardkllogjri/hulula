@@ -1657,7 +1657,7 @@ header{
 }
 
 .main-nav>ul>li>a:hover {
-    color: #fff;
+    color: var(--primary-color3);
 }
 
 .main-nav>ul>li .sub-menu li {

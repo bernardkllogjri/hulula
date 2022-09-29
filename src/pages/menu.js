@@ -116,6 +116,16 @@ const menus = [
           // }
       // ],
     },
+    {
+      id: 6,
+      name: 'Login',
+      links: '/login',
+    },
+    {
+      id: 4,
+      name: 'Sign up',
+      links: '/sign-up',
+    },
     // {
     //     id: 5,
     //     name: 'About',

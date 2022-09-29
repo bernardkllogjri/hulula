@@ -102,14 +102,26 @@ const ItemDetails01 = () => {
                                     <div className="meta-item">
                                         <div className="left">
                                             <span className="viewed eye">225</span>
-                                            <span to="/login" className="liked heart wishlist-button mg-l-8"><span className="number-like">100</span></span>
+                                            {/* <span to="/login" className="liked heart wishlist-button mg-l-8"><span className="number-like">100</span></span> */}
                                         </div>
-                                        <div className="right">
+                                        {/* <div className="right">
                                             <Link to="#" className="share"></Link>
                                             <Link to="#" className="option"></Link>
-                                        </div>
+                                        </div> */}
                                     </div>
-                                    <div className="client-infor sc-card-product">
+                                    <p>Habitant sollicitudin faucibus cursus lectus pulvinar dolor non ultrices eget.
+                                        Facilisi lobortisal morbi fringilla urna amet sed ipsum vitae ipsum malesuada.
+                                        Habitant sollicitudin faucibus cursus lectus pulvinar dolor non ultrices eget.
+                                        Facilisi lobortisal morbi fringilla urna amet sed ipsum</p>
+                                    <div className="d-flex justify-content-between" style={{ marginTop: '10px' }}>
+                                      <Link to="/wallet-connect" className="sc-button header-slider style style-1 wallet fl-button pri-1" style={{ width: '50%' }}>
+                                        <span>Call her now</span>
+                                      </Link>
+                                      <Link to="/wallet-connect" className="sc-button header-slider style style-1 wallet fl-button pri-1" style={{ width: '50%', marginLeft: '10px' }}>
+                                        <span>Message</span>
+                                      </Link>
+                                    </div>
+                                    {/* <div className="client-infor sc-card-product">
                                         <div className="meta-info">
                                             <div className="author">
                                                 <div className="avatar">
@@ -117,7 +129,7 @@ const ItemDetails01 = () => {
                                                 </div>
                                                 <div className="info">
                                                     <span>Owned By</span>
-                                                    <h6> <Link to="/author-02">Ralph Garraway</Link> </h6>
+                                                    <h6> <Link className='btn btn-primary-outline' to="/author-02">Call her now</Link> </h6>
                                                 </div>
                                             </div>
                                         </div>
@@ -132,12 +144,8 @@ const ItemDetails01 = () => {
                                                 </div>
                                             </div>
                                         </div>
-                                    </div>
-                                    <p>Habitant sollicitudin faucibus cursus lectus pulvinar dolor non ultrices eget.
-                                        Facilisi lobortisal morbi fringilla urna amet sed ipsum vitae ipsum malesuada.
-                                        Habitant sollicitudin faucibus cursus lectus pulvinar dolor non ultrices eget.
-                                        Facilisi lobortisal morbi fringilla urna amet sed ipsum</p>
-                                    <div className="meta-item-details style2">
+                                    </div> */}
+                                    {/* <div className="meta-item-details style2">
                                         <div className="item meta-price">
                                             <span className="heading">Current Bid</span>
                                             <div className="price">
@@ -153,9 +161,9 @@ const ItemDetails01 = () => {
                                                 <span>You are good to go!</span>
                                             </Countdown>
                                         </div>
-                                    </div>
-                                    <Link to="/wallet-connect" className="sc-button loadmore style bag fl-button pri-3"><span>Place a bid</span></Link>
-                                    <div className="flat-tabs themesflat-tabs">
+                                    </div> */}
+                                    {/* <Link to="/wallet-connect" className="sc-button loadmore style bag fl-button pri-3"><span>Place a bid</span></Link> */}
+                                    {/* <div className="flat-tabs themesflat-tabs">
                                     <Tabs>
                                         <TabList>
                                         <Tab>Bid History</Tab>
@@ -230,7 +238,7 @@ const ItemDetails01 = () => {
                                             </div>
                                         </TabPanel>
                                     </Tabs>
-                                    </div>
+                                    </div> */}
                                 </div>
                             </div>
                         </div>
