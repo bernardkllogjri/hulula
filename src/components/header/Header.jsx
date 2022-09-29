@@ -108,7 +108,7 @@ const Header = () => {
                                         <Link to="/" className="sc-button header-slider style style-1 wallet fl-button pri-1"><span>Search
                                         </span></Link>
                                     </div>
-                                    <Link to="#" className="show-search header-search-trigger" style={{ fontSize: '16px', fontWeight: 'bold' }} onClick={() => localStorage.setItem('APP_LANGUAGE', appLanguage === 'EN' ? 'FR' : 'EN')}>
+                                    <Link to="#" className="show-search header-search-trigger" style={{ fontSize: '16px', fontWeight: 'bold', marginLeft: '5px' }} onClick={() => localStorage.setItem('APP_LANGUAGE', appLanguage === 'EN' ? 'FR' : 'EN')}>
                                       <img src={appLanguage === 'EN' ? fr : us} width='20' /> {appLanguage === 'EN' ? 'FR' : 'EN'} 
                                     </Link>
                                 </div>
