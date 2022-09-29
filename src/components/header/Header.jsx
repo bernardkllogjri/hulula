@@ -107,7 +107,7 @@ const Header = () => {
                                         </span></Link>
                                     </div>
                                 </div>
-                                <nav className="main-nav" style={{ right: '15px', left: 'initial' }} ref={menuLeft} >
+                                {/* <nav className="secondary-nav" style={{ position: 'absolute', right: '15px', left: 'initial' }} ref={menuLeft} >
                                   <ul id="menu-primary-menu" className="menu">
                                     <li className="menu-item-has-children active">
                                         <Link to="#">{appLanguage}</Link>
@@ -116,7 +116,7 @@ const Header = () => {
                                       </ul>
                                     </li>
                                   </ul>
-                                </nav>
+                                </nav> */}
                             </div> 
                         </div>
                     </div>
