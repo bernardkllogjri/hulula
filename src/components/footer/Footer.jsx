@@ -42,7 +42,7 @@ const Footer = () => {
   const companyList = [
     {
       title: "Explore",
-      link: "/explore-01"
+      link: "/explore"
     },
     {
       title: "Contact Us",

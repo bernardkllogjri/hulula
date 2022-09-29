@@ -12,6 +12,7 @@ import avt from '../../assets/images/avatar/avt-2.jpg'
 
 const Header = () => {
     const { pathname } = useLocation();
+    const appLanguage = localStorage.getItem('APP_LANGUAGE') || 'EN'
 
     const headerRef = useRef (null)
     useEffect(() => {
@@ -105,51 +106,17 @@ const Header = () => {
                                         <Link to="/wallet-connect" className="sc-button header-slider style style-1 wallet fl-button pri-1"><span>Search
                                         </span></Link>
                                     </div>
-
-                                    <div className="admin_active" id="header_admin">
-                                        <div className="header_avatar">
-                                            <div className="price">
-                                                <span>2.45 <strong>ETH</strong> </span>
-                                            </div>
-                                            <img
-                                                className="avatar"
-                                                src={avt}
-                                                alt="avatar"
-                                                />
-                                            <div className="avatar_popup mt-20">
-                                                <div className="d-flex align-items-center copy-text justify-content-between">
-                                                    <span> 13b9ebda035r178... </span>
-                                                    <Link to="/" className="ml-2">
-                                                        <i className="fal fa-copy"></i>
-                                                    </Link>
-                                                </div>
-                                                <div className="d-flex align-items-center mt-10">
-                                                    <img
-                                                        className="coin"
-                                                        src={imgsun}
-                                                        alt="/"
-                                                        />
-                                                    <div className="info ml-10">
-                                                        <p className="text-sm font-book text-gray-400">Balance</p>
-                                                        <p className="w-full text-sm font-bold text-green-500">16.58 ETH</p>
-                                                    </div>
-                                                </div>
-                                                <div className="hr"></div>
-                                                <div className="links mt-20">
-                                                    <Link to="#">
-                                                        <i className="fab fa-accusoft"></i> <span> My items</span>
-                                                    </Link>
-                                                    <a className="mt-10" href="/edit-profile">
-                                                        <i className="fas fa-pencil-alt"></i> <span> Edit Profile</span>
-                                                    </a>
-                                                    <a className="mt-10" href="/login" id="logout">
-                                                        <i className="fal fa-sign-out"></i> <span> Logout</span>
-                                                    </a>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
                                 </div>
+                                <nav className="main-nav" style={{ right: '15px', left: 'initial' }} ref={menuLeft} >
+                                  <ul id="menu-primary-menu" className="menu">
+                                    <li className="menu-item-has-children active">
+                                        <Link to="#">{appLanguage}</Link>
+                                        <ul className="sub-menu" >
+                                          <li className={"menu-item"}><Link onClick={() => localStorage.setItem('APP_LANGUAGE', appLanguage === 'EN' ? 'FR' : 'EN')} to="#">{appLanguage === 'EN' ? 'FR' : 'EN'}</Link></li>
+                                      </ul>
+                                    </li>
+                                  </ul>
+                                </nav>
                             </div> 
                         </div>
                     </div>

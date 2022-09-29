@@ -1514,7 +1514,7 @@ header{
     display        : flex;
     padding        : 16px 0;
     position: absolute;
-    right: 15px;
+    right: 100px;
     top: 0;
     justify-content: end;
     align-items: center;
@@ -1879,6 +1879,9 @@ header{
     }
     .main-nav.active .menu-item.active .sub-menu {
         display: block;
+    }
+    .menu-item:hover {
+      color: #CC0000;
     }
     .main-nav.active .sub-menu::before {
         display: none;

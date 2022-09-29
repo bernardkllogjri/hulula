@@ -21,7 +21,7 @@ const Explore01 = () => {
                                 <ul>
                                     <li><Link to="/">Home</Link></li>
                                     <li><Link to="#">Explore</Link></li>
-                                    <li>Explore 1</li>
+                                    <li>Explore</li>
                                 </ul>
                             </div>
                         </div>

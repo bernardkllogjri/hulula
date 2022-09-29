@@ -3094,6 +3094,8 @@ section.today-picks {
 }
 .seclect-box .dropdown .dropdown-menu a {
   background-color: transparent;
+  white-space: break-spaces;
+  font-size: 12px;
 }
 .seclect-box .dropdown .dropdown-menu a:hover {
   color: #CC0000;
@@ -5409,6 +5411,23 @@ button.accordion-button {
   line-height: 22px;
   padding: 10px 20px;
   background-color: #CC0000 !important;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -ms-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  outline: none;
+  border: none;
+}
+
+.modal-body .btn.btn-secondary {
+  width: 100%;
+  border-radius: 20px;
+  font-weight: 700;
+  font-size: 15px;
+  line-height: 22px;
+  padding: 10px 20px;
+  background-color: #7A798A !important;
   -webkit-transition: all 0.3s ease-in-out;
   -moz-transition: all 0.3s ease-in-out;
   -ms-transition: all 0.3s ease-in-out;
@@ -8489,3 +8508,27 @@ button.accordion-button {
   color: #8a8aa0;
   margin-right: 3px;
 }
+
+
+.modal-consent .modal-dialog .modal-content {
+  background-color: #fff;
+}
+
+.modal-consent .btn {
+  max-width: 150px;
+}
+
+.modal-consent .modal-content {
+  width: 700px;
+  padding: 40px;
+  padding-top: 10px;
+}
+
+.modal-consent h2 {
+  font-size: 50px;
+}
+
+.modal-consent h2, 
+.modal-consent p {
+  margin-bottom: 20px;
+} 

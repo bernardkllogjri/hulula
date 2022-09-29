@@ -25,21 +25,17 @@ const TodayPicks = (props) => {
                   <div id="item_category" className="dropdown">
                     <Dropdown>
                       <Dropdown.Toggle id="dropdown-basic">
-                        All categories
+                        Girls
                       </Dropdown.Toggle>
 
                       <Dropdown.Menu style={{ margin: 0 }}>
-                        <Dropdown.Item href="#">Art</Dropdown.Item>
-                        <Dropdown.Item href="#">Music</Dropdown.Item>
-                        <Dropdown.Item href="#">Domain Names</Dropdown.Item>
-                        <Dropdown.Item href="#">Virtual World</Dropdown.Item>
-                        <Dropdown.Item href="#">Trading Cards</Dropdown.Item>
-                        <Dropdown.Item href="#">Sports</Dropdown.Item>
-                        <Dropdown.Item href="#">Utility</Dropdown.Item>
+                        <Dropdown.Item href="#">New joiners</Dropdown.Item>
+                        <Dropdown.Item href="#">Most visited models</Dropdown.Item>
+                        <Dropdown.Item href="#">Superstar models ( Best rated )</Dropdown.Item>
                       </Dropdown.Menu>
                     </Dropdown>
                   </div>
-                  <div id="buy" className="dropdown">
+                  {/* <div id="buy" className="dropdown">
                     <Dropdown>
                       <Dropdown.Toggle id="dropdown-basic">
                         Buy Now
@@ -50,21 +46,22 @@ const TodayPicks = (props) => {
                         <Dropdown.Item href="#">Has Offers</Dropdown.Item>
                       </Dropdown.Menu>
                     </Dropdown>
-                  </div>
+                  </div> */}
                   <div id="all-items" className="dropdown">
                     <Dropdown>
                       <Dropdown.Toggle id="dropdown-basic">
-                        All Items
+                        Trans:
                       </Dropdown.Toggle>
 
                       <Dropdown.Menu style={{ margin: 0 }}>
-                        <Dropdown.Item href="#">Single Items</Dropdown.Item>
-                        <Dropdown.Item href="#">Bundles</Dropdown.Item>
+                        <Dropdown.Item href="#">New joiners</Dropdown.Item>
+                        <Dropdown.Item href="#">Most visited models</Dropdown.Item>
+                        <Dropdown.Item href="#">Superstar models ( Best rated )</Dropdown.Item>
                       </Dropdown.Menu>
                     </Dropdown>
                   </div>
                 </div>
-                <div className="seclect-box style-2 box-right">
+                {/* <div className="seclect-box style-2 box-right">
                   <div id="artworks" className="dropdown">
                     <Dropdown>
                       <Dropdown.Toggle id="dropdown-basic">
@@ -93,7 +90,7 @@ const TodayPicks = (props) => {
                       </Dropdown.Menu>
                     </Dropdown>
                   </div>
-                </div>
+                </div> */}
               </div>
             </div>
             {data.slice(0, visible).map((item, index) => (

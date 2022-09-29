@@ -91,7 +91,7 @@ const PopularCollection = () => {
                         <div className="heading-live-auctions">
                             <h2 className="tf-title pb-40 text-left">
                                 Popular Collection</h2>
-                            <Link to="/explore-03" className="exp style2 mg-t-23">EXPLORE MORE</Link>
+                            <Link to="/explore" className="exp style2 mg-t-23">EXPLORE MORE</Link>
                         </div>
                     </div>
                     {

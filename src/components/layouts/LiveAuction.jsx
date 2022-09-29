@@ -24,7 +24,7 @@ const LiveAuction = props => {
               <div className="heading-live-auctions">
                 <h2 className="tf-title pb-20">
                   Recently added</h2>
-                <Link to="/explore-03" className="exp style2">EXPLORE MORE</Link>
+                <Link to="/explore" className="exp style2">EXPLORE MORE</Link>
               </div>
             </div>
             <div className="col-md-12">
@@ -73,7 +73,15 @@ const LiveAuction = props => {
                                 </div>
                                 <div className="card-title">
                                   <h5><Link to="/item-details-01">{item.title}</Link></h5>
-                                  <div className="tags">{item.tags}</div>
+                                  {/* <div className="tags">{item.tags}</div> */}
+                                  <div className="contacts">
+                                    <div className="contact-email">
+                                      <i class="far fa-envelope"></i>
+                                    </div>
+                                    <div className="contact-phone">
+                                      <i class="fas fa-phone-alt"></i>
+                                    </div>
+                                  </div>
                                 </div>
                                 <div className="meta-info">
                                   <div className="author">

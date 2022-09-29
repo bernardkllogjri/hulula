@@ -49,13 +49,13 @@ const menus = [
     {
         id: 2,
         name: 'Explore',
-        links: '#',
-        namesub: [
-            {
-                id: 1,
-                sub: 'Explore 01',
-                links: '/explore-01'
-            },
+        links: '/explore',
+        // namesub: [
+            // {
+            //     id: 1,
+            //     sub: 'Explore 01',
+            //     links: '/explore'
+            // },
             // {
             //     id: 2,
             //     sub: 'Explore 02',
@@ -86,39 +86,46 @@ const menus = [
             //     sub: 'Item Details 02',
             //     links: '/item-details-02'
             // }
-        ],
-    },{
-        id: 3,
-        name: 'Filters',
-        links: '#',
-        namesub: [
-            {
-                id: 1,
-                sub: 'Activity 01',
-                links: '/activity-01'
-            },
-            // {
-            //     id: 2,
-            //     sub: 'Activity 02',
-            //     links: '/activity-02'
-            // }
-        ],
+        // ],
     },
     {
-        id: 4,
-        name: 'All models',
-        links: '#',
+      id: 3,
+      name: 'Girls',
+      links: '#',
     },
     {
-        id: 5,
-        name: 'About',
-        links: '#'
+      id: 4,
+      name: 'Trans',
+      links: '/explore',
     },
     {
-        id: 7,
-        name: 'Contact',
-        links: '/contact-01'
+      id: 5,
+      name: 'Filters',
+      // links: '/activity-01',
+      links: '/explore',
+      // namesub: [
+          // {
+          //     id: 1,
+          //     sub: 'Activity 01',
+          //     links: '/activity-01'
+          // },
+          // {
+          //     id: 2,
+          //     sub: 'Activity 02',
+          //     links: '/activity-02'
+          // }
+      // ],
     },
+    // {
+    //     id: 5,
+    //     name: 'About',
+    //     links: '#'
+    // },
+    // {
+    //     id: 7,
+    //     name: 'Contact',
+    //     links: '/contact-01'
+    // },
     
 ]
 

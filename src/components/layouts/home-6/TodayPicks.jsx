@@ -28,7 +28,7 @@ const TodayPicks = props => {
                                 <h2 className="tf-title">
                                     Today's Picks
                                 </h2>
-                                <Link to="/explore-03" className="exp style2">EXPLORE MORE</Link>
+                                <Link to="/explore" className="exp style2">EXPLORE MORE</Link>
                             </div>
                         </div>
                         <div className="col-md-12">

@@ -15,8 +15,7 @@ const TopSeller = props => {
                 <div className="row">
                     <div className="col-md-12">
                         <div className="heading-live-auctions">
-                            <h2 className="tf-title">
-                                Top Seller</h2>
+                            <h2 className="tf-title">Most visited models</h2>
                         </div>
                     </div>
                     <div className="col-md-12">
