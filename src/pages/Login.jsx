@@ -31,7 +31,7 @@ const Login = () => {
                     <div className="row">
                         <div className="col-12">
                             <h2 className="tf-title-heading ct style-1">
-                                Login To NFTs
+                                Login
                             </h2>
 
                             <div className="flat-form box-login-social">
