@@ -8,6 +8,8 @@ import logodark from '../../assets/images/logo/logo_dark.png'
 import logodark2x from '../../assets/images/logo/logo_dark@2x.png'
 import imgsun from '../../assets/images/icon/sun.png'
 import avt from '../../assets/images/avatar/avt-2.jpg'
+import us from '../../assets/images/flags/US.svg'
+import fr from '../../assets/images/flags/FR.svg'
 
 
 const Header = () => {
@@ -103,9 +105,12 @@ const Header = () => {
                                         </div>
                                     </div>
                                     <div className="sc-btn-top mg-r-12" id="site-header">
-                                        <Link to="/wallet-connect" className="sc-button header-slider style style-1 wallet fl-button pri-1"><span>Search
+                                        <Link to="/" className="sc-button header-slider style style-1 wallet fl-button pri-1"><span>Search
                                         </span></Link>
                                     </div>
+                                    <Link to="#" className="show-search header-search-trigger" style={{ fontSize: '16px', fontWeight: 'bold' }} onClick={() => localStorage.setItem('APP_LANGUAGE', appLanguage === 'EN' ? 'FR' : 'EN')}>
+                                      <img src={appLanguage === 'EN' ? fr : us} width='20' /> {appLanguage === 'EN' ? 'FR' : 'EN'} 
+                                    </Link>
                                 </div>
                                 {/* <nav className="secondary-nav" style={{ position: 'absolute', right: '15px', left: 'initial' }} ref={menuLeft} >
                                   <ul id="menu-primary-menu" className="menu">
