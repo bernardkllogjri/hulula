@@ -1791,14 +1791,14 @@ header{
     color: var(--primary-color3);
     }
     
-    .is_dark .main-nav.active .current-item>a,
+    /* .is_dark .main-nav.active .current-item>a,
     .is_dark .main-nav.active ul>li>a:hover {
     background: linear-gradient(
     216.56deg,#E250E5 5.32%,#4B50E6 94.32%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     }
-    
+     */
     .main-nav.active .sub-menu .menu-item a {
     margin-left: 15px;
     }
