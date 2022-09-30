@@ -47,7 +47,33 @@ const menus = [
         // ]
     },
     {
-        id: 2,
+      id: 2,
+      name: 'Info',
+      namesub: [
+        {
+            id: 1,
+            sub: 'Terms and conditions',
+            links: '/'
+        },
+        {
+            id: 2,
+            sub: 'Explore 02',
+            links: '/'
+        },
+        {
+            id: 3,
+            sub: 'Privacy',
+            links: '/'
+        },
+        {
+            id: 4,
+            sub: 'Working in Ticino',
+            links: '/'
+        },
+      ]
+    },
+    {
+        id: 3,
         name: 'Explore',
         links: '/explore',
         // namesub: [
@@ -89,14 +115,9 @@ const menus = [
         // ],
     },
     {
-      id: 3,
+      id: 4,
       name: 'Girls',
       links: '#',
-    },
-    {
-      id: 4,
-      name: 'Trans',
-      links: '/explore',
     },
     {
       id: 5,
@@ -122,7 +143,7 @@ const menus = [
       links: '/login',
     },
     {
-      id: 4,
+      id: 7,
       name: 'Sign up',
       links: '/sign-up',
     },

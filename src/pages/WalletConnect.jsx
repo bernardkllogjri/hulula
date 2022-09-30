@@ -14,49 +14,48 @@ import img8 from '../assets/images/icon/connect-8.png'
 
 const WalletConnect = () => {
     const [data] = useState(
-        [
-            {
-                img: img1,
-                title: 'Meta Mask',
-                description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt'
-            },
-            {
-                img: img2,
-                title: 'Bitski',
-                description: ' Dolor lacinia? Donec nulla, deleniti, dis arcu pharetra maecenas dapibus ante nemo! Wisi?'
-            },
-            {
-                img: img3,
-                title: 'Fortmatic',
-                description: 'Potenti eleifend faucibus quo vero nibh netus suspendisse unde? Consectetuer aspernatur'
-            },
-            {
-                img: img4,
-                title: 'Wallet Connect',
-                description: 'Metus corrupti itaque reiciendis, provident condimentum, reprehenderit numquam, mi'
-            },
-            {
-                img: img5,
-                title: 'Coinbase Wallet',
-                description: 'Sollicitudin iure conubia vivamus habitasse aptent, eligendi deserunt excepteur tellus non'
-            },
-            {
-                img: img6,
-                title: 'Authereum',
-                description: 'Purus irure lacinia eiusmod inventore bibendum habitant potenti non sint rem! Felis, asper'
-            },
-            {
-                img: img7,
-                title: 'Kaikas',
-                description: 'Varius culpa, aspernatur accusantium? Corporis rhoncus, voluptatibus incididunt, velit '
-            },
-            {
-                img: img8,
-                title: 'Torus',
-                description: ' Soluta fuga nihil, mollitia, ad reprehenderit qui viverra culpa posuere labore inventore'
-            },
-            
-        ]
+      [
+        {
+          img: img1,
+          title: 'Meta Mask',
+          description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt'
+        },
+        {
+          img: img2,
+          title: 'Bitski',
+          description: ' Dolor lacinia? Donec nulla, deleniti, dis arcu pharetra maecenas dapibus ante nemo! Wisi?'
+        },
+        {
+          img: img3,
+          title: 'Fortmatic',
+          description: 'Potenti eleifend faucibus quo vero nibh netus suspendisse unde? Consectetuer aspernatur'
+        },
+        {
+          img: img4,
+          title: 'Wallet Connect',
+          description: 'Metus corrupti itaque reiciendis, provident condimentum, reprehenderit numquam, mi'
+        },
+        {
+          img: img5,
+          title: 'Coinbase Wallet',
+          description: 'Sollicitudin iure conubia vivamus habitasse aptent, eligendi deserunt excepteur tellus non'
+        },
+        {
+          img: img6,
+          title: 'Authereum',
+          description: 'Purus irure lacinia eiusmod inventore bibendum habitant potenti non sint rem! Felis, asper'
+        },
+        {
+          img: img7,
+          title: 'Kaikas',
+          description: 'Varius culpa, aspernatur accusantium? Corporis rhoncus, voluptatibus incididunt, velit '
+        },
+        {
+          img: img8,
+          title: 'Torus',
+          description: ' Soluta fuga nihil, mollitia, ad reprehenderit qui viverra culpa posuere labore inventore'
+        },
+      ]
     )
     return (
         <div>
@@ -92,19 +91,19 @@ const WalletConnect = () => {
                             </h5>
                         </div>
                         <div className="col-md-12">
-                            <div className="sc-box-icon-inner style-2">
-                                {
-                                    data.map((item,index) => (
-                                        <div key={index} className="sc-box-icon">
-                                            <div className="img">
-                                                <img src={item.img} alt="Hulula" />
-                                            </div>
-                                            <h4 className="heading"><Link to="/login">{item.title}</Link> </h4>
-                                            <p className="content">{item.description}</p>
-                                         </div>
-                                    ))
-                                }
-                            </div>  
+                          <div className="sc-box-icon-inner style-2">
+                            {
+                              data.map((item,index) => (
+                                <div key={index} className="sc-box-icon">
+                                  <div className="img">
+                                    <img src={item.img} alt="Hulula" />
+                                  </div>
+                                  <h4 className="heading"><Link to="/login">{item.title}</Link> </h4>
+                                  <p className="content">{item.description}</p>
+                                </div>
+                              ))
+                            }
+                          </div>  
                         </div>    
                     </div>              
                 </div>
