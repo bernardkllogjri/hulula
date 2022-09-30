@@ -139,11 +139,21 @@ const menus = [
     },
     {
       id: 6,
+      name: "What's new",
+      links: '/',
+    },
+    {
+      id: 7,
+      name: 'Reviews',
+      links: '/',
+    },
+    {
+      id: 8,
       name: 'Login',
       links: '/login',
     },
     {
-      id: 7,
+      id: 9,
       name: 'Sign up',
       links: '/sign-up',
     },

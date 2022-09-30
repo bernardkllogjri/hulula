@@ -29,6 +29,11 @@ const WalletConnect = () => {
           img: img3,
           title: 'Amex',
           description: 'Potenti eleifend faucibus quo vero nibh netus suspendisse unde? Consectetuer aspernatur'
+        },
+        {
+          img: img4,
+          title: 'Maestro',
+          description: 'Potenti eleifend faucibus quo vero nibh netus suspendisse unde? Consectetuer aspernatur'
         }
       ]
     )
