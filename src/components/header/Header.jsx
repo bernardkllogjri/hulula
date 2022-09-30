@@ -111,7 +111,7 @@ const Header = () => {
                                     <Link to="#" className="show-search header-search-trigger" style={{ fontSize: '16px', fontWeight: 'bold', marginLeft: '8px' }} onClick={() => localStorage.setItem('APP_LANGUAGE', appLanguage === 'EN' ? 'FR' : 'EN')}>
                                       <img src={appLanguage === 'EN' ? fr : us} width='20' /> {appLanguage === 'EN' ? 'FR' : 'EN'} 
                                     </Link>
-                                    <Link to="#" className="show-search header-search-trigger" style={{ fontSize: '16px', fontWeight: 'bold', marginLeft: '8px' }} onClick={() => localStorage.setItem('APP_LANGUAGE', appLanguage === 'EN' ? 'FR' : 'EN')}>
+                                    <Link to="#" className="show-search header-search-trigger" style={{ fontSize: '16px', fontWeight: 'bold', marginLeft: '8px' }}>
                                       <i class="fas fa-phone"></i>
                                     </Link>
                                 </div>
