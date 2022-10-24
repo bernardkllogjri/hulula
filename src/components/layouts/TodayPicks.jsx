@@ -30,7 +30,6 @@ const TodayPicks = props => {
                                 <div className={`sc-card-product ${item.feature ? 'comingsoon' : '' } `}>
                                     <div className="card-media">
                                         <Link to="/item-details-01"><img src={item.img} alt="hulula" /></Link>
-                                        <Link to="/login" className="wishlist-button heart"><span className="number-like">{item.wishlist}</span></Link>
                                         <div className="coming-soon">{item.feature}</div>
                                     </div>
                                     <div className="card-title">
