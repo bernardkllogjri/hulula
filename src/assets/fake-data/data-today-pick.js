@@ -215,19 +215,19 @@ const todayPickData = [
         nameCollection: "Creative Art 3D",
         ethnicity: 'Latino'
       },
-    {
-        img: img8,
-        title: "Displayed Text",
-        tags: "Contact",
-        imgAuthor: imga8,
-        nameAuthor: "Name Surname",
-        age: "27",
-        priceChange: "$12.246",
-        wishlist: "100",
-        imgCollection: imgCollection1,
-        nameCollection: "Creative Art 3D",
-        ethnicity: 'Latino'
-    }
+    // {
+    //     img: img8,
+    //     title: "Displayed Text",
+    //     tags: "Contact",
+    //     imgAuthor: imga8,
+    //     nameAuthor: "Name Surname",
+    //     age: "27",
+    //     priceChange: "$12.246",
+    //     wishlist: "100",
+    //     imgCollection: imgCollection1,
+    //     nameCollection: "Creative Art 3D",
+    //     ethnicity: 'Latino'
+    // }
 
 ]
 

@@ -84,10 +84,14 @@ const Header = () => {
                                                             }
                                                         </ul>
                                                     }
-                                                    
                                                 </li>
                                             ))
                                         }
+                                        <li className='menu-item lang-option-mobile'>
+                                          <Link to="#" className="show-search header-search-trigger" style={{ fontSize: '16px', fontWeight: 'bold', marginLeft: '8px' }} onClick={() => localStorage.setItem('APP_LANGUAGE', appLanguage === 'EN' ? 'FR' : 'EN')}>
+                                            <img src={appLanguage === 'EN' ? fr : us} width='20' /> {appLanguage === 'EN' ? 'FR' : 'EN'} 
+                                          </Link>
+                                        </li>
                                     </ul>
                                 </nav>
                                 <div className="flat-search-btn flex">
@@ -108,7 +112,7 @@ const Header = () => {
                                         <Link to="/" className="sc-button header-slider style style-1 wallet fl-button pri-1"><span>Search
                                         </span></Link>
                                     </div>
-                                    <Link to="#" className="show-search header-search-trigger" style={{ fontSize: '16px', fontWeight: 'bold', marginLeft: '8px' }} onClick={() => localStorage.setItem('APP_LANGUAGE', appLanguage === 'EN' ? 'FR' : 'EN')}>
+                                    <Link to="#" className="show-search header-search-trigger lang-option" style={{ fontSize: '16px', fontWeight: 'bold', marginLeft: '8px' }} onClick={() => localStorage.setItem('APP_LANGUAGE', appLanguage === 'EN' ? 'FR' : 'EN')}>
                                       <img src={appLanguage === 'EN' ? fr : us} width='20' /> {appLanguage === 'EN' ? 'FR' : 'EN'} 
                                     </Link>
                                     <Link to="#" className="show-search header-search-trigger" style={{ fontSize: '16px', fontWeight: 'bold', marginLeft: '8px' }}>

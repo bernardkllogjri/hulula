@@ -1109,7 +1109,7 @@
   font-weight: bold;
   font-size: 12px;
   color: #fff;
-  background-color: var(--primary-color3);
+  background-color: #2AABEE;
   border-radius: 4px;
   letter-spacing: 0.1em;
   text-transform: uppercase;
@@ -1117,7 +1117,7 @@
 
 .sc-card-product .contact-email {
   margin-right: 10px;
-  background-color: #FFA900;
+  background-color: #128C7E;
 }
 
 
@@ -2103,7 +2103,7 @@
 
 .sc-card-product .meta-info .price {
   text-align: right;
-  align-self: flex-end;
+  align-self: center;
 }
 
 .sc-card-product .meta-info .price h5 {

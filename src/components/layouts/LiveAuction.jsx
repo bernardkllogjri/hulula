@@ -76,10 +76,10 @@ const LiveAuction = props => {
                                   {/* <div className="tags">{item.tags}</div> */}
                                   <div className="contacts">
                                     <div className="contact-email">
-                                      <i class="far fa-envelope"></i>
+                                      <i class="fab fa-whatsapp"></i>
                                     </div>
                                     <div className="contact-phone">
-                                      <i class="fas fa-phone-alt"></i>
+                                      <i class="fab fa-telegram"></i>
                                     </div>
                                   </div>
                                 </div>

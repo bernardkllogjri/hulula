@@ -34,13 +34,13 @@ const TodayPicks = props => {
                                         <div className="coming-soon">{item.feature}</div>
                                     </div>
                                     <div className="card-title">
-                                        <h5 className="style2"><Link to="/item-details-01">{item.title}</Link></h5>
+                                        <h5 className="style2"><Link to="/item-details-01">{item.nameAuthor}</Link></h5>
                                         <div className="contacts">
                                           <div className="contact-email">
-                                            <i class="far fa-envelope"></i>
+                                            <i class="fab fa-whatsapp"></i>
                                           </div>
                                           <div className="contact-phone">
-                                            <i class="fas fa-phone-alt"></i>
+                                            <i class="fab fa-telegram"></i>
                                           </div>
                                         </div>
                                         {/* <div className="tags">{item.tags}</div> */}
@@ -51,8 +51,8 @@ const TodayPicks = props => {
                                                 <img src={item.imgAuthor} alt="hulula" />
                                             </div>
                                             <div className="info">
-                                                <span>{item.ethnicity}</span>
-                                                <h6> <Link to="/authors-02">{item.nameAuthor}</Link> </h6>
+                                                {/* <span>{item.ethnicity}</span> */}
+                                                <h6> <Link to="/authors-02">{item.ethnicity}</Link> </h6>
                                             </div>
                                         </div>
                                         <div className="price">
