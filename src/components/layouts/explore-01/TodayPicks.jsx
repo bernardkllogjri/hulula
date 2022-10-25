@@ -114,7 +114,7 @@ const TodayPicks = (props) => {
                   </div>
                   <div className="card-title">
                     <h5 className="style2">
-                      <Link to="/item-details-01">{item.title}</Link>
+                      <Link to="/item-details-01">{item.nameAuthor}</Link>
                     </h5>
                     <div className="contacts">
                       <div className="contact-email">
@@ -131,10 +131,9 @@ const TodayPicks = (props) => {
                         <img src={item.imgAuthor} alt="hulula" />
                       </div>
                       <div className="info">
-                        <span>{item.ethnicity}</span>
                         <h6>
                           {" "}
-                          <Link to="/authors-02">{item.nameAuthor}</Link>{" "}
+                          <Link to="/authors-02">{item.ethnicity}</Link>{" "}
                         </h6>
                       </div>
                     </div>
