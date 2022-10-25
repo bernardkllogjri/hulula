@@ -72,7 +72,7 @@ const LiveAuction = props => {
                                   </div> */}
                                 </div>
                                 <div className="card-title">
-                                  <h5><Link to="/item-details-01">{item.title}</Link></h5>
+                                  <h5><Link to="/item-details-01">{item.nameAuthor}</Link></h5>
                                   {/* <div className="tags">{item.tags}</div> */}
                                   <div className="contacts">
                                     <div className="contact-email">
@@ -89,8 +89,8 @@ const LiveAuction = props => {
                                       <img src={item.imgAuthor} alt="hulula" />
                                     </div>
                                     <div className="info">
-                                      <span>{item.ethnicity}</span>
-                                      <h6> <Link to="/authors-02">{item.nameAuthor}
+                                      {/* <span>{item.ethnicity}</span> */}
+                                      <h6> <Link to="/authors-02">{item.ethnicity}
                                       </Link> </h6>
                                     </div>
                                   </div>

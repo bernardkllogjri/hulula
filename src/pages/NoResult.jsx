@@ -122,7 +122,7 @@ const NoResult = () => {
                                                                 </div>
                                                                 <div className="card-title">
                                                                     <h5><Link to="/item-details-01">{item.title}</Link></h5>
-                                                                    <div className="tags">{item.tags}</div>
+                                                                    {/* <div className="tags">{item.tags}</div> */}
                                                                 </div>
                                                                 <div className="meta-info">
                                                                     <div className="author">
