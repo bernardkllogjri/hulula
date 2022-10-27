@@ -38,7 +38,7 @@ import img6right3 from '../images/models/model-4.jpg'
 
 const popularCollectionData = [
     {
-        title: "Name Surname",
+        title: "Name",
         imgAuthor: imgAuthor1,
         nationality: "Nationality",
         imgleft: img1left,
@@ -52,7 +52,7 @@ const popularCollectionData = [
         tags: 'Contact',
     },
     {
-        title: "Name Surname",
+        title: "Name",
         imgAuthor: imgAuthor2,
         nationality: "Nationality",
         imgleft: img2left,
@@ -66,7 +66,7 @@ const popularCollectionData = [
         tags: 'Contact',
     },
     {
-        title: "Name Surname",
+        title: "Name",
         imgAuthor: imgAuthor3,
         nationality: "Nationality",
         imgleft: img3left,
@@ -80,7 +80,7 @@ const popularCollectionData = [
         tags: 'Contact',
     },
     {
-        title: "Name Surname",
+        title: "Name",
         imgAuthor: imgAuthor1,
         nationality: "Nationality",
         imgleft: img4left,
@@ -94,7 +94,7 @@ const popularCollectionData = [
         tags: 'Contact',
     },
     {
-        title: "Name Surname",
+        title: "Name",
         imgAuthor: imgAuthor2,
         nationality: "Nationality",
         imgleft: img5left,
@@ -108,7 +108,7 @@ const popularCollectionData = [
         tags: 'Contact',
     },
     {
-        title: "Name Surname",
+        title: "Name",
         imgAuthor: imgAuthor3,
         nationality: "Nationality",
         imgleft: img6left,
@@ -122,7 +122,7 @@ const popularCollectionData = [
         tags: 'Contact',
     },
     {
-        title: "Name Surname",
+        title: "Name",
         imgAuthor: imgAuthor1,
         nationality: "Nationality",
         imgleft: img1left,
@@ -136,7 +136,7 @@ const popularCollectionData = [
         tags: 'Contact',
     },
     {
-        title: "Name Surname",
+        title: "Name",
         imgAuthor: imgAuthor2,
         nationality: "Nationality",
         imgleft: img2left,
@@ -150,7 +150,7 @@ const popularCollectionData = [
         tags: 'Contact',
     },
     {
-        title: "Name Surname",
+        title: "Name",
         imgAuthor: imgAuthor3,
         nationality: "Nationality",
         imgleft: img3left,
@@ -164,7 +164,7 @@ const popularCollectionData = [
         tags: 'Contact',
     },
     {
-        title: "Name Surname",
+        title: "Name",
         imgAuthor: imgAuthor1,
         nationality: "Nationality",
         imgleft: img4left,
@@ -178,7 +178,7 @@ const popularCollectionData = [
         tags: 'Contact',
     },
     {
-        title: "Name Surname",
+        title: "Name",
         imgAuthor: imgAuthor2,
         nationality: "Nationality",
         imgleft: img5left,
@@ -192,7 +192,7 @@ const popularCollectionData = [
         tags: 'Contact',
     },
     {
-        title: "Name Surname",
+        title: "Name",
         imgAuthor: imgAuthor3,
         nationality: "Nationality",
         imgleft: img6left,
