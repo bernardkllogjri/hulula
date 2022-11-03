@@ -1489,6 +1489,48 @@
   .sc-card-activity.style-2 .content .media {
     width: 140px;
   }
+
+  .sc-card-product {
+    padding: 0;
+  }
+
+  .sc-card-product .contacts {
+    width: 100%;
+  }
+
+  .sc-card-product .contact-email, .sc-card-product .contact-phone {
+    width: 100%;
+  }
+
+  .sc-card-product .card-title {
+    flex-direction: column;
+    align-items: flex-start;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-bottom: 10px;
+  }
+
+  .sc-card-product .meta-info .price h5 {
+    display: none;
+  }
+
+  .sc-card-product .meta-info {
+    display: none;
+  }
+
+  .sc-card-product .card-title h5.style2 {
+    margin-bottom: 10px;
+  }
+
+  .sc-card-product .card-media {
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    margin-bottom: 10px;
+  }
+
+  .sc-card-product .card-bottom {
+    margin-top: 0;
+  }
 }
 
 @media only screen and (max-width: 400px) {

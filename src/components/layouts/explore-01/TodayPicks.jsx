@@ -96,7 +96,7 @@ const TodayPicks = (props) => {
             {data.slice(0, visible).map((item, index) => (
               <div
                 key={index}
-                className="fl-item col-xl-3 col-lg-4 col-md-6 col-sm-6"
+                className="fl-item col-xl-3 col-lg-4 col-md-6 col-sm-6 col-6"
               >
                 <div
                   className={`sc-card-product ${
