@@ -34,7 +34,7 @@ const LiveAuction = props => {
 
                 breakpoints={{
                   0: {
-                    slidesPerView: 1,
+                    slidesPerView: 2,
                   },
                   767: {
                     slidesPerView: 2,

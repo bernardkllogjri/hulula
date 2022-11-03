@@ -26,7 +26,7 @@ const TodayPicks = props => {
                     </div>
                     {
                         data.slice(0,visible).map((item,index) => (
-                            <div key={index} className="col-xl-3 col-lg-4 col-md-6 col-sm-6">
+                            <div key={index} className="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-6">
                                 <div className={`sc-card-product ${item.feature ? 'comingsoon' : '' } `}>
                                     <div className="card-media">
                                         <Link to="/item-details-01"><img src={item.img} alt="hulula" /></Link>
