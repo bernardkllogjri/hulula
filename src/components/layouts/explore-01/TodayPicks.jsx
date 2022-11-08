@@ -97,6 +97,10 @@ const TodayPicks = (props) => {
               <div
                 key={index}
                 className="fl-item col-xl-3 col-lg-4 col-md-6 col-sm-6 col-6"
+                style={{
+                  paddingLeft: '8px',
+                  paddingRight: '8px'
+                }}
               >
                 <div
                   className={`sc-card-product ${

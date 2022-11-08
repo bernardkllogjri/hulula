@@ -53,7 +53,7 @@ const LiveAuction = props => {
                 {
                   data.slice(0, 7).map((item, index) => (
                     <SwiperSlide key={index}>
-                      <div className="swiper-container show-shadow carousel auctions">
+                      <div className="swiper-container show-shadow carousel auctions" style={{ paddingRight: '8px', paddingLeft: '8px' }}>
                         <div className="swiper-wrapper">
                           <div className="swiper-slide">
                             <div className="slider-item">
