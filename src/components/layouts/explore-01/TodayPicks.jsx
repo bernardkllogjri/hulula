@@ -1,6 +1,6 @@
 import React, { useState, Fragment } from "react";
 import PropTypes from "prop-types";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import CardModal from "../CardModal";
 import { Dropdown } from "react-bootstrap";
 
@@ -13,6 +13,7 @@ const TodayPicks = (props) => {
   };
 
   const [modalShow, setModalShow] = useState(false);
+  const navigate = useNavigate()
 
   return (
     <Fragment>
@@ -107,10 +108,13 @@ const TodayPicks = (props) => {
                     item.feature ? "comingsoon" : ""
                   } `}
                 >
-                  <div className="card-media">
-                    <Link to="/item-details-01">
-                      <img src={item.img} alt="hulula" />
-                    </Link>
+                  <div
+                    onClick={() => { navigate('/item-details-01')  }}
+                    className="card-media"
+                    style={{ 
+                      backgroundImage: `url(${item.img})`
+                    }}
+                  >
                     {/* <Link to="/login" className="wishlist-button heart">
                       <span className="number-like">{item.wishlist}</span>
                     </Link> */}

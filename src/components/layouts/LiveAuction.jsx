@@ -1,6 +1,6 @@
 import React, { useState, Fragment } from 'react';
 import PropTypes from 'prop-types'
-import { Link } from 'react-router-dom'
+import { Link, useNavigate } from 'react-router-dom'
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Navigation, Pagination, Scrollbar, A11y } from 'swiper';
 import Countdown from "react-countdown";
@@ -14,6 +14,7 @@ const LiveAuction = props => {
   const data = props.data;
 
   const [modalShow, setModalShow] = useState(false);
+  const navigate = useNavigate()
 
   return (
     <Fragment>
@@ -58,8 +59,13 @@ const LiveAuction = props => {
                           <div className="swiper-slide">
                             <div className="slider-item">
                               <div className="sc-card-product">
-                                <div className="card-media">
-                                  <Link to="/item-details-01"><img src={item.img} alt="hulula" /></Link>
+                                <div
+                                  onClick={() => { navigate('/item-details-01')  }}
+                                  className="card-media"
+                                  style={{ 
+                                    backgroundImage: `url(${item.img})`
+                                  }}
+                                >
                                   {/* <Link to="/login" className="wishlist-button heart"><span className="number-like">{item.wishlist}</span></Link> */}
                                   {/* <div className="featured-countdown">
                                     <span className="slogan"></span>

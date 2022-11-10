@@ -1412,7 +1412,7 @@
 
   .header-search {
     margin-right: 10px !important;
-}
+  }
   
   .uploadFile input[type=file],
   .tab-authors .menu-tab .tablinks.active::after {
@@ -1492,6 +1492,8 @@
 
   .sc-card-product {
     padding: 0;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
   }
 
   .sc-card-product .contacts {
@@ -1523,13 +1525,26 @@
   }
 
   .sc-card-product .card-media {
-    border-bottom-left-radius: 5px;
-    border-bottom-right-radius: 5px;
+    position: relative;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    height: 250px;
+    overflow: hidden;
     margin-bottom: 10px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 0;
   }
 
   .sc-card-product .card-bottom {
     margin-top: 0;
+  }
+
+  .sc-card-product .card-media img {
+    height: 190px;
   }
 }
 

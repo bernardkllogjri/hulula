@@ -598,9 +598,14 @@
 
 .sc-card-article .card-media,
 .sc-card-product .card-media {
-  border-radius: 12px;
+  position: relative;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  width: 100%;
+  height: 250px;
   overflow: hidden;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
 }
 
 .sc-card-product.menu_card .card-media {

@@ -1,6 +1,6 @@
 import React , { useState , Fragment } from 'react';
 import PropTypes from 'prop-types'
-import { Link } from 'react-router-dom'
+import { Link, useNavigate } from 'react-router-dom'
 import CardModal from './CardModal';
 
 const TodayPicks = props => {
@@ -11,6 +11,8 @@ const TodayPicks = props => {
         setVisible((prevValue) => prevValue + 4);
     }
     const [modalShow, setModalShow] = useState(false);
+    const navigate = useNavigate()
+
     return (
         <Fragment>
         <section className="tf-section today-pick">
@@ -28,9 +30,14 @@ const TodayPicks = props => {
                         data.slice(0,visible).map((item,index) => (
                             <div key={index} className="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-6" style={{ paddingRight: '8px', paddingLeft: '8px' }}>
                                 <div className={`sc-card-product ${item.feature ? 'comingsoon' : '' } `}>
-                                    <div className="card-media">
-                                        <Link to="/item-details-01"><img src={item.img} alt="hulula" /></Link>
-                                        <div className="coming-soon">{item.feature}</div>
+                                    <div
+                                      onClick={() => { navigate('/item-details-01')  }}
+                                      className="card-media"
+                                      style={{ 
+                                        backgroundImage: `url(${item.img})`
+                                      }}
+                                    >
+                                      <div className="coming-soon">{item.feature}</div>
                                     </div>
                                     <div className="card-title">
                                         <h5 className="style2"><Link to="/item-details-01">{item.nameAuthor}</Link></h5>
