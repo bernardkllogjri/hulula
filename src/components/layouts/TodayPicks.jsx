@@ -58,7 +58,7 @@ const TodayPicks = props => {
                                             </div>
                                             <div className="info">
                                                 {/* <span>{item.ethnicity}</span> */}
-                                                <h6> <Link to="/authors-02">{item.ethnicity}</Link> </h6>
+                                                <h6>{item.ethnicity}</h6>
                                             </div>
                                         </div>
                                         <div className="price">

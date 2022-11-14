@@ -1,4 +1,5 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
+import { useLocation } from 'react-router-dom';
 import Header from '../components/header/Header';
 import Footer from '../components/footer/Footer';
 import { Link } from 'react-router-dom';
@@ -15,8 +16,36 @@ import img5 from '../assets/images/avatar/avt-7.jpg'
 import img6 from '../assets/images/avatar/avt-8.jpg'
 import img7 from '../assets/images/avatar/avt-2.jpg'
 import imgdetail1 from '../assets/images/box-item/images-item-details.jpg'
+import client from '../client'
 
 const ItemDetails01 = () => {
+    const location = useLocation()
+    const { state } = location || {}
+    const { id } = state || {}
+    const [data, setData] = useState({})
+    useEffect(() => {
+      const fn = async () => {
+        const result = await client.get('/profile')
+        setData({
+          user: result.data?.data?.users?.find(r => r.id === id),
+          liveAuctionData: result.data?.data?.users.map(item => {
+            return {
+              id: item.id,
+              img: 'http://164.92.156.222' + item?.Galleries?.[0]?.image.replace('/root/hulula_backend/src/public', ''),
+              imgCollection: 'http://164.92.156.222' + item?.Galleries?.[0]?.image.replace('/root/hulula_backend/src/public', ''),
+              imgAuthor: 'http://164.92.156.222' + item?.Profile?.image.replace('/root/hulula_backend/src/public', ''),
+              title: "Displayed Text",
+              tags: "Contact",
+              nameAuthor: item?.firstName + item?.lastName,
+              age: item?.age,
+              ethnicity: item?.Profile?.nationality,
+            }
+          })
+        })
+      }
+      fn()
+    }, [])
+
     const [dataHistory] = useState(
         [
             {
@@ -91,14 +120,14 @@ const ItemDetails01 = () => {
                         <div className="col-xl-6 col-md-12">
                             <div className="content-left">
                                 <div className="media">
-                                    <img src={imgdetail1} alt="Hulula" />
+                                    <img src={'http://164.92.156.222' + data?.user?.Profile?.image.replace('/root/hulula_backend/src/public', '')} alt="Hulula" />
                                 </div>
                             </div>
                         </div>
                         <div className="col-xl-6 col-md-12">
                             <div className="content-right">
                                 <div className="sc-item-details">
-                                    <h2 className="style2">“The Fantasy Flower illustration ” </h2>
+                                    <h2 className="style2">“{data?.user?.firstName} {data?.user?.lastName}”</h2>
                                     <div className="meta-item">
                                         <div className="left">
                                             <span className="viewed eye">225</span>
@@ -109,10 +138,7 @@ const ItemDetails01 = () => {
                                             <Link to="#" className="option"></Link>
                                         </div> */}
                                     </div>
-                                    <p>Habitant sollicitudin faucibus cursus lectus pulvinar dolor non ultrices eget.
-                                        Facilisi lobortisal morbi fringilla urna amet sed ipsum vitae ipsum malesuada.
-                                        Habitant sollicitudin faucibus cursus lectus pulvinar dolor non ultrices eget.
-                                        Facilisi lobortisal morbi fringilla urna amet sed ipsum</p>
+                                    <p>{data?.user?.description}</p>
                                     <div className="d-flex justify-content-between" style={{ marginTop: '10px' }}>
                                       <Link to="/wallet-connect" className="sc-button header-slider style style-1 wallet fl-button pri-1" style={{ width: '50%' }}>
                                         <span>Call her now</span>
@@ -245,7 +271,7 @@ const ItemDetails01 = () => {
                     </div>
                 </div>
             </div>
-            <LiveAuction data={liveAuctionData} />
+            <LiveAuction data={data.liveAuctionData || []} />
             <Footer />
         </div>
     );

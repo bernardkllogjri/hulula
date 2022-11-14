@@ -1,11 +1,32 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom'
 import Header from '../components/header/Header';
 import Footer from '../components/footer/Footer';
 import TodayPicks from '../components/layouts/explore-01/TodayPicks'
 import todayPickData from '../assets/fake-data/data-today-pick';
+import client from '../client'
 
 const Explore01 = () => {
+  const [data, setData] = useState([])
+  useEffect(() => {
+    const fn = async () => {
+      const result = await client.get('/profile')
+      setData(result.data.data.user.map(item => {
+          return {
+            img: 'http://164.92.156.222' + item?.Galleries?.[0]?.image.replace('/root/hulula_backend/src/public', ''),
+            imgCollection: 'http://164.92.156.222' + item?.Galleries?.[0]?.image.replace('/root/hulula_backend/src/public', ''),
+            imgAuthor: 'http://164.92.156.222' + item?.Profile?.image.replace('/root/hulula_backend/src/public', ''),
+            title: "Displayed Text",
+            tags: "Contact",
+            nameAuthor: item?.firstName + item?.lastName,
+            age: item?.age,
+            ethnicity: item?.Profile?.nationality,
+          }
+        }))
+    }
+    fn()
+  }, [])
+
     return (
         <div>
             <Header />
@@ -28,7 +49,7 @@ const Explore01 = () => {
                     </div>
                 </div>                    
             </section>
-            <TodayPicks data={todayPickData} />
+            <TodayPicks data={data} />
             <Footer />
         </div>
     );

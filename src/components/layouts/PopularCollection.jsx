@@ -71,7 +71,7 @@ const PopularCollectionItem = props => (
                                     </div>
                                 </div>
                                 <div className="content">
-                                    <h4><Link to="/authors-01">{props.item.title}</Link></h4>
+                                    <h4>{props.item.title}</h4>
                                     <div className="infor">
                                         <span>{props.item.nationality}</span>
                                     </div>
@@ -80,22 +80,20 @@ const PopularCollectionItem = props => (
                             <div className="tags">{props.item.tags}</div>
                             {/* <Link to="/login" className="wishlist-button public heart"><span className="number-like"> 100</span></Link> */}
                         </div>
-                        <Link to="/authors-02">
-                            <div className="media-images-collection">
-                                <div className="box-left">
-                                    <img src={props.item.imgleft} alt="hulula" />
+                        <div className="media-images-collection">
+                            <div className="box-left">
+                                <img src={props.item.imgleft} alt="hulula" />
+                            </div>
+                            <div className="box-right">
+                                <div className="top-img">
+                                    <img src={props.item.imgright1} alt="hulula" />
+                                    <img src={props.item.imgright2} alt="hulula" />
                                 </div>
-                                <div className="box-right">
-                                    <div className="top-img">
-                                        <img src={props.item.imgright1} alt="hulula" />
-                                        <img src={props.item.imgright2} alt="hulula" />
-                                    </div>
-                                    <div className="bottom-img">
-                                        <img src={props.item.imgright3} alt="hulula" />
-                                    </div>
+                                <div className="bottom-img">
+                                    <img src={props.item.imgright3} alt="hulula" />
                                 </div>
                             </div>
-                        </Link>
+                        </div>
                     </div> 	
                 </div>
             </div>

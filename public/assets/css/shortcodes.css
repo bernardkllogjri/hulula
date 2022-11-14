@@ -5047,7 +5047,7 @@ button.accordion-button {
   display: flex;
   align-items: center;
   margin-bottom: 37px;
-  justify-content: space-between;
+  justify-content: flex-start;
 }
 
 .form-upload-profile .uploadFile,
@@ -5082,6 +5082,7 @@ button.accordion-button {
   padding: 3px;
   background: linear-gradient(216.56deg, #e250e5 5.32%, #4b50e6 94.32%);
   margin-right: 15px;
+  height: 100px;
 }
 
 .option-profile .image.style2 {
@@ -5104,7 +5105,7 @@ button.accordion-button {
 
 .form-infor-profile .info-account,
 .form-infor-profile .info-social {
-  width: calc(50% - 40px);
+  width: calc(100% - 40px);
   margin-left: 40px;
 }
 

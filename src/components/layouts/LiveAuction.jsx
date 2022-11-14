@@ -24,7 +24,8 @@ const LiveAuction = props => {
             <div className="col-md-12">
               <div className="heading-live-auctions">
                 <h2 className="tf-title pb-20">
-                  Recently added</h2>
+                  Recently added
+                </h2>
                 <Link to="/explore" className="exp style2">EXPLORE MORE</Link>
               </div>
             </div>
@@ -60,7 +61,7 @@ const LiveAuction = props => {
                             <div className="slider-item">
                               <div className="sc-card-product">
                                 <div
-                                  onClick={() => { navigate('/item-details-01')  }}
+                                  onClick={() => { navigate('/item-details-01', { state: { id: item.id } })  }}
                                   className="card-media"
                                   style={{ 
                                     backgroundImage: `url(${item.img})`

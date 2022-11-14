@@ -152,6 +152,11 @@ const menus = [
       name: 'Sign up',
       links: '/sign-up',
     },
+    {
+      id: 9,
+      name: 'Log out',
+      links: '#',
+    },
     // {
     //     id: 5,
     //     name: 'About',

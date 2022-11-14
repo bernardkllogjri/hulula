@@ -1,5 +1,5 @@
 import React , { useRef , useState , useEffect } from 'react';
-import { Link , useLocation } from "react-router-dom";
+import { Link, useLocation, useNavigate } from "react-router-dom";
 import menus from "../../pages/menu";
 import DarkMode from './DarkMode';
 import logoheader from '../../assets/images/logo/logo.png'
@@ -15,7 +15,8 @@ import fr from '../../assets/images/flags/FR.svg'
 const Header = () => {
     const { pathname } = useLocation();
     const appLanguage = localStorage.getItem('APP_LANGUAGE') || 'EN'
-
+    const user = JSON.parse(localStorage.getItem('APP_USER'))
+    const navigate = useNavigate()
     const headerRef = useRef (null)
     useEffect(() => {
         window.addEventListener('scroll', isSticky);
@@ -67,9 +68,16 @@ const Header = () => {
                                 <nav id="main-nav" className="main-nav" ref={menuLeft} >
                                     <ul id="menu-primary-menu" className="menu">
                                         {
-                                            menus.map((data,index) => (
+                                            menus.filter(menu => {
+                                              return user?.user?.id ? !['/login', '/sign-up'].includes(menu.links) : !['Log out'].includes(menu.name)
+                                            }).map((data,index) => (
                                                 <li key={index} onClick={()=> handleOnClick(index)} className={`menu-item ${data.namesub ? 'menu-item-has-children' : '' } ${activeIndex === index ? 'active' : ''} ` }   >
-                                                    <Link to={data.links}>{data.name}</Link>
+                                                    <Link to={data.links} onClick={() => {
+                                                      if(data.name === 'Log out') { 
+                                                        localStorage.removeItem('APP_USER')
+                                                        navigate('/')
+                                                      }
+                                                    }}>{data.name}</Link>
                                                     {
                                                          data.namesub &&
                                                          <ul className="sub-menu" >
