@@ -26,7 +26,7 @@ const EditProfile = () => {
           userId: user?.user?.id
         })
       } else {
-        // navigate('/login')
+        navigate('/login')
       }
     }, 1000)
   }, [])
