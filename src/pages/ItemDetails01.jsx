@@ -31,9 +31,9 @@ const ItemDetails01 = () => {
           liveAuctionData: result.data?.data?.users.map(item => {
             return {
               id: item.id,
-              img: 'https://164.92.156.222' + item?.Galleries?.[0]?.image.replace('/root/hulula_backend/src/public', ''),
-              imgCollection: 'https://164.92.156.222' + item?.Galleries?.[0]?.image.replace('/root/hulula_backend/src/public', ''),
-              imgAuthor: 'https://164.92.156.222' + item?.Profile?.image.replace('/root/hulula_backend/src/public', ''),
+              img: 'http://164.92.156.222' + item?.Galleries?.[0]?.image.replace('/root/hulula_backend/src/public', ''),
+              imgCollection: 'http://164.92.156.222' + item?.Galleries?.[0]?.image.replace('/root/hulula_backend/src/public', ''),
+              imgAuthor: 'http://164.92.156.222' + item?.Profile?.image.replace('/root/hulula_backend/src/public', ''),
               title: "Displayed Text",
               tags: "Contact",
               nameAuthor: item?.firstName + item?.lastName,
@@ -120,7 +120,7 @@ const ItemDetails01 = () => {
                         <div className="col-xl-6 col-md-12">
                             <div className="content-left">
                                 <div className="media">
-                                    <img src={'https://164.92.156.222' + data?.user?.Profile?.image.replace('/root/hulula_backend/src/public', '')} alt="Hulula" />
+                                    <img src={'http://164.92.156.222' + data?.user?.Profile?.image.replace('/root/hulula_backend/src/public', '')} alt="Hulula" />
                                 </div>
                             </div>
                         </div>
