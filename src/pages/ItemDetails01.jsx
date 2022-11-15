@@ -31,9 +31,9 @@ const ItemDetails01 = () => {
           liveAuctionData: result.data?.data?.users.map(item => {
             return {
               id: item.id,
-              img: 'https://huladtla.com' + item?.Galleries?.[0]?.image.replace('/root/hulula_backend/src/public', ''),
-              imgCollection: 'https://huladtla.com' + item?.Galleries?.[0]?.image.replace('/root/hulula_backend/src/public', ''),
-              imgAuthor: 'https://huladtla.com' + item?.Profile?.image.replace('/root/hulula_backend/src/public', ''),
+              img: 'https://huladtla.com' + item?.Galleries?.[0]?.image?.replace('/root/hulula_backend/src/public', ''),
+              imgCollection: 'https://huladtla.com' + item?.Galleries?.[0]?.image?.replace('/root/hulula_backend/src/public', ''),
+              imgAuthor: 'https://huladtla.com' + item?.Profile?.image?.replace('/root/hulula_backend/src/public', ''),
               title: "Displayed Text",
               tags: "Contact",
               nameAuthor: item?.firstName + item?.lastName,
@@ -120,7 +120,7 @@ const ItemDetails01 = () => {
                         <div className="col-xl-6 col-md-12">
                             <div className="content-left">
                                 <div className="media">
-                                    <img src={'https://huladtla.com' + data?.user?.Profile?.image.replace('/root/hulula_backend/src/public', '')} alt="Hulula" />
+                                    <img src={'https://huladtla.com' + data?.user?.Profile?.image?.replace('/root/hulula_backend/src/public', '')} alt="Hulula" />
                                 </div>
                             </div>
                         </div>
