@@ -3868,6 +3868,10 @@ section.today-picks {
   overflow: hidden;
 }
 
+.tf-item-details .content-left .media img{
+  width: 100% !important;
+}
+
 .tf-item-details .content-right {
   padding-left: 10%;
   margin-top: 5px;

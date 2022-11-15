@@ -290,10 +290,6 @@
     width    : 1200px;
     max-width: 100%;
   }
-
-  .tf-item-details .content-left .media img{
-    width: 100% !important;
-  }
   
   .explore-tab .content-tab .content-inner .sc-card-product,
   .style-3 .sc-box-icon {
