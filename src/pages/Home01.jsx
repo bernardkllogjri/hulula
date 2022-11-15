@@ -22,9 +22,9 @@ const Home01 = () => {
         liveAuctionData: result?.data?.data?.users?.map(item => {
           return {
             id: item.id,
-            img: 'https://huladtla.com' + item?.Galleries?.[0]?.image?.replace('/root/hulula_backend/src/public', ''),
-            imgCollection: 'https://huladtla.com' + item?.Galleries?.[0]?.image?.replace('/root/hulula_backend/src/public', ''),
-            imgAuthor: 'https://huladtla.com' + item?.Profile?.image?.replace('/root/hulula_backend/src/public', ''),
+            img: 'https://huladtla.com' + item?.Galleries?.[0]?.image,
+            imgCollection: 'https://huladtla.com' + item?.Galleries?.[0]?.image,
+            imgAuthor: 'https://huladtla.com' + item?.Profile?.image,
             title: "Displayed Text",
             tags: "Contact",
             nameAuthor: item?.firstName + " " + item?.lastName,
@@ -34,7 +34,7 @@ const Home01 = () => {
         }),
         topSellerData: result?.data?.data?.users?.map(item => {
           return {
-            img: item?.Profile?.image?.replace('/root/hulula_backend/src/public', ''),
+            img: item?.Profile?.image,
             name: item?.firstName + " " + item?.lastName,
             classPadding: ""
           }
@@ -42,14 +42,14 @@ const Home01 = () => {
         popularCollectionData: result?.data?.data?.users?.map(item => {
           return {
             title: item.firstName + item.lastName,
-            imgAuthor: 'https://huladtla.com' + item?.Profile?.image?.replace('/root/hulula_backend/src/public', ''),
+            imgAuthor: 'https://huladtla.com' + item?.Profile?.image,
             nationality: "Nationality",
-            imgleft: 'https://huladtla.com' + item?.Galleries?.[0]?.image?.replace('/root/hulula_backend/src/public', ''),
-            imgright1: 'https://huladtla.com' + item?.Galleries?.[1]?.image?.replace('/root/hulula_backend/src/public', ''),
-            imgright2: 'https://huladtla.com' + item?.Galleries?.[2]?.image?.replace('/root/hulula_backend/src/public', ''),
-            imgright3: 'https://huladtla.com' + item?.Galleries?.[3]?.image?.replace('/root/hulula_backend/src/public', ''),
-            imgright4: 'https://huladtla.com' + item?.Galleries?.[4]?.image?.replace('/root/hulula_backend/src/public', ''),
-            imgtop: 'https://huladtla.com' + item?.Profile?.image?.replace('/root/hulula_backend/src/public', ''),
+            imgleft: 'https://huladtla.com' + item?.Galleries?.[0]?.image,
+            imgright1: 'https://huladtla.com' + item?.Galleries?.[1]?.image,
+            imgright2: 'https://huladtla.com' + item?.Galleries?.[2]?.image,
+            imgright3: 'https://huladtla.com' + item?.Galleries?.[3]?.image,
+            imgright4: 'https://huladtla.com' + item?.Galleries?.[4]?.image,
+            imgtop: 'https://huladtla.com' + item?.Profile?.image,
             wishlist: "100",
             count: '12 item products',
             tags: 'Contact',
@@ -61,9 +61,9 @@ const Home01 = () => {
         liveAuctionData: result.data.data.users.map(item => {
           return {
             id: item.id,
-            img: 'https://huladtla.com' + item?.Galleries?.[0]?.image?.replace('/root/hulula_backend/src/public', ''),
-            imgCollection: 'https://huladtla.com' + item?.Galleries?.[0]?.image?.replace('/root/hulula_backend/src/public', ''),
-            imgAuthor: 'https://huladtla.com' + item?.Profile?.image?.replace('/root/hulula_backend/src/public', ''),
+            img: 'https://huladtla.com' + item?.Galleries?.[0]?.image,
+            imgCollection: 'https://huladtla.com' + item?.Galleries?.[0]?.image,
+            imgAuthor: 'https://huladtla.com' + item?.Profile?.image,
             title: "Displayed Text",
             tags: "Contact",
             nameAuthor: item?.firstName + " " + item?.lastName,
@@ -73,7 +73,7 @@ const Home01 = () => {
         }),
         topSellerData: result.data.data.users.map(item => {
           return {
-            img: item?.Profile?.image?.replace('/root/hulula_backend/src/public', ''),
+            img: item?.Profile?.image,
             name: item?.firstName + " " + item?.lastName,
             classPadding: ""
           }
@@ -81,14 +81,14 @@ const Home01 = () => {
         popularCollectionData: result.data.data.users.map(item => {
           return {
             title: item.firstName + item.lastName,
-            imgAuthor: 'https://huladtla.com' + item?.Profile?.image?.replace('/root/hulula_backend/src/public', ''),
+            imgAuthor: 'https://huladtla.com' + item?.Profile?.image,
             nationality: "Nationality",
-            imgleft: 'https://huladtla.com' + item?.Galleries?.[0]?.image?.replace('/root/hulula_backend/src/public', ''),
-            imgright1: 'https://huladtla.com' + item?.Galleries?.[1]?.image?.replace('/root/hulula_backend/src/public', ''),
-            imgright2: 'https://huladtla.com' + item?.Galleries?.[2]?.image?.replace('/root/hulula_backend/src/public', ''),
-            imgright3: 'https://huladtla.com' + item?.Galleries?.[3]?.image?.replace('/root/hulula_backend/src/public', ''),
-            imgright4: 'https://huladtla.com' + item?.Galleries?.[4]?.image?.replace('/root/hulula_backend/src/public', ''),
-            imgtop: 'https://huladtla.com' + item?.Profile?.image?.replace('/root/hulula_backend/src/public', ''),
+            imgleft: 'https://huladtla.com' + item?.Galleries?.[0]?.image,
+            imgright1: 'https://huladtla.com' + item?.Galleries?.[1]?.image,
+            imgright2: 'https://huladtla.com' + item?.Galleries?.[2]?.image,
+            imgright3: 'https://huladtla.com' + item?.Galleries?.[3]?.image,
+            imgright4: 'https://huladtla.com' + item?.Galleries?.[4]?.image,
+            imgtop: 'https://huladtla.com' + item?.Profile?.image,
             wishlist: "100",
             count: '12 item products',
             tags: 'Contact',

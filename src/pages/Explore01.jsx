@@ -13,9 +13,9 @@ const Explore01 = () => {
       const result = await client.get('/profile')
       setData(result.data.data.user.map(item => {
           return {
-            img: 'https://huladtla.com' + item?.Galleries?.[0]?.image.replace('/root/hulula_backend/src/public', ''),
-            imgCollection: 'https://huladtla.com' + item?.Galleries?.[0]?.image.replace('/root/hulula_backend/src/public', ''),
-            imgAuthor: 'https://huladtla.com' + item?.Profile?.image.replace('/root/hulula_backend/src/public', ''),
+            img: 'https://huladtla.com' + item?.Galleries?.[0]?.image,
+            imgCollection: 'https://huladtla.com' + item?.Galleries?.[0]?.image,
+            imgAuthor: 'https://huladtla.com' + item?.Profile?.image,
             title: "Displayed Text",
             tags: "Contact",
             nameAuthor: item?.firstName + item?.lastName,
