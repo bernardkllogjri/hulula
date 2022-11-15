@@ -13,9 +13,9 @@ const Explore01 = () => {
       const result = await client.get('/profile')
       setData(result.data.data.user.map(item => {
           return {
-            img: 'http://164.92.156.222' + item?.Galleries?.[0]?.image.replace('/root/hulula_backend/src/public', ''),
-            imgCollection: 'http://164.92.156.222' + item?.Galleries?.[0]?.image.replace('/root/hulula_backend/src/public', ''),
-            imgAuthor: 'http://164.92.156.222' + item?.Profile?.image.replace('/root/hulula_backend/src/public', ''),
+            img: 'https://164.92.156.222' + item?.Galleries?.[0]?.image.replace('/root/hulula_backend/src/public', ''),
+            imgCollection: 'https://164.92.156.222' + item?.Galleries?.[0]?.image.replace('/root/hulula_backend/src/public', ''),
+            imgAuthor: 'https://164.92.156.222' + item?.Profile?.image.replace('/root/hulula_backend/src/public', ''),
             title: "Displayed Text",
             tags: "Contact",
             nameAuthor: item?.firstName + item?.lastName,
