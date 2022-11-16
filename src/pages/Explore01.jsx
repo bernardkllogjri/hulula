@@ -11,7 +11,7 @@ const Explore01 = () => {
   useEffect(() => {
     const fn = async () => {
       const result = await client.get('/profile')
-      setData(result.data.data.user.map(item => {
+      setData(result.data?.data?.users?.map(item => {
           return {
             img: item?.Galleries?.[0]?.image,
             imgCollection: item?.Galleries?.[0]?.image,
