@@ -23,7 +23,8 @@ const EditProfile = () => {
       if(user?.user?.id) {
         setForm({
           ...form,
-          userId: user?.user?.id
+          userId: 11
+          // userId: user?.user?.id
         })
       } else {
         navigate('/login')
@@ -70,7 +71,8 @@ const EditProfile = () => {
     setForm({ ...form, isLoading: true })
     try {
       const result = await client.put('/profile', {
-        userId: form.userId,
+        // userId: form.userId,
+        userId: 11,
         nationality: form.nationality,
         age: form.age,
         height: form.height,
