@@ -133,8 +133,8 @@ const SignUp = () => {
                               <div className="form-inner">
                                 {form.isLoading ? <div>Loading...</div> : (
                                   <form action="#" onSubmit={onSubmit} id="contactform">
-                                    <input id="firstName" name="firstName" tabIndex="1" aria-required="true" required type="text" placeholder="Your Full Name" value={form.firstName} onChange={handleChange} />
-                                    <input id="lastName" name="lastName" tabIndex="1" aria-required="true" required type="text" placeholder="Your Full Name" value={form.lastName} onChange={handleChange} />
+                                    <input id="firstName" name="firstName" tabIndex="1" aria-required="true" required type="text" placeholder="Your First Name" value={form.firstName} onChange={handleChange} />
+                                    <input id="lastName" name="lastName" tabIndex="1" aria-required="true" required type="text" placeholder="Your Last Name" value={form.lastName} onChange={handleChange} />
                                     <input id="email" name="email" tabIndex="2"  aria-required="true" type="email"  placeholder="Your Email Address" required value={form.email} onChange={handleChange} />
                                     <input id="password" name="password" tabIndex="3"  aria-required="true" type="password" placeholder="Set Your Password" required value={form.password} onChange={handleChange} />
                                     <input id="repeatPassword" name="repeatPassword" tabIndex="3"  aria-required="true" type="password" placeholder="Repeat Your Password" required value={form.repeatPassword} onChange={handleChange} />
