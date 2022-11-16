@@ -73,13 +73,13 @@ const SignUp = () => {
                   <div className="row">
                       <div className="col-md-12">
                           <div className="page-title-heading mg-bt-12">
-                              <h1 className="heading text-center">Signup</h1>
+                              <h1 className="heading text-center">Sign up</h1>
                           </div>
                           <div className="breadcrumbs style2">
                               <ul>
                                   <li><Link to="/">Home</Link></li>
                                   <li><Link to="#">Pages</Link></li>
-                                  <li>Signup</li>
+                                  <li>Sign up</li>
                               </ul>
                           </div>
                       </div>
@@ -91,12 +91,12 @@ const SignUp = () => {
                   <div className="row">
                       <div className="col-12">
                           <h2 className="tf-title-heading ct style-1">
-                              Signup To Hulula
+                              Sign up To Hulula
                           </h2>
 
                           <div className="flat-form box-login-social">
                               <div className="box-title-login">
-                                  <h5>Signup with social</h5>
+                                  <h5>Sign up with social</h5>
                               </div>
                               <ul>
                                   <li>
@@ -116,7 +116,7 @@ const SignUp = () => {
 
                           <div className="flat-form box-login-email">
                               <div className="box-title-login">
-                                  <h5>Or Signup with email</h5>
+                                  <h5>Or Sign up with email</h5>
                               </div>
                               {((form.errors || form.error) &&
                                 <Alert variant='danger' style={{ fontSize: '15px' }}>
@@ -145,7 +145,7 @@ const SignUp = () => {
                                       </label>
                                       <Link to="#" className="forgot-pass">Forgot Password ?</Link>
                                     </div>
-                                    <button className="submit">Signup</button>
+                                    <button className="submit">Sign up</button>
                                   </form>
                                 )}
                               </div>

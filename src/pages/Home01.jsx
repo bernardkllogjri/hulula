@@ -16,8 +16,6 @@ const Home01 = () => {
     const fn = async () => {
       const result = await client.get('/profile')
 
-      console.warn({ result })
-
       setData({
         liveAuctionData: result?.data?.data?.users?.map(item => {
           return {

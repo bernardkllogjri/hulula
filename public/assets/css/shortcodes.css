@@ -204,6 +204,18 @@
   -o-transition: all 0.3s ease;
   transition: all 0.3s ease;
 }
+
+.sc-button.filled {
+  background-color: var(--primary-color3);
+  color: white;
+}
+
+.sc-button.filled:hover {
+  background-color: transparent;
+  color: var(--primary-color3);
+  border-color: var(--primary-color3);
+}
+
 .sc-button.no-bg {
   background: transparent;
 }

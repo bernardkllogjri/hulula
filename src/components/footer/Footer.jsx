@@ -5,57 +5,45 @@ import logofooter from '../../assets/images/logo/logo2.png'
 const Footer = () => {
   const accountList = [
     {
-      title: "Authors",
-      link: "/authors-01"
-    },
-    {
-      title: "Collection",
-      link: "/wallet-connect"
-    },
-    {
-      title: "Author Profile",
-      link: "/edit-profile"
-    },
-    {
-      title: "Create Collection",
-      link: "/create-item"
-    },
-  ]
-  const resourcesList = [
-    {
-      title: "Help & Support",
-      link: "/help-center"
-    },
-    {
-      title: "Live Auctions",
-      link: "/live-auctions"
-    },
-    {
-      title: "Item Details",
-      link: "/item-details-01"
-    },
-    {
-      title: "Activity",
-      link: "/activity-01"
-    },
-  ]
-  const companyList = [
-    {
-      title: "Explore",
+      title: "Girls",
       link: "/explore"
     },
     {
-      title: "Contact Us",
-      link: "/contact-01"
+      title: "Trans",
+      link: "/explore"
     },
     {
-      title: "Our Blog",
-      link: "/blog"
+      title: "Filters",
+      link: "/explore"
+    }
+  ]
+  const resourcesList = [
+    {
+      title: "Working in Ticino",
+      link: "#"
+    },
+    {
+      title: "Terms and Conditions",
+      link: "#"
+    },
+    {
+      title: "Privacy",
+      link: "#"
+    }
+  ]
+  const companyList = [
+    {
+      title: "FAQ",
+      link: "#"
+    },
+    {
+      title: "Help & Support",
+      link: "#"
     },
     {
       title: "Discover",
-      link: "/faq"
-    },
+      link: "#"
+    }
   ]
   const socialList = [
     {
@@ -165,13 +153,9 @@ const Footer = () => {
             </div>
             <div className="col-lg-3 col-md-6 col-sm-7 col-12">
               <div className="widget widget-subcribe">
-                <h5 className="title-widget">Subscribe Us</h5>
-                <div className="form-subcribe">
-                  <form id="subscribe-form" action="#" method="GET" acceptCharset="utf-8" className="form-submit">
-                    <input name="email" className="email" type="email" placeholder="info@yourgmail.com" required />
-                    <button id="submit" name="submit" type="submit"><i className="icon-fl-send"></i></button>
-                  </form>
-                </div>
+                <a href='#'>
+                  <h5 className="title-widget">Subscribe Us</h5>
+                </a>
               </div>
             </div>
           </div>
