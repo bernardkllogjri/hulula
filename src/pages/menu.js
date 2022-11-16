@@ -55,11 +55,11 @@ const menus = [
             sub: 'Terms and conditions',
             links: '/'
         },
-        {
-            id: 2,
-            sub: 'Explore 02',
-            links: '/'
-        },
+        // {
+        //     id: 2,
+        //     sub: 'Explore 02',
+        //     links: '/'
+        // },
         {
             id: 3,
             sub: 'Privacy',
