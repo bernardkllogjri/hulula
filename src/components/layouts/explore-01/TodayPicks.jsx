@@ -99,8 +99,8 @@ const TodayPicks = (props) => {
                 key={index}
                 className="fl-item col-xl-3 col-lg-4 col-md-6 col-sm-6 col-6"
                 style={{
-                  paddingLeft: '8px',
-                  paddingRight: '8px'
+                  paddingLeft: '4px',
+                  paddingRight: '4px'
                 }}
               >
                 <div
@@ -108,16 +108,18 @@ const TodayPicks = (props) => {
                     item.feature ? "comingsoon" : ""
                   } `}
                 >
+                  {/* <Link to="/login" className="wishlist-button heart">
+                    <span className="number-like">{item.wishlist}</span>
+                  </Link> */}
                   <div
-                    onClick={() => { navigate('/item-details-01')  }}
+                    onClick={() => {
+                      navigate('/item-details-01', { state: { id: item.id } })  
+                    }}
                     className="card-media"
                     style={{ 
                       backgroundImage: `url(${item.img})`
                     }}
                   >
-                    {/* <Link to="/login" className="wishlist-button heart">
-                      <span className="number-like">{item.wishlist}</span>
-                    </Link> */}
                     <div className="coming-soon">{item.feature}</div>
                   </div>
                   <div className="card-title">

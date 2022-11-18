@@ -28,7 +28,7 @@ const TodayPicks = props => {
                     </div>
                     {
                         data.slice(0,visible).map((item,index) => (
-                            <div key={index} className="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-6" style={{ paddingRight: '8px', paddingLeft: '8px' }}>
+                            <div key={index} className="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-6" style={{ paddingRight: '4px', paddingLeft: '4px' }}>
                                 <div className={`sc-card-product ${item.feature ? 'comingsoon' : '' } `}>
                                     <div
                                       onClick={() => { navigate('/item-details-01', { state: { id: item.id }})  }}

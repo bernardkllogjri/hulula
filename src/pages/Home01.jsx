@@ -54,45 +54,6 @@ const Home01 = () => {
           }
         })
       })
-
-      console.warn({
-        liveAuctionData: result.data.data.users.map(item => {
-          return {
-            id: item.id,
-            img: item?.Galleries?.[0]?.image,
-            imgCollection: item?.Galleries?.[0]?.image,
-            imgAuthor: item?.Profile?.image,
-            title: "Displayed Text",
-            tags: "Contact",
-            nameAuthor: item?.firstName + " " + item?.lastName,
-            age: item?.age,
-            ethnicity: item?.Profile?.nationality,
-          }
-        }),
-        topSellerData: result.data.data.users.map(item => {
-          return {
-            img: item?.Profile?.image,
-            name: item?.firstName + " " + item?.lastName,
-            classPadding: ""
-          }
-        }),
-        popularCollectionData: result.data.data.users.map(item => {
-          return {
-            title: item.firstName + item.lastName,
-            imgAuthor: item?.Profile?.image,
-            nationality: "Nationality",
-            imgleft: item?.Galleries?.[0]?.image,
-            imgright1: item?.Galleries?.[1]?.image,
-            imgright2: item?.Galleries?.[2]?.image,
-            imgright3: item?.Galleries?.[3]?.image,
-            imgright4: item?.Galleries?.[4]?.image,
-            imgtop: item?.Profile?.image,
-            wishlist: "100",
-            count: '12 item products',
-            tags: 'Contact',
-          }
-        })
-      });
     }
     fn()
   }, [])

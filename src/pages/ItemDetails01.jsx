@@ -26,11 +26,6 @@ const ItemDetails01 = () => {
     useEffect(() => {
       const fn = async () => {
         const result = await client.get('/profile')
-        console.warn({
-          result,
-          id,
-          op: result.data?.data?.users?.find(r => r.id === id),
-        })
         setData({
           user: result.data?.data?.users?.find(r => r.id === id),
           liveAuctionData: result.data?.data?.users.map(item => {

@@ -11,7 +11,6 @@ const Login = () => {
 
   useEffect(() => {
     const user = JSON.parse(localStorage.getItem('APP_USER'))
-    console.warn({ user })
     if(user?.user?.id) {
       navigate('/')
     }
