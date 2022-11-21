@@ -30,7 +30,10 @@ const SignUp = () => {
   const phone = watch('phone')
 
   useEffect(() => {
-    if(!phone) return
+    if(!phone) {
+      clearErrors('phone')
+      return
+    }
     if (!isValidPhoneNumber(phone)) {
       setError('phone', {
         type: 'pattern',
