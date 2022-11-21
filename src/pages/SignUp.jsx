@@ -26,7 +26,7 @@ const schema = yup.object({
 const SignUp = () => {
   const [form, setForm] = useState({})
   const navigate = useNavigate()
-  const { register, setError ,handleSubmit, getValues, watch, formState: { errors }, control } = useForm({ resolver: yupResolver(schema)});
+  const { register, setError, clearErrors ,handleSubmit, getValues, watch, formState: { errors }, control } = useForm({ resolver: yupResolver(schema)});
   const phone = watch('phone')
 
   useEffect(() => {
@@ -36,11 +36,9 @@ const SignUp = () => {
         type: 'pattern',
         message: 'Not a valid phone number'
       })
+    } else {
+      clearErrors('phone')
     }
-    console.warn({
-      valid: isValidPhoneNumber(phone || ''),
-      phone,
-    });
   }, [phone])
 
   useEffect(() => {
@@ -57,8 +55,10 @@ const SignUp = () => {
         firstName: formData.firstName,
         lastName: formData.lastName,
         email: formData.email,
+        username: formData.username,
+        phoneNumber: formData.phone,
         password: formData.password,
-        repeatPassword: formData.repeatPassword,
+        repeatPassword: formData.repeatPassword
       })
       const { data } = user || {}
       if(!data?.data) {
