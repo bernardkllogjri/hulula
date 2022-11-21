@@ -179,9 +179,11 @@ const ItemDetails02 = () => {
                                                                 <div className="client">
                                                                     <div className="sc-author-box style-2">
                                                                         <div className="author-avatar">
-                                                                            <Link to="#">
-                                                                                <img src={item.img} alt="Hulula" className="avatar" />
-                                                                            </Link>
+                                                                            {item.img && 
+                                                                                <Link to="#">
+                                                                                    <img src={item.img} alt="Hulula" className="avatar" />
+                                                                                </Link>
+                                                                            }
                                                                             <div className="badge"></div>
                                                                         </div>
                                                                         <div className="author-infor">

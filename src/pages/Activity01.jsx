@@ -165,7 +165,7 @@ const Activity01 = () => {
                                     <div className="sc-card-activity style1" key={index}>
                                         <div className="content">
                                             <div className="media">
-                                                <img src={item.img} alt="Hulula" />
+                                                {item.img && <img src={item.img} alt="Hulula" />}
                                             </div>
                                             <div className="infor">
                                                 <h3> <Link to="/item-details-01">{item.title}</Link></h3>

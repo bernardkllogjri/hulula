@@ -826,10 +826,10 @@
   .flat-title-page.style2 .img-bg{
     top: 25%;
   }
-  .flat-title-page.style-3,
+  /* .flat-title-page.style-3,
   .is_dark .flat-title-page{
     border-bottom: 1px solid #343444;
-  } 
+  }  */
 
   .header_1.header_2.is-fixed .mode_switcher{
     display: none !important;
@@ -903,7 +903,7 @@
     justify-content: center;
   }
   .home-1 .flat-title-page {
-    height: 440px;
+    height: 330px;
   }
   .authors-2 .react-tabs__tab {
     padding: 4.2% 35px 4.5%;
@@ -926,9 +926,9 @@
     padding: 120px 0 140px;
 }
 
-  .mainslider.home .wrap-heading .content {
+  /* .mainslider.home .wrap-heading .content {
     padding-top: 70px;
-  }
+  } */
   .home-4 .flat-cart-item {
     padding: 185px 0 20px;
   }
@@ -1023,7 +1023,7 @@
   .tf-section.top-seller,
   .tf-section.top-seller.home3.s2,
   .tf-section.live-auctions.pad-b-74 {
-    padding: 70px 0px;
+    padding: 100px 10px 100px;
   }
   .home-1 .tf-section.live-auctions {
     padding: 77px 0 0px;
@@ -1377,6 +1377,26 @@
 }
 .home-7 .flat-slider {
   padding-top: 0;
+}
+
+.sc-card-product:hover {
+  -webkit-transform: none;
+  -ms-transform: none;
+  -o-transform: none;
+  transform: none;
+  -webkit-filter: none;
+  -ms-filter: none;
+  -moz-filter: none;
+  transition: none;
+  -webkit-transition: none;
+  -moz-transition: none;
+  -ms-transition: none;
+  -o-transition: none;
+}
+
+.top-seller .sc-author-box.style-2 .author-avatar {
+  width: 100px;
+  height: 100px;
 }
 
 }

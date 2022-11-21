@@ -20,7 +20,7 @@ const Explore01 = () => {
             title: "Displayed Text",
             tags: "Contact",
             nameAuthor: item?.firstName + item?.lastName,
-            age: item?.age,
+            age: item?.Profile?.age,
             ethnicity: item?.Profile?.nationality,
           }
         }))
@@ -31,7 +31,7 @@ const Explore01 = () => {
     return (
         <div>
             <Header />
-            <section className="flat-title-page inner">
+            {/* <section className="flat-title-page inner">
               <div className="overlay"></div>
               <div className="themesflat-container">
                   <div className="row">
@@ -49,7 +49,7 @@ const Explore01 = () => {
                       </div>
                   </div>
               </div>                    
-            </section>
+            </section> */}
             <TodayPicks data={data} />
             <Footer />
         </div>

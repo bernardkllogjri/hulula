@@ -79,9 +79,11 @@ const BrowCategory = () => {
                                                         <div className="type-title">
                                                             <h3>{item.title}</h3>
                                                         </div>
-                                                        <div className="card-media">
-                                                            <Link to="/item-details-01"><img src={item.img} alt="Hulula" /></Link>
-                                                        </div>                                      
+                                                        {item.img && 
+                                                            <div className="card-media">
+                                                                <Link to="/item-details-01"><img src={item.img} alt="Hulula" /></Link>
+                                                            </div>
+                                                        }
                                                     </div>  	
                                                 </div>
                                             </div>

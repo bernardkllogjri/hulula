@@ -141,24 +141,32 @@ const PopularCollectionItem = props => (
                 <div className="slider-item">										
                 <div className="sc-card-collection style-2 home5">
                     <div className="media-images-collection">
-                        <div className="box-left">
-                            <img src={props.item.imgleft} alt="Hulula" />
-                        </div>
+                        {props.item.imgleft &&
+                            <div className="box-left">
+                                <img src={props.item.imgleft} alt="Hulula" />
+                            </div>
+                        }
                         <div className="box-right">
+                        {props.item.imgright1 &&
                             <div className="top-img">
                                 <img src={props.item.imgright1} alt="Hulula" />
                             </div>
+                        }
+                        {props.item.imgright2 &&
                             <div className="bottom-img">
                                 <img src={props.item.imgright2} alt="Hulula" />
                             </div>
+                        }
                         <Link to="/login" className="wishlist-button heart"><span className="number-like">{props.item.wishlist}</span></Link>
                     </div>
                     </div>
                     <div className="author-avatar">
-                        <div className="image">
-                            <img src={props.item.imgAuthor} alt="Hulula" className="avatar" />
-                            <div className="badge"><i className="ripple"></i></div>
-                        </div>
+                        {props.item.imgAuthor && 
+                            <div className="image">
+                                <img src={props.item.imgAuthor} alt="Hulula" className="avatar" />
+                                <div className="badge"><i className="ripple"></i></div>
+                            </div>
+                        }
                     </div>
                     <div className="content">
                         <h4 className="heading">

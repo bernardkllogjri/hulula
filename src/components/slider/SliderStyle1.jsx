@@ -72,8 +72,8 @@ const SliderItem = props => (
                                     </div>
                                 </div>
                                 <div className="image">
-                                    <img className="img-bg" src={props.item.imgbg} alt="hulula" />
-                                    <img src={props.item.img} alt="hulula" />
+                                    {props.item.imgbg && <img className="img-bg" src={props.item.imgbg} alt="hulula" />}
+                                    {props.item.img && <img src={props.item.img} alt="hulula" />}
                                 </div>
                             </div>   
                         </div>					                           

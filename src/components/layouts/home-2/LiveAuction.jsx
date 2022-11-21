@@ -58,7 +58,7 @@ const LiveAuction = props => {
                                                             <div className="slider-item">
                                                             <div className="sc-card-product explode style2">
                                                                 <div className="card-media">
-                                                                    <Link to="/item-details-01"><img src={item.img} alt="hulula" /></Link>
+                                                                    {item.img && <Link to="/item-details-01"><img src={item.img} alt="hulula" /></Link>}
                                                                     <div className="featured-countdown">
                                                                         <span className="slogan"></span>
                                                                         <Countdown date={Date.now() + 500000000}>
@@ -75,7 +75,7 @@ const LiveAuction = props => {
                                                                 <div className="meta-info">
                                                                     <div className="author">
                                                                         <div className="avatar">
-                                                                            <img src={item.imgAuthor} alt="hulula" />
+                                                                            {item.imgAuthor && <img src={item.imgAuthor} alt="hulula" />}
                                                                         </div>
                                                                         <div className="info">
                                                                             <span>Creator</span>

@@ -21,7 +21,7 @@ const TodayPicks = (props) => {
         <div className="themesflat-container">
           <div className="row">
             <div className="col-md-12">
-              <div className="wrap-box explore-1 flex mg-bt-40">
+              <div className="wrap-box explore-1 flex">
                 <div className="seclect-box style-1">
                   <div id="item_category" className="dropdown">
                     <Dropdown>
@@ -30,6 +30,7 @@ const TodayPicks = (props) => {
                       </Dropdown.Toggle>
 
                       <Dropdown.Menu style={{ margin: 0 }}>
+                        <Dropdown.Item href="#">Age</Dropdown.Item>
                         <Dropdown.Item href="#">New joiners</Dropdown.Item>
                         <Dropdown.Item href="#">Most visited models</Dropdown.Item>
                         <Dropdown.Item href="#">Superstar models ( Best rated )</Dropdown.Item>
@@ -137,9 +138,7 @@ const TodayPicks = (props) => {
                   </div>
                   <div className="meta-info">
                     <div className="author">
-                      <div className="avatar">
-                        <img src={item.imgAuthor} alt="hulula" />
-                      </div>
+                      <div className="avatar" style={{ backgroundImage: `url(${item.imgAuthor})` }} />
                       <div className="info">
                         <h6>
                           {" "}

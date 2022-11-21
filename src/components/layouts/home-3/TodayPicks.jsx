@@ -27,7 +27,7 @@ const TodayPicks = props => {
                                 <div key={index} className="fl-item col-xl-3 col-lg-4 col-md-6 col-sm-6">
                                     <div className={`sc-card-product style2 mg-bt ${item.feature ? 'comingsoon' : '' } `}>                               
                                         <div className="card-media">
-                                            <Link to="/item-details-01"><img src={item.img} alt="Hulula" /></Link>
+                                            {item.img && <Link to="/item-details-01"><img src={item.img} alt="Hulula" /></Link>}
                                             <Link to="/login" className="wishlist-button heart"><span className="number-like">{item.wishlist}</span></Link>
                                             <div className="coming-soon">{item.feature}</div>
                                         </div>
@@ -37,9 +37,11 @@ const TodayPicks = props => {
                                         </div>
                                         <div className="meta-info">
                                             <div className="author">
-                                                <div className="avatar">
-                                                    <img src={item.imgAuthor} alt="Hulula" />
-                                                </div>
+                                                {item.imgAuthor &&
+                                                    <div className="avatar">
+                                                        <img src={item.imgAuthor} alt="Hulula" />
+                                                    </div>
+                                                }
                                                 <div className="info">
                                                     <span>Creator</span>
                                                     <h6> <Link to="/authors-02">{item.nameAuthor}</Link> </h6>

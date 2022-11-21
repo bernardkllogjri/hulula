@@ -99,12 +99,12 @@ const PopularCollection = () => {
                             <div key={index} className="fl-collection fl-item3 col-xl-4 col-md-6">
                                 <div className="sc-card-collection style-2 sc-card-style7">
                                     <div className="card-media-h7">
-                                        <img src={item.imgTop} alt="Hulula" />
+                                        {item.imgTop && <img src={item.imgTop} alt="Hulula" />}
                                     </div>
                                     <div className="card-media-h7 style2">
-                                        <img src={item.imgBottom1} alt="Hulula" />
-                                        <img src={item.imgBottom2} alt="Hulula" />
-                                        <img src={item.imgBottom3} alt="Hulula" />
+                                        {item.imgBottom1 && <img src={item.imgBottom1} alt="Hulula" />}
+                                        {item.imgBottom2 && <img src={item.imgBottom2} alt="Hulula" />}
+                                        {item.imgBottom3 && <img src={item.imgBottom3} alt="Hulula" />}
                                     </div>
                                     <div className="card-bottom">
                                         <div className="author">
@@ -120,7 +120,7 @@ const PopularCollection = () => {
                                     </div>
                                     <div className="sc-author-box style-2">
                                         <div className="author-avatar">
-                                            <img src={item.imgAuthor} alt="Hulula" className="avatar" />
+                                            {item.imgAuthor && <img src={item.imgAuthor} alt="Hulula" className="avatar" />}
                                             <div className="badge"><i className="ripple"></i></div>
                                         </div>
                                     </div>

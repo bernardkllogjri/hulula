@@ -576,7 +576,7 @@ const Authors02 = () => {
                                                         <div key={index} className="col-xl-3 col-lg-4 col-md-6 col-12">
                                                             <div className="sc-card-product explode ">
                                                                 <div className="card-media">
-                                                                    <Link to="/item-details-01"><img src={data.img} alt="Hulula" /></Link>
+                                                                    {data.img && <Link to="/item-details-01"><img src={data.img} alt="Hulula" /></Link>}
                                                                     <div className="button-place-bid ">
                                                                         <button onClick={() => setModalShow(true)} className="sc-button style-place-bid style bag fl-button pri-3"><span>Place Bid</span></button>
                                                                     </div>
@@ -588,7 +588,7 @@ const Authors02 = () => {
                                                                 <div className="meta-info">
                                                                     <div className="author">
                                                                         <div className="avatar">
-                                                                            <img src={data.imgAuthor} alt="Hulula" />
+                                                                            {data.imgAuthor && <img src={data.imgAuthor} alt="Hulula" />}
                                                                         </div>
                                                                         <div className="info">
                                                                             <span>Creator</span>

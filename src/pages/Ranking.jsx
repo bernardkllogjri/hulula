@@ -219,13 +219,13 @@ const Ranking = () => {
                                             <div className="item flex">
                                                 <div className="infor-item flex column1">
                                                     <div className="media">
-                                                        <img src={item.img} alt="Hulula" />
+                                                        {item.img && <img src={item.img} alt="Hulula" />}
                                                     </div>
                                                     <div className="content-collection pad-t-4">
                                                         <h5 className="title mb-15"><Link to="/item-detail">"{item.title}"</Link></h5>
                                                         <div className="author flex">
                                                             <div className="author-avatar">
-                                                                <img src={item.imgAuthor} alt="Hulula" />
+                                                                {item.imgAuthor && <img src={item.imgAuthor} alt="Hulula" />}
                                                                 <div className="badge"><i className="ripple"></i></div>
                                                             </div>
                                                             <div className="content">

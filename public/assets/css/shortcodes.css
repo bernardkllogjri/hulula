@@ -253,11 +253,6 @@
 
 /* button style icon */
 
-.sc-button.style span {
-  padding-left: 26px;
-  padding-right: 26px;
-}
-
 .sc-button.style span::before {
   position: absolute;
   font-family: "nfts";
@@ -615,7 +610,7 @@
   background-position: center;
   background-size: cover;
   width: 100%;
-  height: 250px;
+  height: 300px;
   overflow: hidden;
   margin-bottom: 10px;
 }
@@ -662,6 +657,8 @@
   overflow: hidden;
   margin-right: 12px;
   flex-shrink: 0;
+  background-position: center;
+  background-size: cover;
 }
 
 .sc-card-article .meta-info .author .info span,
@@ -871,7 +868,7 @@
   margin-bottom: 47px;
 }
 .sc-card-product {
-  padding: 20px;
+  padding: 8px;
   background: var(--primary-color);
   box-shadow: 0px 3px 16px rgba(47, 83, 109, 0.12);
   border-radius: 20px;
@@ -1857,7 +1854,7 @@
 }
 
 .flat-bt-slider .sc-button {
-  padding: 16px 35px;
+  padding: 16px 40px;
 }
 
 /* .sc-button.header-slider span,
@@ -1872,7 +1869,6 @@
   -ms-transition: all 0.3s ease;
   -o-transition: all 0.3s ease;
   transition: all 0.3s ease;
-  padding-left: 28px;
 }
 
 .sc-btn-top .sc-button {
@@ -2278,7 +2274,7 @@
 -------------------------------------------------------------- */
 /* Live Auctions */
 .tf-section.live-auctions {
-  padding: 77px 0 70px;
+  padding: 0;
 }
 .home-5 .tf-section.live-auctions {
   padding: 77px 0 75px;
@@ -2567,7 +2563,7 @@ section.today-picks {
 
 .mainslider.home .wrap-heading .content {
   width: 50%;
-  padding-top: 114px;
+  /* padding-top: 114px; */
 }
 .center .mainslider.home .wrap-heading .content {
   width: 100%;
@@ -2579,7 +2575,7 @@ section.today-picks {
   display: none;
 }
 .home-1 .flat-title-page {
-  height: 618px;
+  height: 500px;
 }
 .home-2 .flat-title-page {
   height: 470px;
@@ -2958,7 +2954,7 @@ section.today-picks {
 /* Explore 1
 -------------------------------------------------------------- */
 .tf-section.sc-explore-1 {
-  padding: 80px 0 80px;
+  padding: 100px 10px 100px;
 }
 
 .mainslider.home2 .wrap-heading {
@@ -3451,7 +3447,17 @@ section.today-picks {
   border: 1px solid rgba(138, 138, 160, 0.3);
   border-radius: 8px;
   padding: 9px 20px;
-  margin-bottom: 24px;
+  margin-bottom: 10px;
+}
+
+.form-inner form .PhoneInputCountryIcon--border {
+  width: 25px;
+  height: 25px;
+}
+
+.form-inner form .PhoneInputCountrySelectArrow {
+  width: 7px;
+  height: 7px;
 }
 
 .form-inner form input,
@@ -3623,11 +3629,11 @@ section.today-picks {
 
 .top-seller .sc-author-box.style-2 .author-avatar {
   margin: 0 0 20px 0;
-}
-
-.top-seller .sc-author-box.style-2 .author-avatar .avatar {
   width: 120px;
   height: 120px;
+  border-radius: 40px;
+  background-position: center;
+  background-size: cover;
 }
 
 .top-seller .sc-author-box.style-2 .author-avatar .badge {
@@ -3872,7 +3878,8 @@ section.today-picks {
 }
 .tf-item-details {
   padding-bottom: 0;
-  margin-bottom: -7px;
+  padding-top: 100px;
+  /* margin-bottom: -7px; */
 }
 
 .tf-item-details .content-left .media {
@@ -4068,7 +4075,6 @@ section.today-picks {
   display: block;
   text-align: center;
   padding: 12px 40px;
-  margin-bottom: 23px;
 }
 
 .tf-item-details .content-right .themesflat-tabs .content {
@@ -5062,7 +5068,7 @@ button.accordion-button {
 .form-upload-profile .option-profile {
   display: flex;
   align-items: center;
-  margin-bottom: 37px;
+  margin-bottom: 12px;
   justify-content: flex-start;
 }
 
@@ -8541,7 +8547,7 @@ button.accordion-button {
 }
 
 .modal-consent .modal-content {
-  width: 700px;
+  max-width: 700px;
   padding: 40px;
   padding-top: 10px;
 }

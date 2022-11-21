@@ -53,9 +53,7 @@ const TodayPicks = props => {
                                     </div>
                                     <div className="meta-info">
                                         <div className="author">
-                                            <div className="avatar">
-                                                <img src={item.imgAuthor} alt="hulula" />
-                                            </div>
+                                            <div className="avatar" style={{ backgroundImage: `url(${item.imgAuthor})`}} />
                                             <div className="info">
                                                 {/* <span>{item.ethnicity}</span> */}
                                                 <h6>{item.ethnicity}</h6>

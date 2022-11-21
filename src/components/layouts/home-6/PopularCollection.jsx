@@ -109,14 +109,16 @@ const PopularCollection = () => {
 const PopularCollectionItem = props => (
     <div className="slider-item">										
     <div className="sc-card-collection style-2 home2">
-        <div className="card-media-h6">
-            <img src={props.item.img} alt="Hulula" />
-        </div>
+        {props.item.img &&
+            <div className="card-media-h6">
+                <img src={props.item.img} alt="Hulula" />
+            </div>
+        }
         <div className="card-bottom">
             <div className="author">
                 <div className="sc-author-box style-2">
                     <div className="author-avatar">
-                        <img src={props.item.imgAuthor} alt="Hulula" className="avatar" />
+                        {props.item.imgAuthor && <img src={props.item.imgAuthor} alt="Hulula" className="avatar" />}
                         <div className="badge"><i className="ripple"></i></div>
                     </div>
                 </div>

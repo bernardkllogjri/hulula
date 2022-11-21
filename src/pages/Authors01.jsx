@@ -52,7 +52,7 @@ const Authors01 = () => {
                                             <div className="author">
                                                 <div className="sc-author-box style-2">
                                                     <div className="author-avatar">
-                                                        <img src={item.imgAuthor} alt="Hulula" className='avatar' />
+                                                        {item.imgAuthor && <img src={item.imgAuthor} alt="Hulula" className='avatar' />}
                                                     <div className="badge"></div>
                                                 </div>
                                                 </div>
@@ -68,15 +68,15 @@ const Authors01 = () => {
                                         <Link to="/author-02">
                                             <div className="media-images-collection">
                                                 <div className="box-left">
-                                                    <img src={item.imgleft} alt="Hulula" />
+                                                    {item.imgleft && <img src={item.imgleft} alt="Hulula" />}
                                                 </div>
                                                 <div className="box-right">
                                                     <div className="top-img">
-                                                        <img src={item.imgright1} alt="Hulula" />
-                                                        <img src={item.imgright2} alt="Hulula" />
+                                                        {item.imgright1 && <img src={item.imgright1} alt="Hulula" />}
+                                                        {item.imgright2 && <img src={item.imgright2} alt="Hulula" />}
                                                     </div>
                                                     <div className="bottom-img">
-                                                        <img src={item.imgright3} alt="Hulula" />
+                                                        {item.imgright3 && <img src={item.imgright3} alt="Hulula" />}
                                                     </div>
                                                 </div>
                                             </div>

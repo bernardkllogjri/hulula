@@ -63,13 +63,13 @@ const PopularCollectionItem = props => (
                         <Link to="/authors-02">
                             <div className="media-images-box">
                                 <div className="top-media">
-                                    <img src={props.item.imgleft} alt="Hulula" />
-                                    <img src={props.item.imgright3} alt="Hulula" />
+                                    {props.item.imgleft && <img src={props.item.imgleft} alt="Hulula" />}
+                                    {props.item.imgright3 && <img src={props.item.imgright3} alt="Hulula" />}
                                     </div>
                                 <div className="bottom-media">
-                                    <img src={props.item.imgright1} alt="Hulula" />
-                                    <img src={props.item.imgright2} alt="Hulula" />
-                                    <img src={props.item.imgright4} alt="Hulula" />
+                                    {props.item.imgright1 && <img src={props.item.imgright1} alt="Hulula" />}
+                                    {props.item.imgright2 && <img src={props.item.imgright2} alt="Hulula" />}
+                                    {props.item.imgright4 && <img src={props.item.imgright4} alt="Hulula" />}
                                 </div>
                             </div>
                         </Link>
@@ -77,7 +77,7 @@ const PopularCollectionItem = props => (
                             <div className="author">
                                 <div className="sc-author-box style-2">
                                     <div className="author-avatar">
-                                        <img src={props.item.imgAuthor} alt="" className="avatar" />
+                                        {props.item.imgAuthor && <img src={props.item.imgAuthor} alt="" className="avatar" />}
                                         <div className="badge"><i className="ripple"></i></div>
                                     </div>
                                 </div>

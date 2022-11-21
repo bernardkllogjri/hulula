@@ -113,9 +113,11 @@ const CategoryItem = props => (
             <div className="slider-item">										
                 <div className="sc-categoty">
                     <div className="card-media">
-                        <Link to="#">
-                            <img src={props.item.img} alt="Hulula" />
-                        </Link>
+                        {props.item.img &&
+                            <Link to="#">
+                                <img src={props.item.img} alt="Hulula" />
+                            </Link>
+                        }
                     </div>
                     <div className="card-title">
                         <Link to="#"><h4>{props.item.title}</h4></Link>

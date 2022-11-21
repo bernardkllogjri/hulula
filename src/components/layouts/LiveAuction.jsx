@@ -92,8 +92,8 @@ const LiveAuction = props => {
                                 </div>
                                 <div className="meta-info">
                                   <div className="author">
-                                    <div className="avatar">
-                                      <img src={item.imgAuthor} alt="hulula" />
+                                    <div className="avatar" style={{ backgroundImage: `url(${item.imgAuthor})` }}>
+                                      {/* {item.imgAuthor && <img src={item.imgAuthor} alt="hulula" />} */}
                                     </div>
                                     <div className="info">
                                       {/* <span>{item.ethnicity}</span> */}

@@ -346,7 +346,7 @@ const SliderItem = props => (
     
     <div className="sc-author-box style-2">
         <div className="author-avatar">
-                <img src={props.item.img} alt="Hulula" className="avatar" />
+                {props.item.img && <img src={props.item.img} alt="Hulula" className="avatar" />}
             <div className="badge"></div>
         </div>
         <div className="author-infor">

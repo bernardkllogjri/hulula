@@ -32,9 +32,11 @@ const TodayPicks = props => {
                                     <div className={`sc-card-product menu_card style2 ${item.feature ? 'comingsoon' : '' } `}>
                                         <div className="meta-info style">
                                             <div className="author">
-                                                <div className="avatar">
-                                                    <img src={item.imgCollection} alt="Hulula" />
-                                                </div>
+                                                {item.imgCollection &&
+                                                    <div className="avatar">
+                                                        <img src={item.imgCollection} alt="Hulula" />
+                                                    </div>
+                                                }
                                                 <div className="info">
                                                     <span>Collection</span>
                                                     <h6> <Link to="/author-02">{item.nameCollection}</Link> </h6>
@@ -61,7 +63,7 @@ const TodayPicks = props => {
                                             </div>
                                         </div>
                                         <div className="card-media">
-                                            <Link to="/item-details-01"><img src={item.img} alt="Hulula" /></Link>
+                                            {item.img && <Link to="/item-details-01"><img src={item.img} alt="Hulula" /></Link>}
                                             <Link to="/login" className="wishlist-button heart"><span className="number-like">{item.wishlist}</span></Link>
                                             <div className="coming-soon">{item.feature}</div>
                                         </div>
@@ -71,9 +73,11 @@ const TodayPicks = props => {
                                         </div>
                                         <div className="meta-info">
                                             <div className="author">
-                                                <div className="avatar">
-                                                    <img src={item.imgAuthor} alt="Hulula" />
-                                                </div>
+                                                {item.imgAuthor &&
+                                                    <div className="avatar">
+                                                        <img src={item.imgAuthor} alt="Hulula" />
+                                                    </div>
+                                                }
                                                 <div className="info">
                                                     <span>Owned By</span>
                                                     <h6> <Link to="/author-02">{item.nameAuthor}</Link> </h6>

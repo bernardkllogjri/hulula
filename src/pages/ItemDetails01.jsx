@@ -37,7 +37,7 @@ const ItemDetails01 = () => {
               title: "Displayed Text",
               tags: "Contact",
               nameAuthor: item?.firstName + item?.lastName,
-              age: item?.age,
+              age: item?.Profile?.age,
               ethnicity: item?.Profile?.nationality,
             }
           })
@@ -96,32 +96,13 @@ const ItemDetails01 = () => {
     return (
         <div className='item-details'>
             <Header />
-            <section className="flat-title-page inner">
-                <div className="overlay"></div>
-                <div className="themesflat-container">
-                    <div className="row">
-                        <div className="col-md-12">
-                            <div className="page-title-heading mg-bt-12">
-                                <h1 className="heading text-center">Item Details 1</h1>
-                            </div>
-                            <div className="breadcrumbs style2">
-                                <ul>
-                                    <li><Link to="/">Home</Link></li>
-                                    <li><Link to="#">Explore</Link></li>
-                                    <li>Item Details 1</li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                </div>                    
-            </section>
             <div className="tf-section tf-item-details">
                 <div className="themesflat-container">
                     <div className="row">
                         <div className="col-xl-6 col-md-12">
                             <div className="content-left">
                                 <div className="media">
-                                    <img src={data?.user?.Profile?.image} alt="Hulula" />
+                                    <img src={data?.user?.Galleries?.[0]?.image} alt="Hulula" />
                                 </div>
                             </div>
                         </div>

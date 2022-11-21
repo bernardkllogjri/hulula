@@ -121,7 +121,7 @@ const LiveAuction = () => {
                                                             <div className="slider-item">										
                                                                 <div className="sc-card-product">
                                                                     <div className="card-media">
-                                                                        <Link to="/item-details-01"><img src={item.img} alt="hulula" /></Link>
+                                                                        {item.img && <Link to="/item-details-01"><img src={item.img} alt="hulula" /></Link>}
                                                                         <Link to="/login" className="wishlist-button heart"><span className="number-like">{item.wishlist}</span></Link>
                                                                         <div className="featured-countdown">
                                                                             <span className="slogan"></span>
@@ -139,9 +139,11 @@ const LiveAuction = () => {
                                                                     </div>
                                                                     <div className="meta-info">
                                                                         <div className="author">
-                                                                            <div className="avatar">
-                                                                                <img src={item.imgAuthor} alt="hulula" />
-                                                                            </div>
+                                                                            {item.imgAuthor && 
+                                                                                <div className="avatar">
+                                                                                    <img src={item.imgAuthor} alt="hulula" />
+                                                                                </div>
+                                                                            }
                                                                             <div className="info">
                                                                                 <span>Creator</span>
                                                                                 <h6> <Link to="/authors-02">{item.nameAuthor}

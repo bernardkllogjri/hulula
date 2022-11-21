@@ -33,9 +33,11 @@ const TopSellerItem = props => (
     <div className={`box-item ${props.item.classPadding}`}>
         <div className="sc-author-box style-3 pd-0">
             <div className="author-avatar">
-                <Link to="/authors-02">
-                    <img src={props.item.img} alt="hulula" className="avatar" />
-                </Link>
+                {props.item.img && 
+                    <Link to="/authors-02">
+                        <img src={props.item.img} alt="hulula" className="avatar" />
+                    </Link>
+                }
                 <div className="badge"><i className="ripple"></i></div>
             </div>
             <div className="author-infor">

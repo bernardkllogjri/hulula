@@ -29,9 +29,11 @@ const TopSellerItem = props => (
     <div className="col-xl-3 col-lg-4 col-md-6 col-sm-6">
         <div className="sc-author-box">
             <div className="author-avatar">
-                <Link to="/authors-02">
-                    <img src={props.item.img} alt="Hulula" className="avatar" />
-                </Link>
+                {props.item.img &&
+                    <Link to="/authors-02">
+                        <img src={props.item.img} alt="Hulula" className="avatar" />
+                    </Link>
+                }
                 <div className="badge"><i className="ripple"></i></div>
             </div>
             <div className="author-infor">

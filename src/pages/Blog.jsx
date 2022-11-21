@@ -59,12 +59,12 @@ const BlogItem = props => (
     <div className="fl-blog fl-item2 col-lg-4 col-md-6">
         <article className="sc-card-article">
             <div className="card-media">
-                <Link to="/blog-details"><img src={props.item.img} alt="Hulula" /></Link>
+                {props.item.img && <Link to="/blog-details"><img src={props.item.img} alt="Hulula" /></Link>}
             </div>
             <div className="meta-info">
                 <div className="author">
                     <div className="avatar">
-                        <img src={props.item.imgAuthor} alt="Hulula" />
+                        {props.item.imgAuthor && <img src={props.item.imgAuthor} alt="Hulula" />}
                     </div>
                     <div className="info">
                         <span>Post owner</span>

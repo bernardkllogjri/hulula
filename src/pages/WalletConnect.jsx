@@ -76,7 +76,7 @@ const WalletConnect = () => {
                               data.map((item,index) => (
                                 <div key={index} className="sc-box-icon">
                                   <div className="img">
-                                    <img src={item.img} alt="Hulula" />
+                                    {item.img && <img src={item.img} alt="Hulula" />}
                                   </div>
                                   <h4 className="heading"><Link to="/login">{item.title}</Link> </h4>
                                   <p className="content">{item.description}</p>

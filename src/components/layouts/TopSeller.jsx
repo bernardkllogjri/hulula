@@ -25,7 +25,7 @@ const TopSeller = props => {
                         navigation
                         breakpoints={{
                             0: {
-                                slidesPerView: 2,
+                                slidesPerView: 3,
                               },
                             767: {
                               slidesPerView: 5,
@@ -63,13 +63,11 @@ const TopSellerItem = props => (
             <div className="swiper-slide">
                 <div className="slider-item">										
                     <div className="sc-author-box style-2">
-                        <div className="author-avatar">
-                          <img src={props.item.img} alt="" className="avatar" />
+                        <div className="author-avatar" style={{ backgroundImage: `url(${props.item.img})` }}>
                           <div className="badge"></div>
                         </div>
                         <div className="author-infor">
                           <h5>{props.item.name}</h5>
-                            {/* <span className="price">{props.item.price}</span> */}
                         </div>
                     </div>    	
                 </div>

@@ -156,9 +156,11 @@ const TopSeller = () => {
                                                     <div className="box-item" key={index}>
                                                     <div className="sc-author-box style-3">
                                                         <div className="author-avatar">
-                                                            <Link to="/authors-02">
-                                                                <img src={item.img} alt="Hulula" className="avatar" />
-                                                            </Link>
+                                                            {item.img &&
+                                                                <Link to="/authors-02">
+                                                                    <img src={item.img} alt="Hulula" className="avatar" />
+                                                                </Link>
+                                                            }
                                                             <div className="badge"><i className="ripple"></i></div>
                                                         </div>
                                                         <div className="author-infor">
@@ -198,9 +200,11 @@ const TopSeller = () => {
                                                     <div className="box-item" key={index}>
                                                     <div className="sc-author-box style-3">
                                                         <div className="author-avatar">
-                                                            <Link to="#">
-                                                                <img src={item.img} alt="Hulula" className="avatar" />
-                                                            </Link>
+                                                            {item.img &&
+                                                                <Link to="#">
+                                                                    <img src={item.img} alt="Hulula" className="avatar" />
+                                                                </Link>
+                                                            }
                                                             <div className="badge"><i className="ripple"></i></div>
                                                         </div>
                                                         <div className="author-infor">

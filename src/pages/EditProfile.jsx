@@ -5,6 +5,16 @@ import Footer from '../components/footer/Footer';
 import avt from '../assets/images/avatar/avata_profile.jpg'
 import client from '../client'
 import { useEffect } from 'react';
+import { useForm } from "react-hook-form";
+import { yupResolver } from '@hookform/resolvers/yup';
+import * as yup from "yup";
+
+const schema = yup.object({
+  nationality: yup.string().required('Nationality is required'),
+  age: yup.number().required('Age is required').min(18).max(99),
+  height: yup.number().required('Height is required'),
+  description: yup.string().required('Description is required')
+}).required();
 
 const toBase64 = file => new Promise((resolve, reject) => {
   const reader = new FileReader();
@@ -16,6 +26,9 @@ const toBase64 = file => new Promise((resolve, reject) => {
 const EditProfile = () => {
   const [form, setForm] = useState({})
   const navigate = useNavigate()
+  const { register, handleSubmit, formState: { errors } } = useForm({
+    resolver: yupResolver(schema)
+  });
 
   useEffect(() => {
     setTimeout(() => {
@@ -23,8 +36,7 @@ const EditProfile = () => {
       if(user?.user?.id) {
         setForm({
           ...form,
-          userId: 11
-          // userId: user?.user?.id
+          userId: user?.user?.id
         })
       } else {
         navigate('/login')
@@ -36,13 +48,6 @@ const EditProfile = () => {
     setForm({
       ...form,
       [key]: undefined
-    })
-  }
-
-  const handleChange = (e) => {
-    setForm({
-      ...form,
-      [e.target.name]: e.target.value
     })
   }
 
@@ -65,22 +70,19 @@ const EditProfile = () => {
     })
   }
 
-  const onSubmit = async (e) => {
-    e.preventDefault()
-    e.stopPropagation()
-    setForm({ ...form, isLoading: true })
+  const onSubmit = async (formData) => {
+    setForm({ ...formData, isLoading: true })
     try {
       const result = await client.put('/profile', {
-        // userId: form.userId,
-        userId: 11,
-        nationality: form.nationality,
-        age: form.age,
-        height: form.height,
-        image: form.image,
-        description: form.description
+        userId: form.userId,
+        nationality: formData.nationality,
+        age: formData.age,
+        height: formData.height,
+        image: formData.image,
+        description: formData.description
       })
       setForm({
-        ...form,
+        ...formData,
         isLoading: false,
         error: undefined,
         errors: undefined
@@ -88,7 +90,7 @@ const EditProfile = () => {
       navigate('/')
     } catch (e) {
       setForm({
-        ...form,
+        ...formData,
         isLoading: false,
         error: e.response.data.message,
         errors: e.response.data.error.details
@@ -126,7 +128,7 @@ const EditProfile = () => {
                               <div className="card-media">
                                   <img id="profileimg" src={form.image || avt} alt="Hulula" />                         
                               </div>
-                              <div style={{ fontSize: '10px', fontStyle: 'italic', marginTop: '10px' }}>Please upload an image that's 1mb or less</div>
+                              <div style={{ fontSize: '14px', marginTop: '10px' }}>Please upload an image that's 1mb or less</div>
                               <div id="upload-profile">
                                   <Link to="#" className="btn-upload">Upload New Photo </Link>
                                   <input id="tf-upload-img" type="file" name="image" required="" onChange={onFileChange} />
@@ -149,26 +151,30 @@ const EditProfile = () => {
                                     </div>
                                   ))}
                               </div>
-                              <div style={{ fontSize: '10px', fontStyle: 'italic', marginBottom: '10px' }}>Please upload image that are 1mb or less</div>
-                              <form onSubmit={onSubmit} className="form-profile">
+                              <div style={{ fontSize: '14px', marginBottom: '10px' }}>Please upload images that are 1mb or less</div>
+                              <form onSubmit={handleSubmit(onSubmit)} className="form-profile">
                                   <div className="form-infor-profile">
                                       <div className="info-account">
                                           <h4 className="title-create-item">Account info</h4>                                    
                                               <fieldset>
                                                   <h4 className="title-infor-account">Nationality</h4>
-                                                  <input type="text" name="nationality" value={form.nationality} placeholder="Latin" onChange={handleChange} required />
+                                                  <input type="text" placeholder="Latin" {...register("nationality")} />
+                                                  {errors?.nationality && <p className='text-danger' style={{ fontSize: '12px', marginBottom: '5px' }}>{errors?.nationality?.message}</p>}
                                               </fieldset>
                                               <fieldset>
                                                   <h4 className="title-infor-account">Age</h4>
-                                                  <input type="text" name="age" value={form.age} placeholder="27" onChange={handleChange} required />
+                                                  <input type="text" placeholder="Age" {...register("age")} />
+                                                  {errors?.age && <p className='text-danger' style={{ fontSize: '12px', marginBottom: '5px' }}>{errors?.age?.message}</p>}
                                               </fieldset>
                                               <fieldset>
                                                   <h4 className="title-infor-account">Height</h4>
-                                                  <input type="text" name="height" value={form.height} placeholder="170" onChange={handleChange} required />
+                                                  <input type="text" placeholder="180" {...register("height")} />
+                                                  {errors?.height && <p className='text-danger' style={{ fontSize: '12px', marginBottom: '5px' }}>{errors?.height?.message}</p>}
                                               </fieldset>
                                               <fieldset>
                                                   <h4 className="title-infor-account">Bio</h4>
-                                                  <textarea tabIndex="4" rows="5" name="description" value={form.description} onChange={handleChange} required></textarea>
+                                                  <textarea type="text" placeholder="description" {...register("description")} />
+                                                  {errors?.description && <p className='text-danger' style={{ fontSize: '12px', marginBottom: '5px' }}>{errors?.description?.message}</p>}
                                               </fieldset>
                                       </div>
                                   </div>

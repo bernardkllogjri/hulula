@@ -26,7 +26,7 @@ const Home01 = () => {
             title: "Displayed Text",
             tags: "Contact",
             nameAuthor: item?.firstName + " " + item?.lastName,
-            age: item?.age,
+            age: item?.Profile?.age,
             ethnicity: item?.Profile?.nationality,
           }
         }),

@@ -202,7 +202,7 @@ const BlogDetails = () => {
                                     {
                                         dataRecent.map((item,index) => (
                                             <li key={index} className="box-recent-post">
-                                                <div className="box-feature"><Link to="/blog-details"><img src={item.img} alt="Hulula" /></Link></div>
+                                                {item.img && <div className="box-feature"><Link to="/blog-details"><img src={item.img} alt="Hulula" /></Link></div>}
                                                 <div className="box-content">
                                                     <Link to="/blog-details" className="title-recent-post">{item.title}</Link>
                                                     <span><span className="sub-recent-post">{item.text}</span><Link to="/blog" className="day-recent-post">{item.time}</Link></span>

@@ -66,7 +66,7 @@ const PopularCollectionItem = props => (
                             <div className="author">
                                 <div className="sc-author-box style-2">
                                     <div className="author-avatar">
-                                        <img src={props.item.imgAuthor} alt="" className="avatar" />
+                                        {props.item.imgAuthor && <img src={props.item.imgAuthor} alt="" className="avatar" />}
                                         <div className="badge"><i className="ripple"></i></div>
                                     </div>
                                 </div>
@@ -82,15 +82,15 @@ const PopularCollectionItem = props => (
                         </div>
                         <div className="media-images-collection">
                             <div className="box-left">
-                                <img src={props.item.imgleft} alt="hulula" />
+                                {props.item.imgleft && <img src={props.item.imgleft} alt="hulula" />}
                             </div>
                             <div className="box-right">
                                 <div className="top-img">
-                                    <img src={props.item.imgright1} alt="hulula" />
-                                    <img src={props.item.imgright2} alt="hulula" />
+                                    {props.item.imgright1 && <img src={props.item.imgright1} alt="hulula" />}
+                                    {props.item.imgright2 && <img src={props.item.imgright2} alt="hulula" />}
                                 </div>
                                 <div className="bottom-img">
-                                    <img src={props.item.imgright3} alt="hulula" />
+                                    {props.item.imgright3 && <img src={props.item.imgright3} alt="hulula" />}
                                 </div>
                             </div>
                         </div>
