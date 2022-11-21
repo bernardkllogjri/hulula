@@ -10,7 +10,7 @@ import { yupResolver } from '@hookform/resolvers/yup';
 import * as yup from "yup";
 import 'react-phone-number-input/style.css'
 import PhoneInputWithCountry from 'react-phone-number-input/react-hook-form'
-import { isValidPhoneNumber } from 'react-phone-number-input'
+import { isValidPhoneNumber, parsePhoneNumber } from 'react-phone-number-input'
 
 const schema = yup.object({
   firstName: yup.string().required('First name is required').matches(/^[A-Za-z]+$/i, 'Only alphanumeric values'),
@@ -53,13 +53,14 @@ const SignUp = () => {
 
   const onSubmit = async (formData) => {
     setForm({ ...formData, isLoading: true })
-    try { 
+    try {
+      const phoneNumber = parsePhoneNumber(formData.phone)
       const user = await client.post('/signup', {
         firstName: formData.firstName,
         lastName: formData.lastName,
         email: formData.email,
         username: formData.username,
-        phoneNumber: formData.phone,
+        phoneNumber: `0${phoneNumber.nationalNumber}`,
         password: formData.password,
         repeatPassword: formData.repeatPassword
       })
