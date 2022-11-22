@@ -139,6 +139,7 @@ const EditProfile = () => {
                         <div className="col-xl-9 col-lg-8 col-md-12 col-12">
                             <div className="form-upload-profile">
                               <h4 className="title-create-item" styles={{ fontWeight: 'bold' }}>Choose your Cover image</h4>
+                              <h4 className="title-create-item" styles={{ fontWeight: 'bold' }}>Choose your Cover image</h4>
                               <div className="option-profile clearfix">
                                   <form action="#">
                                       <label className="uploadFile">
