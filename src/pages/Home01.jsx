@@ -63,8 +63,6 @@ const Home01 = () => {
 
     return (
         <div className='home-1'>
-            {JSON.stringify(data.topSellerData)}
-            <Header />
             <Slider data={heroSliderData} />
             <LiveAuction data={data.liveAuctionData || []} />
             <TopSeller data={data.topSellerData || []} />
