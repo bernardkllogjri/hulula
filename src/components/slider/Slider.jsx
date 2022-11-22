@@ -81,7 +81,7 @@ const SliderItem = props => {
                       {!user && (
                         <>
                           <Link to="/login" className="sc-button filled header-slider style pri-1"><span>Log in</span></Link>
-                          <Link to="/signup" className="sc-button filled header-slider style pri-1"><span>Sign up</span></Link>
+                          <Link to="/sign-up" className="sc-button filled header-slider style pri-1"><span>Sign up</span></Link>
                         </>
                       )}
                     </div>
