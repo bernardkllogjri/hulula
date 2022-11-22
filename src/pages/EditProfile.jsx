@@ -78,7 +78,7 @@ const EditProfile = () => {
         nationality: formData.nationality,
         age: formData.age,
         height: formData.height,
-        image: formData.image,
+        image: form.image,
         description: formData.description
       })
       setForm({
@@ -131,7 +131,7 @@ const EditProfile = () => {
                               <div style={{ fontSize: '14px', marginTop: '10px', fontWeight: 'bold' }}>Please upload an image that's 1mb or less</div>
                               <div id="upload-profile">
                                   <Link to="#" className="btn-upload">Upload New Photo </Link>
-                                  <input id="tf-upload-img" type="file" name="image" required="" onChange={onFileChange} />
+                                  <input id="tf-upload-img" type="file" name="image" required onChange={onFileChange} />
                               </div>
                               <Link to="#" className="btn-upload style2" onClick={deleteKey('image')}>Delete</Link>
                           </div>
