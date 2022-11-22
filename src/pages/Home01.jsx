@@ -63,6 +63,7 @@ const Home01 = () => {
 
     return (
         <div className='home-1'>
+            <Header />
             <Slider data={heroSliderData} />
             <LiveAuction data={data.liveAuctionData || []} />
             <TopSeller data={data.topSellerData || []} />
