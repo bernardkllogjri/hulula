@@ -63,7 +63,7 @@ const TopSellerItem = props => (
             <div className="swiper-slide">
                 <div className="slider-item">										
                     <div className="sc-author-box style-2">
-                        <div className="author-avatar" style={{ backgroundImage: `url(${props.item.imgAuthor})` }}>
+                        <div className="author-avatar" style={{ backgroundImage: `url(${props.item.img})` }}>
                           <div className="badge"></div>
                         </div>
                         <div className="author-infor">
