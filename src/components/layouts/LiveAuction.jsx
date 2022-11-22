@@ -82,12 +82,12 @@ const LiveAuction = props => {
                                   <h5><Link to="/item-details-01">{item.nameAuthor}</Link></h5>
                                   {/* <div className="tags">{item.tags}</div> */}
                                   <div className="contacts">
-                                    <div className="contact-email">
+                                    <a href={`https://wa.me/${item.phoneNumber}`} className="contact-email">
                                       <i class="fab fa-whatsapp"></i>
-                                    </div>
-                                    <div className="contact-phone">
+                                    </a>
+                                    <a className="contact-phone">
                                       <i class="fab fa-telegram"></i>
-                                    </div>
+                                    </a>
                                   </div>
                                 </div>
                                 <div className="meta-info">

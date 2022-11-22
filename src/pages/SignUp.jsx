@@ -54,13 +54,12 @@ const SignUp = () => {
   const onSubmit = async (formData) => {
     setForm({ ...formData, isLoading: true })
     try {
-      const phoneNumber = parsePhoneNumber(formData.phone)
       const user = await client.post('/signup', {
         firstName: formData.firstName,
         lastName: formData.lastName,
         email: formData.email,
         username: formData.username,
-        phoneNumber: `0${phoneNumber.nationalNumber}`,
+        phoneNumber: formData.phone,
         password: formData.password,
         repeatPassword: formData.repeatPassword
       })

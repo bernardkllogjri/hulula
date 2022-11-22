@@ -9,17 +9,20 @@ import TodayPicks from '../components/layouts/TodayPicks';
 import PopularCollection from '../components/layouts/PopularCollection';
 import { useState } from 'react';
 import client from '../client';
+import { parsePhoneNumber } from 'react-phone-number-input';
 
 const Home01 = () => {
   const [data, setData] = useState({})
   useEffect(() => {
     const fn = async () => {
       const result = await client.get('/profile')
-
+ 
       setData({
         liveAuctionData: result?.data?.data?.users?.map(item => {
+          const phoneNumber = item.phoneNumber ? parsePhoneNumber(item.phoneNumber) : {}
           return {
             id: item.id,
+            phoneNumber: phoneNumber?.nationalNumber ? phoneNumber?.countryCallingCode + phoneNumber?.nationalNumber : undefined,
             img: item?.Galleries?.[0]?.image,
             imgCollection: item?.Galleries?.[0]?.image,
             imgAuthor: item?.Profile?.image,

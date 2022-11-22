@@ -42,12 +42,12 @@ const TodayPicks = props => {
                                     <div className="card-title">
                                         <h5 className="style2"><Link to="/item-details-01">{item.nameAuthor}</Link></h5>
                                         <div className="contacts">
-                                          <div className="contact-email">
+                                          <a href={`https://wa.me/${item.phoneNumber}`} className="contact-email">
                                             <i class="fab fa-whatsapp"></i>
-                                          </div>
-                                          <div className="contact-phone">
+                                          </a>
+                                          <a href='' className="contact-phone">
                                             <i class="fab fa-telegram"></i>
-                                          </div>
+                                          </a>
                                         </div>
                                         {/* <div className="tags">{item.tags}</div> */}
                                     </div>
