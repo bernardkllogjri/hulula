@@ -78,7 +78,7 @@ const EditProfile = () => {
         nationality: formData.nationality,
         age: formData.age,
         height: formData.height,
-        image: formData.image,
+        image: form.image,
         description: formData.description
       })
       setForm({
@@ -128,17 +128,18 @@ const EditProfile = () => {
                               <div className="card-media">
                                   <img id="profileimg" src={form.image || avt} alt="Hulula" />                         
                               </div>
-                              <div style={{ fontSize: '14px', marginTop: '10px' }}>Please upload an image that's 1mb or less</div>
+                              <div style={{ fontSize: '14px', marginTop: '10px', fontWeight: 'bold' }}>Please upload an image that's 1mb or less</div>
                               <div id="upload-profile">
                                   <Link to="#" className="btn-upload">Upload New Photo </Link>
-                                  <input id="tf-upload-img" type="file" name="image" required="" onChange={onFileChange} />
+                                  <input id="tf-upload-img" type="file" name="image" required onChange={onFileChange} />
                               </div>
                               <Link to="#" className="btn-upload style2" onClick={deleteKey('image')}>Delete</Link>
                           </div>
                         </div>
                         <div className="col-xl-9 col-lg-8 col-md-12 col-12">
                             <div className="form-upload-profile">
-                              <h4 className="title-create-item">Choice your Cover image</h4>
+                              <h4 className="title-create-item" styles={{ fontWeight: 'bold' }}>Choose your Cover image</h4>
+                              <div style={{ fontSize: '14px', marginTop: '10px', marginBottom: '10px', fontWeight: 'bold' }}>Please upload an image that's 1mb or less</div>
                               <div className="option-profile clearfix">
                                   <form action="#">
                                       <label className="uploadFile">

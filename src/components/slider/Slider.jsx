@@ -80,8 +80,8 @@ const SliderItem = props => {
                     <div className="flat-bt-slider flex style2" style={{ marginTop: '8px' }}>
                       {!user && (
                         <>
-                          <Link to="/create-item" className="sc-button filled header-slider style pri-1"><span>Log in</span></Link>
-                          <Link to="/create-item" className="sc-button filled header-slider style pri-1"><span>Sign up</span></Link>
+                          <Link to="/login" className="sc-button filled header-slider style pri-1"><span>Log in</span></Link>
+                          <Link to="/sign-up" className="sc-button filled header-slider style pri-1"><span>Sign up</span></Link>
                         </>
                       )}
                     </div>
