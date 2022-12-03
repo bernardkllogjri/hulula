@@ -4,6 +4,7 @@ import Header from '../components/header/Header';
 import Footer from '../components/footer/Footer';
 import TodayPicks from '../components/layouts/explore-02/TodayPicks'
 import todayPickData from '../assets/fake-data/data-today-pick';
+import { t } from '../utils';
 
 const Explore02 = () => {
     return (
@@ -19,7 +20,7 @@ const Explore02 = () => {
                             </div>
                             <div className="breadcrumbs style2">
                                 <ul>
-                                    <li><Link to="/">Home</Link></li>
+                                    <li><Link to="/">{t('global.home')}</Link></li>
                                     <li><Link to="#">Explore</Link></li>
                                     <li>Explore 2</li>
                                 </ul>

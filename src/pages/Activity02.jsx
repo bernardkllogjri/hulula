@@ -10,6 +10,7 @@ import img5 from '../assets/images/box-item/card-item-9.jpg'
 import img6 from '../assets/images/box-item/image-box-11.jpg'
 import img7 from '../assets/images/box-item/card-item-4.jpg'
 import img8 from '../assets/images/box-item/card-item-3.3.jpg'
+import { t } from '../utils';
 const Activity02 = () => {
     const [dataBox] = useState(
         [
@@ -195,7 +196,7 @@ const Activity02 = () => {
                             </div>
                             <div className="breadcrumbs style2">
                                 <ul>
-                                    <li><Link to="/">Home</Link></li>
+                                    <li><Link to="/">{t('global.home')}</Link></li>
                                     <li><Link to="#">Activity</Link></li>
                                     <li>Activity 2</li>
                                 </ul>

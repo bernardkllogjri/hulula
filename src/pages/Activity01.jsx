@@ -7,6 +7,7 @@ import img2 from '../assets/images/box-item/image-box-10.jpg'
 import img3 from '../assets/images/box-item/image-box-11.jpg'
 import img4 from '../assets/images/box-item/image-box-21.jpg'
 import img5 from '../assets/images/box-item/image-box-6.jpg'
+import { t } from '../utils';
 
 
 const Activity01 = () => {
@@ -147,7 +148,7 @@ const Activity01 = () => {
                             </div>
                             <div className="breadcrumbs style2">
                                 <ul>
-                                    <li><Link to="/">Home</Link></li>
+                                    <li><Link to="/">{t('global.home')}</Link></li>
                                     <li><Link to="#">Activity</Link></li>
                                     <li>Activity 1</li>
                                 </ul>

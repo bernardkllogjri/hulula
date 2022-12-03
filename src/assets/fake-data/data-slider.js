@@ -1,15 +1,13 @@
 import img1 from '../images/slider/slide_1.png';
-import img2 from '../images/slider/slide_1.png';
 import imgbg1 from '../images/slider/bg_slide_1.png'
-import imgbg2 from '../images/slider/bg_slide_1.png'
-
+import { t } from '../../utils';
 
 const heroSliderData = [
     {
-        title_1: "Find your",
-        title_2: "perfect match",
-        title_3: "for tonight",
-        description: "Find a model and contact her for more info",
+        title_1: t('homepage.match.find'),
+        title_2: t('homepage.match.perfect'),
+        title_3: t('homepage.match.tonight'),
+        description: t('homepage.match.contact'),
         img: img1,
         imgbg: imgbg1,
         class:'left'

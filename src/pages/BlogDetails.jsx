@@ -11,6 +11,7 @@ import imgblog1 from '../assets/images/blog/thumb-7.jpg'
 import imgblog2 from '../assets/images/blog/thumb-6.jpg'
 import imgblogdetail1 from '../assets/images/blog/thumb1_details.jpg'
 import imgblogdetail2 from '../assets/images/blog/thumb2_details.jpg'
+import { t } from '../utils';
 
 const BlogDetails = () => {
     const [dataRecent] = useState(
@@ -86,7 +87,7 @@ const BlogDetails = () => {
                             </div>
                             <div className="breadcrumbs style2">
                                 <ul>
-                                    <li><Link to="/">Home</Link></li>
+                                    <li><Link to="/">{t('global.home')}</Link></li>
                                     <li><Link to="#">Community</Link></li>
                                     <li>Blog Details</li>
                                 </ul>

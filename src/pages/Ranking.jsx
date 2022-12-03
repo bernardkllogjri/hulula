@@ -9,6 +9,7 @@ import img4 from '../assets/images/box-item/img6rank.jpg'
 import img5 from '../assets/images/box-item/img1rank.jpg'
 import img6 from '../assets/images/box-item/img2rank.jpg'
 import imga1 from '../assets/images/avatar/author_rank.jpg'
+import { t } from '../utils';
 
 const Ranking = () => {
     const [data] = useState(
@@ -177,7 +178,7 @@ const Ranking = () => {
                             <div className="breadcrumbs style2">
                                 <ul>
                                     <li><Link to="/">Home</Link></li>
-                                    <li><Link to="#">Pages</Link></li>
+                                    <li><Link to="#">{t('global.pages')}</Link></li>
                                     <li>Ranking</li>
                                 </ul>
                             </div>

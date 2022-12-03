@@ -1,7 +1,9 @@
+import { t } from '../utils'
+
 const menus = [
     {
         id: 1,
-        name: 'Home',
+        name: t('global.home'),
         links: '/',
         // namesub: [
         //     {
@@ -48,11 +50,11 @@ const menus = [
     },
     {
       id: 2,
-      name: 'Info',
+      name: t('global.info'),
       namesub: [
         {
             id: 1,
-            sub: 'Terms and conditions',
+            sub: t('global.termsConditions'),
             links: '/'
         },
         // {
@@ -62,12 +64,12 @@ const menus = [
         // },
         {
             id: 3,
-            sub: 'Privacy',
+            sub: t('global.privacy'),
             links: '/'
         },
         {
             id: 4,
-            sub: 'Working in Ticino',
+            sub: t('global.workingTicino'),
             links: '/'
         },
       ]
@@ -116,12 +118,12 @@ const menus = [
     // },
     {
       id: 4,
-      name: 'Girls',
+      name: t('global.girls'),
       links: '/explore',
     },
     {
       id: 5,
-      name: 'Filters',
+      name: t('global.filters'),
       // links: '/activity-01',
       links: '/explore',
       // namesub: [
@@ -139,22 +141,22 @@ const menus = [
     },
     {
       id: 6,
-      name: 'Reviews',
+      name: t('global.reviews'),
       links: '/',
     },
     {
       id: 7,
-      name: 'Login',
+      name: t('global.login'),
       links: '/login',
     },
     {
       id: 8,
-      name: 'Sign up',
+      name: t('global.signUp'),
       links: '/sign-up',
     },
     {
       id: 9,
-      name: 'Log out',
+      name: t('global.logout'),
       links: '#',
     },
     // {

@@ -4632,13 +4632,13 @@ section.today-picks {
   background: transparent;
   color: #fff;
 }
-.uploadFile input[type="file"]:before {
+.uploadFile .uploadFile_before {
   width: 152px;
   height: 48px;
   font-weight: 700;
   font-size: 14px;
   line-height: 48px;
-  content: "Upload file";
+  /* content: "Upload file"; */
   display: inline-block;
   background-color: rgba(81, 66, 252, 0.1);
   border: 2px solid transparent;
@@ -4654,7 +4654,7 @@ section.today-picks {
 .is_dark .uploadFile {
   color: #fff;
 }
-.is_dark .uploadFile input[type="file"]:before {
+.is_dark .uploadFile .uploadFile_before {
   border-color: #fff;
   background-color: transparent;
   color: #fff;
@@ -5100,6 +5100,7 @@ button.accordion-button {
   position: relative;
   left: 0;
   top: 0;
+  display: none;
 }
 
 .option-profile .image {

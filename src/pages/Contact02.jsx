@@ -2,6 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom'
 import Header from '../components/header/Header';
 import Footer from '../components/footer/Footer';
+import { t } from '../utils';
 
 const Contact02 = () => {
     return (
@@ -17,8 +18,8 @@ const Contact02 = () => {
                             </div>
                             <div className="breadcrumbs style2">
                                 <ul>
-                                    <li><Link to="/">Home</Link></li>
-                                    <li><Link to="#">Contact</Link></li>
+                                    <li><Link to="/">{t('global.home')}</Link></li>
+                                    <li><Link to="#">{t('global.contact')}</Link></li>
                                     <li>Contact 2</li>
                                 </ul>
                             </div>

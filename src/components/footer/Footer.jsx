@@ -2,46 +2,48 @@ import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom'
 import logodark from '../../assets/images/logo/logo_dark.png'
 import logofooter from '../../assets/images/logo/logo2.png'
+import { t } from '../../utils';
+
 const Footer = () => {
   const accountList = [
     {
-      title: "Girls",
+      title: t('global.girls'),
       link: "/explore"
     },
     {
-      title: "Trans",
+      title: t('global.trans'),
       link: "/explore"
     },
     {
-      title: "Filters",
+      title: t('global.filters'),
       link: "/explore"
     }
   ]
   const resourcesList = [
     {
-      title: "Working in Ticino",
+      title: t('global.workingTicino'),
       link: "#"
     },
     {
-      title: "Terms and Conditions",
-      link: "#"
+      title: t('global.termsConditions'),
+      link: "/Terms-and-conditions_IT.html"
     },
     {
-      title: "Privacy",
+      title: t('global.privacy'),
       link: "#"
     }
   ]
   const companyList = [
     {
-      title: "FAQ",
+      title: t('global.faq'),
       link: "#"
     },
     {
-      title: "Help & Support",
+      title: t('global.helpSupport'),
       link: "#"
     },
     {
-      title: "Discover",
+      title: t('global.discover'),
       link: "#"
     }
   ]
@@ -117,7 +119,7 @@ const Footer = () => {
             </div>
             <div className="col-lg-2 col-md-4 col-sm-5 col-5">
               <div className="widget widget-menu style-1">
-                <h5 className="title-widget">My Account</h5>
+                <h5 className="title-widget">{t('global.myAccount')}</h5>
                 <ul>
                   {
                     accountList.map((item, index) => (
@@ -129,11 +131,11 @@ const Footer = () => {
             </div>
             <div className="col-lg-2 col-md-4 col-sm-7 col-7">
               <div className="widget widget-menu style-2">
-                <h5 className="title-widget">Resources</h5>
+                <h5 className="title-widget">{t('global.resources')}</h5>
                 <ul>
                   {
                     resourcesList.map((item, index) => (
-                      <li key={index}><Link to={item.link}>{item.title}</Link></li>
+                      <li key={index}>{index === 1 ? <a href={item.link}>{item.title}</a> : <Link to={item.link}>{item.title}</Link>}</li>
                     ))
                   }
                 </ul>
@@ -141,7 +143,7 @@ const Footer = () => {
             </div>
             <div className="col-lg-2 col-md-4 col-sm-5 col-5">
               <div className="widget widget-menu fl-st-3">
-                <h5 className="title-widget">Company</h5>
+                <h5 className="title-widget">{t('global.company')}</h5>
                 <ul>
                   {
                     companyList.map((item, index) => (
@@ -154,7 +156,7 @@ const Footer = () => {
             <div className="col-lg-3 col-md-6 col-sm-7 col-12">
               <div className="widget widget-subcribe">
                 <a href='#'>
-                  <h5 className="title-widget">Subscribe Us</h5>
+                  <h5 className="title-widget">{t('global.subscribeUs')}</h5>
                 </a>
               </div>
             </div>

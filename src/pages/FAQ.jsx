@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom'
 import Header from '../components/header/Header';
 import Footer from '../components/footer/Footer';
 import { Accordion } from 'react-bootstrap-accordion'
+import { t } from '../utils';
 
 const FAQ = () => {
     const [data] = useState(
@@ -43,13 +44,13 @@ const FAQ = () => {
                     <div className="row">
                         <div className="col-md-12">
                             <div className="page-title-heading mg-bt-12">
-                                <h1 className="heading text-center">FAQ</h1>
+                                <h1 className="heading text-center">{t('global.faq')}</h1>
                             </div>
                             <div className="breadcrumbs style2">
                                 <ul>
-                                    <li><Link to="/">Home</Link></li>
-                                    <li><Link to="#">Pages</Link></li>
-                                    <li>FAQ</li>
+                                    <li><Link to="/">{t('global.home')}</Link></li>
+                                    <li><Link to="#">{t('global.pages')}</Link></li>
+                                    <li>{t('global.faq')}</li>
                                 </ul>
                             </div>
                         </div>

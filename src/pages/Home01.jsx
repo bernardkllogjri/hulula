@@ -10,6 +10,7 @@ import PopularCollection from '../components/layouts/PopularCollection';
 import { useState } from 'react';
 import client from '../client';
 import { parsePhoneNumber } from 'react-phone-number-input';
+import { t } from '../utils';
 
 const Home01 = () => {
   const [data, setData] = useState({})
@@ -27,7 +28,7 @@ const Home01 = () => {
             imgCollection: item?.Galleries?.[0]?.image,
             imgAuthor: item?.Profile?.image,
             title: "Displayed Text",
-            tags: "Contact",
+            tags: t('global.contact'),
             nameAuthor: item?.firstName + " " + item?.lastName,
             age: item?.Profile?.age,
             ethnicity: item?.Profile?.nationality,
@@ -44,7 +45,7 @@ const Home01 = () => {
           return {
             title: item.firstName + item.lastName,
             imgAuthor: item?.Profile?.image,
-            nationality: "Nationality",
+            nationality: t('global.nationality'),
             imgleft: item?.Galleries?.[0]?.image,
             imgright1: item?.Galleries?.[1]?.image,
             imgright2: item?.Galleries?.[2]?.image,
@@ -53,7 +54,7 @@ const Home01 = () => {
             imgtop: item?.Profile?.image,
             wishlist: "100",
             count: '12 item products',
-            tags: 'Contact',
+            tags: t('global.contact'),
           }
         })
       })

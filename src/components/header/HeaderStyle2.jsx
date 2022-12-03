@@ -5,6 +5,7 @@ import DarkMode from './DarkMode';
 import logodark from '../../assets/images/logo/logo_dark.png'
 import avt from '../../assets/images/avatar/avt-2.jpg'
 import coin from '../../assets/images/logo/coin.svg'
+import { t } from '../../utils';
 
 
 const HeaderStyle2 = () => {
@@ -141,7 +142,7 @@ const HeaderStyle2 = () => {
                                                         <i className="fab fa-accusoft"></i> <span> My items</span>
                                                     </Link>
                                                     <a className="mt-10" href="/edit-profile">
-                                                        <i className="fas fa-pencil-alt"></i> <span> Edit Profile</span>
+                                                        <i className="fas fa-pencil-alt"></i> <span>{t('editProfilePage.title')}</span>
                                                     </a>
                                                     <a className="mt-10" href="/login" id="logout">
                                                         <i className="fal fa-sign-out"></i> <span> Logout</span>

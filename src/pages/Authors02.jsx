@@ -31,6 +31,7 @@ import imgCollection7 from '../assets/images/avatar/avt-18.jpg'
 import img8 from '../assets/images/box-item/image-box-11.jpg'
 import imga8 from '../assets/images/avatar/avt-3.jpg'
 import imgCollection8 from '../assets/images/avatar/avt-18.jpg'
+import { t } from '../utils';
 
 
 const Authors02 = () => {
@@ -521,8 +522,8 @@ const Authors02 = () => {
                             </div>
                             <div className="breadcrumbs style2">
                                 <ul>
-                                    <li><Link to="/">Home</Link></li>
-                                    <li><Link to="#">Pages</Link></li>
+                                    <li><Link to="/">{t('global.home')}</Link></li>
+                                    <li><Link to="#">{t('global.pages')}</Link></li>
                                     <li>Author</li>
                                 </ul>
                             </div>

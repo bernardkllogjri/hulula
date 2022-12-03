@@ -3,6 +3,7 @@ import PropTypes from 'prop-types'
 import { Link } from 'react-router-dom'
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Navigation, Scrollbar, A11y } from 'swiper';
+import { t } from '../../../utils';
 
 const PopularCollection = props => {
     const data = props.data;
@@ -12,7 +13,7 @@ const PopularCollection = props => {
                 <div className="row">
                     <div className="col-md-12">
                         <div className="">
-                            <h2 className="tf-title style2">Popular Collection</h2>
+                            <h2 className="tf-title style2">{t('homepage.popularCollection')}</h2>
                             <div className="heading-line"></div>
                         </div>
                     </div>

@@ -4,6 +4,7 @@ import Header from '../components/header/Header';
 import Footer from '../components/footer/Footer';
 import Explore from '../components/layouts/explore-04/Explore';
 import widgetSidebarData from '../assets/fake-data/data-widget-sidebar'
+import { t } from '../utils';
     
 const Explore04 = () => {
     return (
@@ -19,7 +20,7 @@ const Explore04 = () => {
                             </div>
                             <div className="breadcrumbs style2">
                                 <ul>
-                                    <li><Link to="/">Home</Link></li>
+                                    <li><Link to="/">{t('global.home')}</Link></li>
                                     <li><Link to="#">Explore</Link></li>
                                     <li>Explore 4</li>
                                 </ul>

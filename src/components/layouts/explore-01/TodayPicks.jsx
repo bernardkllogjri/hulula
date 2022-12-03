@@ -3,6 +3,7 @@ import PropTypes from "prop-types";
 import { Link, useNavigate } from "react-router-dom";
 import CardModal from "../CardModal";
 import { Dropdown } from "react-bootstrap";
+import { t } from "../../../utils";
 
 const TodayPicks = (props) => {
   const data = props.data;
@@ -26,13 +27,13 @@ const TodayPicks = (props) => {
                   <div id="item_category" className="dropdown">
                     <Dropdown>
                       <Dropdown.Toggle id="dropdown-basic">
-                        Girls
+                        {t('global.girls')}
                       </Dropdown.Toggle>
 
                       <Dropdown.Menu style={{ margin: 0 }}>
-                        <Dropdown.Item href="#">Age</Dropdown.Item>
+                        <Dropdown.Item href="#">{t('global.bio')}</Dropdown.Item>
                         <Dropdown.Item href="#">New joiners</Dropdown.Item>
-                        <Dropdown.Item href="#">Most visited models</Dropdown.Item>
+                        <Dropdown.Item href="#">{t('homepage.models.mostVisited')}</Dropdown.Item>
                         <Dropdown.Item href="#">Superstar models ( Best rated )</Dropdown.Item>
                       </Dropdown.Menu>
                     </Dropdown>
@@ -52,12 +53,12 @@ const TodayPicks = (props) => {
                   <div id="all-items" className="dropdown">
                     <Dropdown>
                       <Dropdown.Toggle id="dropdown-basic">
-                        Trans:
+                        {t('global.trans')}:
                       </Dropdown.Toggle>
 
                       <Dropdown.Menu style={{ margin: 0 }}>
                         <Dropdown.Item href="#">New joiners</Dropdown.Item>
-                        <Dropdown.Item href="#">Most visited models</Dropdown.Item>
+                        <Dropdown.Item href="#">{t('homepage.models.mostVisited')}</Dropdown.Item>
                         <Dropdown.Item href="#">Superstar models ( Best rated )</Dropdown.Item>
                       </Dropdown.Menu>
                     </Dropdown>

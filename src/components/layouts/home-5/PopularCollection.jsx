@@ -14,6 +14,7 @@ import imgAuthor3 from '../../../assets/images/avatar/avt-7.jpg'
 import img3left from '../../../assets/images/box-item/collection-item-13.jpg'
 import img3right1 from '../../../assets/images/box-item/collection-item-10.jpg'
 import img3right2 from '../../../assets/images/box-item/collection-item-8.jpg'
+import { t } from '../../../utils';
 
 const PopularCollection = () => {
     const [data] = useState(
@@ -89,9 +90,8 @@ const PopularCollection = () => {
                 <div className="row">
                     <div className="col-md-12">
                         <div className="heading-live-auctions">
-                            <h2 className="tf-title pb-22 text-left">
-                                Popular Collection</h2>
-                            <Link to="/explore" className="exp style2">EXPLORE MORE</Link>
+                            <h2 className="tf-title pb-22 text-left">{t('homepage.popularCollection')}</h2>
+                            <Link to="/explore" className="exp style2">{t('homepage.exploreMore.uppercase')}</Link>
                         </div>
                     </div>
                     <div className="col-md-12">

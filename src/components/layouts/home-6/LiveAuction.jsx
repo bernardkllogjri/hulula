@@ -15,6 +15,7 @@ import img3 from '../../../assets/images/box-item/image-box-31.jpg'
 import imga1 from '../../../assets/images/avatar/avt-28.jpg'
 import imga2 from '../../../assets/images/avatar/avt-29.jpg'
 import imga3 from '../../../assets/images/avatar/avt-30.jpg'
+import { t } from '../../../utils';
 
 const LiveAuction = () => {
     const [data] = useState(
@@ -88,7 +89,7 @@ const LiveAuction = () => {
                             <div className="heading-live-auctions">
                                 <h2 className="tf-title pb-24">
                                     Live Auctions</h2>
-                                <Link to="/explore" className="exp style2">EXPLORE MORE</Link>
+                                <Link to="/explore" className="exp style2">{t('homepage.exploreMore.uppercase')}</Link>
                             </div>
                         </div>
                         <div className="col-md-12">

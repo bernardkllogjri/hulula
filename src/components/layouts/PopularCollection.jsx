@@ -3,6 +3,7 @@ import PropTypes from 'prop-types'
 import { Link } from 'react-router-dom'
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Navigation, Scrollbar, A11y } from 'swiper';
+import { t } from '../../utils';
 
 const PopularCollection = props => {
     const data = props.data;
@@ -12,9 +13,8 @@ const PopularCollection = props => {
                 <div className="row">
                     <div className="col-md-12">
                         <div className="heading-live-auctions">
-                            <h2 className="tf-title pb-22 text-left">
-                                Popular Collection</h2>
-                            <Link to="/explore" className="exp style2">EXPLORE MORE</Link>
+                            <h2 className="tf-title pb-22 text-left">{t('homepage.popularCollection')}</h2>
+                            <Link to="/explore" className="exp style2">{t('homepage.exploreMore.uppercase')}</Link>
                         </div>
                     </div>
                     <div className="col-md-12">

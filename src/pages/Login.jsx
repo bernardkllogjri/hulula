@@ -4,6 +4,7 @@ import Header from '../components/header/Header';
 import Footer from '../components/footer/Footer';
 import client from '../client'
 import { Alert } from 'react-bootstrap';
+import { t } from '../utils';
 
 const Login = () => {
   const [form, setForm] = useState({})
@@ -68,12 +69,12 @@ const Login = () => {
                   <div className="row">
                       <div className="col-12">
                           <h2 className="tf-title-heading ct style-1">
-                              Login
+                              {t('global.login')}
                           </h2>
 
                           <div className="flat-form box-login-social">
                               <div className="box-title-login">
-                                  <h5>Login with social</h5>
+                                  <h5>{t('loginPage.loginWithSocials')}</h5>
                               </div>
                               <ul>
                                   <li>
@@ -93,7 +94,7 @@ const Login = () => {
 
                           <div className="flat-form box-login-email">
                               <div className="box-title-login">
-                                  <h5>Or login with email</h5>
+                                  <h5>{t('loginPage.loginWithEmail')}</h5>
                               </div>
                               {((form.errors || form.error) &&
                                 <Alert variant='danger' style={{ fontSize: '15px' }}>
@@ -110,17 +111,17 @@ const Login = () => {
                               <div className="form-inner">
                               {form.isLoading ? <div>Loading...</div> : (
                                 <form onSubmit={onSubmit} action="#" id="contactform">
-                                    <input id="email" name="email" tabIndex="1" aria-required="true" type="email" placeholder="Your Email" onChange={handleChange} required />
-                                    <input id="password" name="password" tabIndex="2"  aria-required="true" type="password" placeholder="Your Password" onChange={handleChange} required />
+                                    <input id="email" name="email" tabIndex="1" aria-required="true" type="email" placeholder={t('loginPage.email.placeholder')} onChange={handleChange} required />
+                                    <input id="password" name="password" tabIndex="2"  aria-required="true" type="password" placeholder={t('loginPage.password.placeholder')} onChange={handleChange} required />
                                     <div className="row-form style-1">
-                                        <label>Remember me
+                                        <label>{t('loginPage.rememberMe.label')}
                                             <input type="checkbox" />
                                             <span className="btn-checkbox"></span>
                                         </label>
-                                        <Link to="#" className="forgot-pass">Forgot Password ?</Link>
+                                        <Link to="#" className="forgot-pass">{t('loginPage.forgotPassword.label')}</Link>
                                     </div>
 
-                                    <button className="submit">Login</button>
+                                    <button className="submit">{t('global.login')}</button>
                                 </form>
                               )}
                               </div>

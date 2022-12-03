@@ -5,6 +5,7 @@ import Footer from '../components/footer/Footer';
 import TodayPicks from '../components/layouts/explore-01/TodayPicks'
 import todayPickData from '../assets/fake-data/data-today-pick';
 import client from '../client'
+import { t } from '../utils';
 
 const Explore01 = () => {
   const [data, setData] = useState([])
@@ -18,7 +19,7 @@ const Explore01 = () => {
             imgCollection: item?.Galleries?.[0]?.image,
             imgAuthor: item?.Profile?.image,
             title: "Displayed Text",
-            tags: "Contact",
+            tags: t('global.contact'),
             nameAuthor: item?.firstName + item?.lastName,
             age: item?.Profile?.age,
             ethnicity: item?.Profile?.nationality,

@@ -7,6 +7,7 @@ import { Tab, Tabs, TabList, TabPanel  } from 'react-tabs';
 import 'react-tabs/style/react-tabs.css';
 import img1 from '../assets/images/box-item/image-box-6.jpg'
 import avt from '../assets/images/avatar/avt-9.jpg'
+import { t } from '../utils';
 
 const CreateItem = () => {
     return (
@@ -22,8 +23,8 @@ const CreateItem = () => {
                             </div>
                             <div className="breadcrumbs style2">
                                 <ul>
-                                    <li><Link to="/">Home</Link></li>
-                                    <li><Link to="#">Pages</Link></li>
+                                    <li><Link to="/">{t('global.home')}</Link></li>
+                                    <li><Link to="#">{t('global.pages')}</Link></li>
                                     <li>Create Item</li>
                                 </ul>
                             </div>
@@ -75,8 +76,11 @@ const CreateItem = () => {
                          <div className="col-xl-9 col-lg-6 col-md-12 col-12">
                              <div className="form-create-item">
                                  <form action="#">
-                                    <h4 className="title-create-item">Upload file</h4>
+                                    <h4 className="title-create-item">{t('editProfilePage.uploadFile.label')}</h4>
                                     <label className="uploadFile">
+                                        <div className="uploadFile_before">
+                                            {t('editProfilePage.uploadFile.label')}
+                                        </div>
                                         <span className="filename">PNG, JPG, GIF, WEBP or MP4. Max 200mb.</span>
                                         <input type="file" className="inputfile form-control" name="file" />
                                     </label>

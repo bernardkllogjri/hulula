@@ -8,6 +8,7 @@ import { useEffect } from 'react';
 import { useForm } from "react-hook-form";
 import { yupResolver } from '@hookform/resolvers/yup';
 import * as yup from "yup";
+import { t } from '../utils';
 
 const schema = yup.object({
   nationality: yup.string().required('Nationality is required'),
@@ -107,13 +108,13 @@ const EditProfile = () => {
                   <div className="row">
                       <div className="col-md-12">
                           <div className="page-title-heading mg-bt-12">
-                              <h1 className="heading text-center">Edit Profile</h1>
+                              <h1 className="heading text-center">{t('editProfilePage.title')}</h1>
                           </div>
                           <div className="breadcrumbs style2">
                               <ul>
-                                  <li><Link to="/">Home</Link></li>
-                                  <li><Link to="#">Pages</Link></li>
-                                  <li>Edit Profile</li>
+                                  <li><Link to="/">{t('global.home')}</Link></li>
+                                  <li><Link to="#">{t('global.pages')}</Link></li>
+                                  <li>{t('editProfilePage.title')}</li>
                               </ul>
                           </div>
                       </div>
@@ -128,21 +129,24 @@ const EditProfile = () => {
                               <div className="card-media">
                                   <img id="profileimg" src={form.image || avt} alt="Hulula" />                         
                               </div>
-                              <div style={{ fontSize: '14px', marginTop: '10px', fontWeight: 'bold' }}>Please upload an image that's 1mb or less</div>
+                              <div style={{ fontSize: '14px', marginTop: '10px', fontWeight: 'bold' }}>{t('editProfilePage.fileSize.label')}</div>
                               <div id="upload-profile">
-                                  <Link to="#" className="btn-upload">Upload New Photo </Link>
+                                  <Link to="#" className="btn-upload">{t('editProfilePage.uploadPhoto')}</Link>
                                   <input id="tf-upload-img" type="file" name="image" required onChange={onFileChange} />
                               </div>
-                              <Link to="#" className="btn-upload style2" onClick={deleteKey('image')}>Delete</Link>
+                              <Link to="#" className="btn-upload style2" onClick={deleteKey('image')}>{t('global.delete')}</Link>
                           </div>
                         </div>
                         <div className="col-xl-9 col-lg-8 col-md-12 col-12">
                             <div className="form-upload-profile">
-                              <h4 className="title-create-item" styles={{ fontWeight: 'bold' }}>Choose your Cover image</h4>
-                              <div style={{ fontSize: '14px', marginTop: '10px', marginBottom: '10px', fontWeight: 'bold' }}>Please upload an image that's 1mb or less</div>
+                              <h4 className="title-create-item" styles={{ fontWeight: 'bold' }}>{t('editProfilePage.chooseCover.label')}</h4>
+                              <div style={{ fontSize: '14px', marginTop: '10px', marginBottom: '10px', fontWeight: 'bold' }}>{t('editProfilePage.fileSize.label')}</div>
                               <div className="option-profile clearfix">
                                   <form action="#">
                                       <label className="uploadFile">
+                                          <div className="uploadFile_before">
+                                            {t('editProfilePage.uploadFile.label')}
+                                          </div>
                                           <input type="file" className="inputfile form-control" name="gallery" onChange={onMultiFileChange} />
                                       </label>
                                   </form>
@@ -152,35 +156,35 @@ const EditProfile = () => {
                                     </div>
                                   ))}
                               </div>
-                              <div style={{ fontSize: '14px', marginBottom: '10px' }}>Please upload images that are 1mb or less</div>
+                              <div style={{ fontSize: '14px', marginBottom: '10px' }}>{t('editProfilePage.fileSize.label')}</div>
                               <form onSubmit={handleSubmit(onSubmit)} className="form-profile">
                                   <div className="form-infor-profile">
                                       <div className="info-account">
-                                          <h4 className="title-create-item">Account info</h4>                                    
+                                          <h4 className="title-create-item">{t('editProfilePage.accountInfo.label')}</h4>                                    
                                               <fieldset>
-                                                  <h4 className="title-infor-account">Nationality</h4>
+                                                  <h4 className="title-infor-account">{t('global.nationality')}</h4>
                                                   <input type="text" placeholder="Latin" {...register("nationality")} />
                                                   {errors?.nationality && <p className='text-danger' style={{ fontSize: '12px', marginBottom: '5px' }}>{errors?.nationality?.message}</p>}
                                               </fieldset>
                                               <fieldset>
-                                                  <h4 className="title-infor-account">Age</h4>
-                                                  <input type="text" placeholder="Age" {...register("age")} />
+                                                  <h4 className="title-infor-account">{t('global.age')}</h4>
+                                                  <input type="text" placeholder={t('global.age')} {...register("age")} />
                                                   {errors?.age && <p className='text-danger' style={{ fontSize: '12px', marginBottom: '5px' }}>{errors?.age?.message}</p>}
                                               </fieldset>
                                               <fieldset>
-                                                  <h4 className="title-infor-account">Height</h4>
+                                                  <h4 className="title-infor-account">{t('global.height')}</h4>
                                                   <input type="text" placeholder="180" {...register("height")} />
                                                   {errors?.height && <p className='text-danger' style={{ fontSize: '12px', marginBottom: '5px' }}>{errors?.height?.message}</p>}
                                               </fieldset>
                                               <fieldset>
-                                                  <h4 className="title-infor-account">Bio</h4>
-                                                  <textarea type="text" placeholder="description" {...register("description")} />
+                                                  <h4 className="title-infor-account">{t('global.bio')}</h4>
+                                                  <textarea type="text" placeholder={t('global.bio')} {...register("description")} />
                                                   {errors?.description && <p className='text-danger' style={{ fontSize: '12px', marginBottom: '5px' }}>{errors?.description?.message}</p>}
                                               </fieldset>
                                       </div>
                                   </div>
                                   <button className="tf-button-submit mg-t-15" type="submit">
-                                      Update Profile
+                                      {t('global.updateProfile')}
                                   </button>           
                               </form>
                           </div>

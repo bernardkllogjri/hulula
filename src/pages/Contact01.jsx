@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom'
 import Header from '../components/header/Header';
 import Footer from '../components/footer/Footer';
 import img1 from '../assets/images/blog/thumb-8.png'
+import { t } from '../utils';
 
 const Contact01 = () => {
     return (
@@ -18,8 +19,8 @@ const Contact01 = () => {
                             </div>
                             <div className="breadcrumbs style2">
                                 <ul>
-                                    <li><Link to="/">Home</Link></li>
-                                    <li><Link to="#">Contact</Link></li>
+                                    <li><Link to="/">{t('global.home')}</Link></li>
+                                    <li><Link to="#">{t('global.contact')}</Link></li>
                                     <li>Contact 1</li>
                                 </ul>
                             </div>

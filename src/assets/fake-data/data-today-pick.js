@@ -15,13 +15,14 @@ import imga7 from '../images/avatar/avt-4.jpg'
 import img8 from '../images/models/model-4.jpg'
 import imga8 from '../images/avatar/avt-3.jpg'
 import imgCollection1 from '../images/avatar/avt-18.jpg'
+import { t } from '../../utils'
 
 
 const todayPickData = [
     {
         img: img1,
         title: "Displayed Text",
-        tags: "Contact",
+        tags: t('global.contact'),
         imgAuthor: imga1,
         nameAuthor: "Name",
         age: "27",
@@ -34,7 +35,7 @@ const todayPickData = [
     {
         img: img2,
         title: "Displayed Text",
-        tags: "Contact",
+        tags: t('global.contact'),
         imgAuthor: imga2,
         nameAuthor: "Name",
         age: "27",
@@ -48,7 +49,7 @@ const todayPickData = [
     {
         img: img3,
         title: "Displayed Text",
-        tags: "Contact",
+        tags: t('global.contact'),
         imgAuthor: imga3,
         nameAuthor: "Name",
         age: "27",
@@ -61,7 +62,7 @@ const todayPickData = [
     {
         img: img4,
         title: "Displayed Text",
-        tags: "Contact",
+        tags: t('global.contact'),
         imgAuthor: imga4,
         nameAuthor: "Name",
         age: "27",
@@ -74,7 +75,7 @@ const todayPickData = [
     {
         img: img5,
         title: "Displayed Text",
-        tags: "Contact",
+        tags: t('global.contact'),
         imgAuthor: imga5,
         nameAuthor: "Name",
         age: "27",
@@ -87,7 +88,7 @@ const todayPickData = [
     {
         img: img6,
         title: "Displayed Text",
-        tags: "Contact",
+        tags: t('global.contact'),
         imgAuthor: imga6,
         nameAuthor: "Name",
         age: "27",
@@ -100,7 +101,7 @@ const todayPickData = [
     {
         img: img7,
         title: "Displayed Text",
-        tags: "Contact",
+        tags: t('global.contact'),
         imgAuthor: imga7,
         nameAuthor: "Name",
         age: "27",
@@ -113,7 +114,7 @@ const todayPickData = [
     {
         img: img8,
         title: "Displayed Text",
-        tags: "Contact",
+        tags: t('global.contact'),
         imgAuthor: imga8,
         nameAuthor: "Name",
         age: "27",
@@ -126,7 +127,7 @@ const todayPickData = [
     {
         img: img1,
         title: "Displayed Text",
-        tags: "Contact",
+        tags: t('global.contact'),
         imgAuthor: imga1,
         nameAuthor: "Name",
         age: "27",
@@ -139,7 +140,7 @@ const todayPickData = [
     {
         img: img2,
         title: "Displayed Text",
-        tags: "Contact",
+        tags: t('global.contact'),
         imgAuthor: imga2,
         nameAuthor: "Name",
         age: "27",
@@ -153,7 +154,7 @@ const todayPickData = [
     {
         img: img3,
         title: "Displayed Text",
-        tags: "Contact",
+        tags: t('global.contact'),
         imgAuthor: imga3,
         nameAuthor: "Name",
         age: "27",
@@ -166,7 +167,7 @@ const todayPickData = [
     {
         img: img4,
         title: "Displayed Text",
-        tags: "Contact",
+        tags: t('global.contact'),
         imgAuthor: imga4,
         nameAuthor: "Name",
         age: "27",
@@ -179,7 +180,7 @@ const todayPickData = [
     {
         img: img5,
         title: "Displayed Text",
-        tags: "Contact",
+        tags: t('global.contact'),
         imgAuthor: imga5,
         nameAuthor: "Name",
         age: "27",
@@ -192,7 +193,7 @@ const todayPickData = [
     {
         img: img6,
         title: "Displayed Text",
-        tags: "Contact",
+        tags: t('global.contact'),
         imgAuthor: imga6,
         nameAuthor: "Name",
         age: "27",
@@ -205,7 +206,7 @@ const todayPickData = [
     {
         img: img7,
         title: "Displayed Text",
-        tags: "Contact",
+        tags: t('global.contact'),
         imgAuthor: imga7,
         nameAuthor: "Name",
         age: "27",
@@ -218,7 +219,7 @@ const todayPickData = [
     // {
     //     img: img8,
     //     title: "Displayed Text",
-    //     tags: "Contact",
+    //     tags: t('global.contact'),
     //     imgAuthor: imga8,
     //     nameAuthor: "Name",
     //     age: "27",

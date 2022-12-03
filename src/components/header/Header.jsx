@@ -9,7 +9,7 @@ import logodark2x from '../../assets/images/logo/logo_dark@2x.png'
 import imgsun from '../../assets/images/icon/sun.png'
 import avt from '../../assets/images/avatar/avt-2.jpg'
 import us from '../../assets/images/flags/US.svg'
-import fr from '../../assets/images/flags/FR.svg'
+import it from '../../assets/images/flags/IT.svg'
 
 
 const Header = () => {
@@ -96,8 +96,17 @@ const Header = () => {
                                             ))
                                         }
                                         <li className='menu-item lang-option-mobile'>
-                                          <Link to="#" className="show-search header-search-trigger" style={{ fontSize: '16px', fontWeight: 'bold', marginLeft: '8px' }} onClick={() => localStorage.setItem('APP_LANGUAGE', appLanguage === 'EN' ? 'FR' : 'EN')}>
-                                            <img src={appLanguage === 'EN' ? fr : us} width='20' /> {appLanguage === 'EN' ? 'FR' : 'EN'} 
+                                          <Link
+                                            to="#"
+                                            className="show-search header-search-trigger"
+                                            style={{ fontSize: '16px', fontWeight: 'bold', marginLeft: '8px', display: 'flex', justifyContent: 'center', alignItems: 'center' }}
+                                            onClick={() => {
+                                                localStorage.setItem('APP_LANGUAGE', appLanguage === 'EN' ? 'IT' : 'EN')
+                                                setTimeout(() => {
+                                                    window.location.reload()
+                                                }, 100)
+                                            }}>
+                                            <img src={appLanguage === 'EN' ? it : us} width='20' style={{ marginRight: '8px' }} /> {appLanguage === 'EN' ? 'IT' : 'EN'} 
                                           </Link>
                                         </li>
                                     </ul>
@@ -120,8 +129,17 @@ const Header = () => {
                                         <Link to="/" className="sc-button header-slider style style-1 wallet fl-button pri-1"><span>Search
                                         </span></Link>
                                     </div>
-                                    <Link to="#" className="show-search header-search-trigger lang-option" style={{ fontSize: '16px', fontWeight: 'bold', marginLeft: '8px' }} onClick={() => localStorage.setItem('APP_LANGUAGE', appLanguage === 'EN' ? 'FR' : 'EN')}>
-                                      <img src={appLanguage === 'EN' ? fr : us} width='20' /> {appLanguage === 'EN' ? 'FR' : 'EN'} 
+                                    <Link
+                                        to="#"
+                                        className="show-search header-search-trigger lang-option"
+                                        style={{ fontSize: '16px', fontWeight: 'bold', marginLeft: '8px', display: 'flex', justifyContent: 'center', alignItems: 'center' }}
+                                        onClick={() => {
+                                            localStorage.setItem('APP_LANGUAGE', appLanguage === 'EN' ? 'IT' : 'EN')
+                                            setTimeout(() => {
+                                                window.location.reload()
+                                            }, 100)
+                                        }}>
+                                      <img src={appLanguage === 'EN' ? it : us} width='20' style={{ marginRight: 8 }} /> {appLanguage === 'EN' ? 'IT' : 'EN'} 
                                     </Link>
                                     <Link to="#" className="show-search header-search-trigger" style={{ fontSize: '16px', fontWeight: 'bold', marginLeft: '8px' }}>
                                       <i class="fas fa-phone"></i>
@@ -132,7 +150,7 @@ const Header = () => {
                                     <li className="menu-item-has-children active">
                                         <Link to="#">{appLanguage}</Link>
                                         <ul className="sub-menu" >
-                                          <li className={"menu-item"}><Link onClick={() => localStorage.setItem('APP_LANGUAGE', appLanguage === 'EN' ? 'FR' : 'EN')} to="#">{appLanguage === 'EN' ? 'FR' : 'EN'}</Link></li>
+                                          <li className={"menu-item"}><Link onClick={() => localStorage.setItem('APP_LANGUAGE', appLanguage === 'EN' ? 'IT' : 'EN')} to="#">{appLanguage === 'EN' ? 'IT' : 'EN'}</Link></li>
                                       </ul>
                                     </li>
                                   </ul>

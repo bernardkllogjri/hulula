@@ -8,6 +8,7 @@ import imgAuthor2 from '../../../assets/images/avatar/avt-8.jpg'
 import img2 from '../../../assets/images/box-item/collection-item-15.jpg'
 import imgAuthor3 from '../../../assets/images/avatar/avt-7.jpg'
 import img3 from '../../../assets/images/box-item/collection-item-16.jpg'
+import { t } from '../../../utils';
 
 
 
@@ -64,9 +65,8 @@ const PopularCollection = () => {
                 <div className="row">
                     <div className="col-md-12">
                         <div className="heading-live-auctions">
-                            <h2 className="tf-title pb-39 text-left">
-                                Popular Collection</h2>
-                            <Link to="/explore" className="exp style2">EXPLORE MORE</Link>
+                            <h2 className="tf-title pb-39 text-left">{t('homepage.popularCollection')}</h2>
+                            <Link to="/explore" className="exp style2">{t('homepage.exploreMore.uppercase')}</Link>
                         </div>
                     </div>
                     <div className="col-md-12">

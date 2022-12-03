@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 import blogData from  '../assets/fake-data/data-blog'
 import Header from '../components/header/Header';
 import Footer from '../components/footer/Footer';
+import { t } from '../utils';
 
 const Blog = () => {
     const [data] = useState(blogData);
@@ -24,7 +25,7 @@ const Blog = () => {
                             </div>
                             <div className="breadcrumbs style2">
                                 <ul>
-                                    <li><Link to="/">Home</Link></li>
+                                    <li><Link to="/">{t('global.home')}</Link></li>
                                     <li><Link to="#">Community</Link></li>
                                     <li>Blog</li>
                                 </ul>

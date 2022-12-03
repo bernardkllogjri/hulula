@@ -15,6 +15,7 @@ import img5 from '../assets/images/avatar/avt-7.jpg'
 import img6 from '../assets/images/avatar/avt-8.jpg'
 import img7 from '../assets/images/avatar/avt-2.jpg'
 import imgdetail1 from '../assets/images/box-item/images-item-details2.jpg'
+import { t } from '../utils';
 
 const ItemDetails02 = () => {
     const [dataHistory] = useState(
@@ -76,7 +77,7 @@ const ItemDetails02 = () => {
                             </div>
                             <div className="breadcrumbs style2">
                                 <ul>
-                                    <li><Link to="/">Home</Link></li>
+                                    <li><Link to="/">{t('global.home')}</Link></li>
                                     <li><Link to="#">Explore</Link></li>
                                     <li>Item Details 2</li>
                                 </ul>
@@ -166,7 +167,7 @@ const ItemDetails02 = () => {
                                     <Tabs>
                                         <TabList>
                                         <Tab>Bid History</Tab>
-                                        <Tab>Info</Tab>
+                                        <Tab>{t('glboal.info')}</Tab>
                                         <Tab>Provenance</Tab>
                                         </TabList>
 

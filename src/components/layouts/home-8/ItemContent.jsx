@@ -25,6 +25,7 @@ import img12 from '../../../assets/images/box-item/image-box-55.jpg'
 import img13 from '../../../assets/images/box-item/image-box-56.jpg'
 import img14 from '../../../assets/images/box-item/image-box-50.jpg'
 import img15 from '../../../assets/images/box-item/image-box-51.jpg'
+import { t } from '../../../utils';
 
 const ItemContent = () => {
     const [dataTab] = useState(
@@ -35,7 +36,7 @@ const ItemContent = () => {
             },
             {
                 id: 2,
-                title: "Today's Picks",
+                title: t('homepage.models.todaysPicks'),
             },
             {
                 id: 3,

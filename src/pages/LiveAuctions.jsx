@@ -4,6 +4,7 @@ import Footer from '../components/footer/Footer';
 import { Link } from 'react-router-dom'
 import liveAuctionData from '../assets/fake-data/data-live-auction';
 import LiveAuction from '../components/layouts/auctions/LiveAuction';
+import { t } from '../utils';
 
 const LiveAuctions = () => {
     return (
@@ -19,7 +20,7 @@ const LiveAuctions = () => {
                             </div>
                             <div className="breadcrumbs style2">
                                 <ul>
-                                    <li><Link to="/">Home</Link></li>
+                                    <li><Link to="/">{t('global.home')}</Link></li>
                                     <li><Link to="#">Explore</Link></li>
                                     <li>Auctions</li>
                                 </ul>

@@ -11,6 +11,7 @@ import * as yup from "yup";
 import 'react-phone-number-input/style.css'
 import PhoneInputWithCountry from 'react-phone-number-input/react-hook-form'
 import { isValidPhoneNumber, parsePhoneNumber } from 'react-phone-number-input'
+import { t } from '../utils';
 
 const schema = yup.object({
   firstName: yup.string().required('First name is required').matches(/^[A-Za-z]+$/i, 'Only alphanumeric values'),
@@ -99,12 +100,12 @@ const SignUp = () => {
                   <div className="row">
                       <div className="col-12">
                           <h2 className="tf-title-heading ct style-1">
-                              Sign up To Hulula
+                              {t('signupPage.title')}
                           </h2>
 
                           <div className="flat-form box-login-social">
                               <div className="box-title-login">
-                                  <h5>Sign up with social</h5>
+                                  <h5>{t('signupPage.social.title')}</h5>
                               </div>
                               <ul>
                                   <li>
@@ -124,7 +125,7 @@ const SignUp = () => {
 
                           <div className="flat-form box-login-email">
                               <div className="box-title-login">
-                                  <h5>Or Sign up with email</h5>
+                                  <h5>{t('signupPage.email.title')}</h5>
                               </div>
                               {((form.errors || form.error) &&
                                 <Alert variant='danger' style={{ fontSize: '15px' }}>
@@ -141,41 +142,41 @@ const SignUp = () => {
                               <div className="form-inner">
                                 {form.isLoading ? <div>Loading...</div> : (
                                   <form action="#" onSubmit={handleSubmit(onSubmit)} id="contactform">
-                                    <input placeholder="Your First Name" type='text' {...register("firstName")} />
+                                    <input placeholder={t('signupPage.firstName.placeholder')} type='text' {...register("firstName")} />
                                     {errors?.firstName && <p className='text-danger' style={{ fontSize: '12px', marginBottom: '5px' }}>{errors?.firstName?.message}</p>}
-                                    <input placeholder="Your Last Name" type='text' {...register("lastName")} />
+                                    <input placeholder={t('signupPage.lastName.placeholder')} type='text' {...register("lastName")} />
                                     {errors?.lastName && <p className='text-danger' style={{ fontSize: '12px', marginBottom: '5px' }}>{errors?.lastName?.message}</p>}
-                                    <input placeholder="Your Email Name" type='email' {...register("email")}/>
+                                    <input placeholder={t('signupPage.email.placeholder')} type='email' {...register("email")}/>
                                     {errors?.email && <p className='text-danger' style={{ fontSize: '12px', marginBottom: '5px' }}>{errors?.email?.message}</p>}
                                     <PhoneInputWithCountry
                                       name='phone'
                                       defaultCountry='CH'
                                       countries={['IT', 'CH']}
-                                      placeholder="Enter phone number"
+                                      placeholder={t('signupPage.phone.placeholder')}
                                       control={control}
                                     />
                                     {errors?.phone && <p className='text-danger' style={{ fontSize: '12px', marginBottom: '5px' }}>{errors?.phone?.message}</p>}
-                                    <input placeholder="Your Username" type='text' {...register("username")} />
+                                    <input placeholder={t('signupPage.username.placeholder')} type='text' {...register("username")} />
                                     {errors?.username && <p className='text-danger' style={{ fontSize: '12px', marginBottom: '5px' }}>{errors?.username?.message}</p>}
-                                    <input placeholder="Set Your Password" type='password' {...register("password")}/>
+                                    <input placeholder={t('signupPage.password.placeholder')} type='password' {...register("password")}/>
                                     {errors?.password && <p className='text-danger' style={{ fontSize: '12px', marginBottom: '5px' }}>{errors?.password?.message}</p>}
-                                    <input placeholder="Repeat Your Password" type='password' {...register("repeatPassword")}/>
+                                    <input placeholder={t('signupPage.passwordRepeat.placeholder')} type='password' {...register("repeatPassword")}/>
                                     {errors?.repeatPassword && <p className='text-danger' style={{ fontSize: '12px', marginBottom: '5px' }}>{errors?.repeatPassword?.message}</p>}
                                     <div className="row-form style-1">
-                                      <label>Remember me
+                                      <label>{t('loginPage.rememberMe.label')}
                                         <input type="checkbox" />
                                         <span className="btn-checkbox"></span>
                                       </label>
-                                      <Link to="#" className="forgot-pass">Forgot Password ?</Link>
+                                      <Link to="#" className="forgot-pass">{t('loginPage.forgotPassword.label')}</Link>
                                     </div>
                                     <div className="row-form style-1">
-                                      <label>I accept terms and conditions
+                                      <label>{t('signupPage.acceptTerms.placeholder')}
                                         <input type="checkbox" {...register("TOS")} />
                                         <span className="btn-checkbox"></span>
                                         {errors?.TOS && <p className='text-danger' style={{ fontSize: '12px', marginBottom: '5px' }}>{errors?.TOS?.message}</p>}
                                       </label>
                                     </div>
-                                    <button className="submit">Sign up</button>
+                                    <button className="submit">{t('global.signUp')}</button>
                                   </form>
                                 )}
                               </div>

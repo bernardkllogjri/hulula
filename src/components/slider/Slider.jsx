@@ -10,6 +10,7 @@ import shape1 from '../../assets/images/backgroup-secsion/bg-gradient1.png'
 import shape2 from '../../assets/images/backgroup-secsion/bg-gradient2.png'
 import shape3 from '../../assets/images/backgroup-secsion/bg-gradient3.png'
 import imgbg from '../../assets/images/backgroup-secsion/img_bg_page_title.jpg'
+import { t } from '../../utils';
 
 
 const Slider = props => {
@@ -75,13 +76,13 @@ const SliderItem = props => {
                     <p className="sub-heading">{props.item.description}
                     </p>
                     <div className="flat-bt-slider flex style2">
-                      <Link to="/explore" className="sc-button header-slider style style-1 rocket fl-button pri-1"><span>Explore</span></Link>
+                      <Link to="/explore" className="sc-button header-slider style style-1 rocket fl-button pri-1"><span>{t('global.explore')}</span></Link>
                     </div>
                     <div className="flat-bt-slider flex style2" style={{ marginTop: '8px' }}>
                       {!user && (
                         <>
-                          <Link to="/login" className="sc-button filled header-slider style pri-1"><span>Log in</span></Link>
-                          <Link to="/sign-up" className="sc-button filled header-slider style pri-1"><span>Sign up</span></Link>
+                          <Link to="/login" className="sc-button filled header-slider style pri-1"><span>{t('global.login')}</span></Link>
+                          <Link to="/sign-up" className="sc-button filled header-slider style pri-1"><span>{t('global.signUp')}</span></Link>
                         </>
                       )}
                     </div>

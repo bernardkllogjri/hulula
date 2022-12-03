@@ -10,6 +10,7 @@ import CardModal from '../CardModal';
 import 'swiper/scss';
 import 'swiper/scss/navigation';
 import 'swiper/scss/pagination';
+import { t } from '../../../utils';
 
 const LiveAuction = props => {
     const data = props.data;
@@ -25,7 +26,7 @@ const LiveAuction = props => {
                             <div className="heading-live-auctions">
                                 <h2 className="tf-title pb-20">
                                     Live Auctions</h2>
-                                <Link to="/explore" className="exp style2">EXPLORE MORE</Link>
+                                <Link to="/explore" className="exp style2">{t('homepage.exploreMore.uppercase')}</Link>
                             </div>
                         </div>
                         <div className="col-md-12">

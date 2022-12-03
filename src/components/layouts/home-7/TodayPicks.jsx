@@ -28,6 +28,7 @@ import img9 from '../../../assets/images/box-item/image-box-44.jpg'
 import imga9 from '../../../assets/images/avatar/avt-2.jpg'
 import img10 from '../../../assets/images/box-item/image-box-45.jpg'
 import imga10 from '../../../assets/images/avatar/avt-10.jpg'
+import { t } from '../../../utils';
 
 const TodayPicks = () => {
     const [data] = useState(
@@ -233,7 +234,7 @@ const TodayPicks = () => {
                                 <h2 className="tf-title">
                                     Top Picks
                                 </h2>
-                                <Link to="/explore" className="exp style2">EXPLORE MORE</Link>
+                                <Link to="/explore" className="exp style2">{t('homepage.exploreMore.uppercase')}</Link>
                             </div>
                         </div>
                         <div className="col-md-12">
@@ -344,7 +345,7 @@ const TodayPicks = () => {
 
                                     <Dropdown.Menu style={{ margin: 0 }}>
                                     <Dropdown.Item href="#">
-                                        <span>Recently added</span>
+                                        <span>{t('global.recentlyAdded')}</span>
                                         <i className="fal fa-check"></i>
                                     </Dropdown.Item>
                                     <Dropdown.Item href="#" className='active'>

@@ -2,6 +2,7 @@ import React , { useState , Fragment } from 'react';
 import PropTypes from 'prop-types'
 import { Link, useNavigate } from 'react-router-dom'
 import CardModal from './CardModal';
+import { t } from '../../utils'
 
 const TodayPicks = props => {
     const data = props.data;
@@ -21,9 +22,9 @@ const TodayPicks = props => {
                     <div className="col-md-12">
                         <div className="heading-live-auctions mg-bt-21">
                             <h2 className="tf-title pad-l-7">
-                                Today's Picks
+                                {t('homepage.models.todaysPicks')}
                             </h2>
-                            <Link to="/explore" className="exp style2">EXPLORE MORE</Link>
+                            <Link to="/explore" className="exp style2">{t('homepage.exploreMore.uppercase')}</Link>
                         </div>
                     </div>
                     {

@@ -2,6 +2,7 @@ import React , { useState , Fragment } from 'react';
 import PropTypes from 'prop-types'
 import { Link } from 'react-router-dom'
 import CardModal from '../CardModal';
+import { t } from '../../../utils';
 
 const TodayPicks = props => {
     const data = props.data;
@@ -18,7 +19,7 @@ const TodayPicks = props => {
                     <div className="row">
                         <div className="col-md-12">
                             <div className="">
-                                <h2 className="tf-title pb-11">Today's Picks</h2>
+                                <h2 className="tf-title pb-11">{t('homepage.models.todaysPicks')}</h2>
                                 <div className="heading-line s1"></div>
                             </div>
                         </div>

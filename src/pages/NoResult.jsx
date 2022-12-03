@@ -7,6 +7,7 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import { Navigation, Pagination, Scrollbar, A11y } from 'swiper';
 import Countdown from "react-countdown";
 import CardModal from '../components/layouts/CardModal';
+import { t } from '../utils';
 
 const NoResult = () => {
     const [data]  = useState(liveAuctionData);
@@ -25,7 +26,7 @@ const NoResult = () => {
                             <div className="breadcrumbs style2">
                                 <ul>
                                     <li><Link to="/">Home</Link></li>
-                                    <li><Link to="#">Pages</Link></li>
+                                    <li><Link to="#">{t('global.pages')}</Link></li>
                                     <li>No Result</li>
                                 </ul>
                             </div>

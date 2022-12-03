@@ -7,6 +7,7 @@ import img2 from '../../../assets/images/icon/rainbow.png'
 import img3 from '../../../assets/images/icon/photo.png'
 import img4 from '../../../assets/images/icon/itunes.png'
 import CardModal from '../CardModal';
+import { t } from '../../../utils';
 
 const TodayPicks = props => {
     const data = props.data;
@@ -25,9 +26,9 @@ const TodayPicks = props => {
                         <div className="col-md-12">
                             <div className="heading-live-auctions mg-bt-21">
                                 <h2 className="tf-title">
-                                    Today's Picks
+                                    {t('homepage.models.todaysPicks')}
                                 </h2>
-                                <Link to="/explore" className="exp style2">EXPLORE MORE</Link>
+                                <Link to="/explore" className="exp style2">{t('homepage.exploreMore.uppercase')}</Link>
                             </div>
                         </div>
                         <div className="col-md-12">
@@ -133,14 +134,14 @@ const TodayPicks = props => {
                                             <path d="M6 12H18" stroke="white" strokeWidth="1.5" strokeLinecap="round"/>
                                             <path d="M10 17H14" stroke="white" strokeWidth="1.5" strokeLinecap="round"/>
                                         </svg>
-                                        <span>Sort By: Recently Added</span>
+                                        <span>Sort By: {t('global.recentlyAdded')}</span>
                                     </Dropdown.Toggle>
 
                                     <Dropdown.Menu style={{ margin: 0 }}>
                                     <Dropdown.Item href="#">
                                         <h6>Sort by</h6>
                                         <Link className="sort-filter" to="#">
-                                            <span>Recently added</span>
+                                            <span>{t('global.recentlyAdded')}</span>
                                             <i className="fal fa-check"></i>
                                         </Link>
                                         <Link className="sort-filter active" to="#">

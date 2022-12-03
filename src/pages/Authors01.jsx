@@ -5,6 +5,7 @@ import Footer from '../components/footer/Footer';
 import TopSeller from '../components/layouts/authors/TopSeller';
 import topSellerData from '../assets/fake-data/data-top-seller'
 import popularCollectionData from '../assets/fake-data/data-popular-collection';
+import { t } from '../utils';
 
 const Authors01 = () => {
     const [data] = useState(popularCollectionData);
@@ -26,8 +27,8 @@ const Authors01 = () => {
                             </div>
                             <div className="breadcrumbs style2">
                                 <ul>
-                                    <li><Link to="/">Home</Link></li>
-                                    <li><Link to="#">Pages</Link></li>
+                                    <li><Link to="/">{t('global.home')}</Link></li>
+                                    <li><Link to="#">{t('global.pages')}</Link></li>
                                     <li>Authors</li>
                                 </ul>
                             </div>

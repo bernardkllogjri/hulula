@@ -11,6 +11,7 @@ import img5 from '../assets/images/icon/connect-5.png'
 import img6 from '../assets/images/icon/connect-6.png'
 import img7 from '../assets/images/icon/connect-7.png'
 import img8 from '../assets/images/icon/connect-8.png'
+import { t } from '../utils';
 
 const WalletConnect = () => {
     const [data] = useState(
@@ -51,7 +52,7 @@ const WalletConnect = () => {
                             <div className="breadcrumbs style2">
                                 <ul>
                                     <li><Link to="/">Home</Link></li>
-                                    <li><Link to="#">Pages</Link></li>
+                                    <li><Link to="#">{t('global.pages')}</Link></li>
                                     <li>Direct payment</li>
                                 </ul>
                             </div>

@@ -8,6 +8,7 @@ import img3 from '../assets/images/icon/icon-3.png'
 import img4 from '../assets/images/icon/icon-4.png'
 import img5 from '../assets/images/icon/icon-5.png'
 import img6 from '../assets/images/icon/icon-6.png'
+import { t } from '../utils';
 
 const HelpCenter = () => {
     const [dataBox] = useState(
@@ -60,7 +61,7 @@ const HelpCenter = () => {
                             </div>
                             <div className="breadcrumbs style2">
                                 <ul>
-                                    <li><Link to="/">Home</Link></li>
+                                    <li><Link to="/">{t('global.home')}</Link></li>
                                     <li><Link to="#">Community</Link></li>
                                     <li>Help Center</li>
                                 </ul>
