@@ -3,7 +3,7 @@ export default {
   "homepage.welcome.desc": "Il sito offre materiale e foto destinato ad un pubblico adulto. Il sito utilizza cookies per migliorare l'esperienza di navigazione degli utenti. Cliccando il tasto ENTRA viene accettato il regolamentodel sito, la cookies policy e si dichiara di essere maggiorenne.",
   "homepage.welcome.enter": "18+ Entra",
   "homepage.welcome.exit": "18- Esci",
-  "homepage.match.find": "Trova il tuo",
+  "homepage.match.find": "Trova la tua",
   "homepage.match.perfect": " parter ideale",
   "homepage.match.tonight": "per questa notte",
   "homepage.match.contact": "Trova una modella e contattala",
