@@ -26,7 +26,7 @@ export default {
   "global.filters": "Filtri",
   "global.reviews": "Recensioni",
   "global.recentlyAdded" :"Aggiunti di recente",
-  "homepage.exploreMore.uppercase": "Espolra di piu",
+  "homepage.exploreMore.uppercase": "ESPLORA DI PIU",
   "homepage.models.mostVisited": "Modelle piu visitate",
   "homepage.models.todaysPicks": "Scelte di oggi",
   "homepage.popularCollection": "Collezione popolare",
