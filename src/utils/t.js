@@ -3,7 +3,7 @@ import it from '../assets/locales/it-it'
 
 export default (key) => {
   
-  const lng = localStorage.getItem('APP_LANGUAGE')
+  const lng = localStorage.getItem('APP_LANGUAGE') || 'EN'
 
   if(lng === 'EN') { return en[key] }
   if(lng === 'IT') { return it[key] }
