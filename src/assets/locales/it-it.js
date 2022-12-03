@@ -4,7 +4,7 @@ export default {
   "homepage.welcome.enter": "18+ Entra",
   "homepage.welcome.exit": "18- Esci",
   "homepage.match.find": "Trova il tuo",
-  "homepage.match.perfect": " parter ideale per questa notte",
+  "homepage.match.perfect": " parter ideale",
   "homepage.match.tonight": "per questa notte",
   "homepage.match.contact": "Trova una modella e contattala",
   "global.login": "Accedi",
