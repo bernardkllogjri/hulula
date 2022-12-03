@@ -1,4 +1,4 @@
-{
+export default {
   "homepage.welcomeTo": "Welcome To",
   "homepage.welcome.desc": "The site offers material and photos intended for an adult audience. The site uses cookies to improve users' browsing experience. By clicking the ENTER button you are agreeing to the site's rules, cookies policy and you are stating that you are of legal age.",
   "homepage.welcome.enter": "18+ Enter",

@@ -1,5 +1,5 @@
-import en from '../assets/locales/en-gb.json'
-import it from '../assets/locales/it-it.json'
+import en from '../assets/locales/en-gb'
+import it from '../assets/locales/it-it'
 
 export default (key) => {
   

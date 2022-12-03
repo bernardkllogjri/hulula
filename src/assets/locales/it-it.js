@@ -1,4 +1,4 @@
-{
+export default {
   "homepage.welcomeTo": "Benvenuti a ",
   "homepage.welcome.desc": "Il sito offre materiale e foto destinato ad un pubblico adulto. Il sito utilizza cookies per migliorare l'esperienza di navigazione degli utenti. Cliccando il tasto ENTRA viene accettato il regolamentodel sito, la cookies policy e si dichiara di essere maggiorenne.",
   "homepage.welcome.enter": "18+ Entra",
