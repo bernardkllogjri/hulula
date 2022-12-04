@@ -21,7 +21,6 @@ const Home01 = () => {
       setData({
         liveAuctionData: result?.data?.data?.users?.map(item => {
           const phoneNumber = item.phoneNumber ? parsePhoneNumber(item.phoneNumber) : {}
-          console.warn({ op: item?.Galleries?.[0]?.image });
           return {
             id: item.id,
             phoneNumber: phoneNumber?.nationalNumber ? phoneNumber?.countryCallingCode + phoneNumber?.nationalNumber : undefined,
