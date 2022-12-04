@@ -58,7 +58,6 @@ PopularCollection.propTypes = {
 
 const PopularCollectionItem = props => {
     const navigate = useNavigate()
-    console.warn({ props });
     return (
         <div className="swiper-container show-shadow carousel4 button-arow-style"  onClick={() => { navigate('/item-details-01', { state: { id: props.item.id } })  }}>
             <div className="swiper-wrapper">
