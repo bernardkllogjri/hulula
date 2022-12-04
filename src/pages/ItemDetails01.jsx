@@ -94,6 +94,8 @@ const ItemDetails01 = () => {
         ]
     )
 
+    console.warn({ data });
+
     return (
         <div className='item-details'>
             <Header />
@@ -121,7 +123,7 @@ const ItemDetails01 = () => {
                                             <Link to="#" className="option"></Link>
                                         </div> */}
                                     </div>
-                                    <p>{data?.user?.description}</p>
+                                    <p>{data?.user?.Profile?.description}</p>
                                     <div className="d-flex justify-content-between" style={{ marginTop: '10px' }}>
                                       <Link to="/wallet-connect" className="sc-button header-slider style style-1 wallet fl-button pri-1" style={{ width: '50%' }}>
                                         <span>Call her now</span>

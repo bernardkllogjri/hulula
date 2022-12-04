@@ -54,66 +54,68 @@ const LiveAuction = props => {
                 scrollbar={{ draggable: true }}
               >
                 {
-                  data.slice(0, 7).map((item, index) => (
-                    <SwiperSlide key={index}>
-                      <div className="swiper-container show-shadow carousel auctions" style={{ paddingRight: '4px', paddingLeft: '4px' }}>
-                        <div className="swiper-wrapper">
-                          <div className="swiper-slide">
-                            <div className="slider-item">
-                              <div className="sc-card-product">
-                                <div
-                                  onClick={() => { navigate('/item-details-01', { state: { id: item.id } })  }}
-                                  className="card-media"
-                                  style={{ 
-                                    backgroundImage: `url(${item.img})`
-                                  }}
-                                >
-                                  {/* <Link to="/login" className="wishlist-button heart"><span className="number-like">{item.wishlist}</span></Link> */}
-                                  {/* <div className="featured-countdown">
-                                    <span className="slogan"></span>
-                                    <Countdown date={Date.now() + 500000000}>
-                                      <span>You are good to go!</span>
-                                    </Countdown>
-                                  </div> */}
-                                  {/* <div className="button-place-bid">
-                                    <button onClick={() => setModalShow(true)} className="sc-button style-place-bid style bag fl-button pri-3"><span>Place Bid</span></button>
-                                  </div> */}
-                                </div>
-                                <div className="card-title">
-                                  <h5><Link to="/item-details-01">{item.nameAuthor}</Link></h5>
-                                  {/* <div className="tags">{item.tags}</div> */}
-                                  <div className="contacts">
-                                    <a href={`https://wa.me/${item.phoneNumber}`} className="contact-email">
-                                      <i class="fab fa-whatsapp"></i>
-                                    </a>
-                                    <a className="contact-phone">
-                                      <i class="fab fa-telegram"></i>
-                                    </a>
+                  data.slice(0, 7).map((item, index) => {
+                    return (
+                      <SwiperSlide key={index}>
+                        <div className="swiper-container show-shadow carousel auctions" style={{ paddingRight: '4px', paddingLeft: '4px' }}>
+                          <div className="swiper-wrapper">
+                            <div className="swiper-slide">
+                              <div className="slider-item">
+                                <div className="sc-card-product">
+                                  <div
+                                    onClick={() => { navigate('/item-details-01', { state: { id: item.id } })  }}
+                                    className="card-media"
+                                    style={{ 
+                                      backgroundImage: `url(${item.img})`
+                                    }}
+                                  >
+                                    {/* <Link to="/login" className="wishlist-button heart"><span className="number-like">{item.wishlist}</span></Link> */}
+                                    {/* <div className="featured-countdown">
+                                      <span className="slogan"></span>
+                                      <Countdown date={Date.now() + 500000000}>
+                                        <span>You are good to go!</span>
+                                      </Countdown>
+                                    </div> */}
+                                    {/* <div className="button-place-bid">
+                                      <button onClick={() => setModalShow(true)} className="sc-button style-place-bid style bag fl-button pri-3"><span>Place Bid</span></button>
+                                    </div> */}
                                   </div>
-                                </div>
-                                <div className="meta-info">
-                                  <div className="author">
-                                    <div className="avatar" style={{ backgroundImage: `url(${item.imgAuthor})` }}>
-                                      {/* {item.imgAuthor && <img src={item.imgAuthor} alt="hulula" />} */}
-                                    </div>
-                                    <div className="info">
-                                      {/* <span>{item.ethnicity}</span> */}
-                                      <h6> <Link to="/authors-02">{item.ethnicity}
-                                      </Link> </h6>
+                                  <div className="card-title">
+                                    <h5><Link to="/item-details-01">{item.nameAuthor}</Link></h5>
+                                    {/* <div className="tags">{item.tags}</div> */}
+                                    <div className="contacts">
+                                      <a href={`https://wa.me/${item.phoneNumber}`} className="contact-email">
+                                        <i class="fab fa-whatsapp"></i>
+                                      </a>
+                                      <a className="contact-phone">
+                                        <i class="fab fa-telegram"></i>
+                                      </a>
                                     </div>
                                   </div>
-                                  <div className="price">
-                                    <span></span>
-                                    <h5> {item.age} Years Old</h5>
+                                  <div className="meta-info">
+                                    <div className="author">
+                                      <div className="avatar" style={{ backgroundImage: `url(${item.imgAuthor})` }}>
+                                        {/* {item.imgAuthor && <img src={item.imgAuthor} alt="hulula" />} */}
+                                      </div>
+                                      <div className="info">
+                                        {/* <span>{item.ethnicity}</span> */}
+                                        <h6> <Link to="/authors-02">{item.ethnicity}
+                                        </Link> </h6>
+                                      </div>
+                                    </div>
+                                    <div className="price">
+                                      <span></span>
+                                      <h5> {item.age} Years Old</h5>
+                                    </div>
                                   </div>
                                 </div>
                               </div>
                             </div>
                           </div>
                         </div>
-                      </div>
-                    </SwiperSlide>
-                  ))
+                      </SwiperSlide>
+                    )
+                  })
                 }
               </Swiper>
             </div>
