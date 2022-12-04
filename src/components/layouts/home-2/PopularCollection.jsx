@@ -60,7 +60,7 @@ const PopularCollectionItem = props => (
             <div className="swiper-slide">
                 <div className="slider-item">										
                     <div className="sc-card-collection style-3">
-                        <Link to="/authors-02">
+                        <Link to="#">
                             <div className="media-images-box">
                                 <div className="top-media">
                                     {props.item.imgleft && <img src={props.item.imgleft} alt="Hulula" />}
@@ -85,7 +85,7 @@ const PopularCollectionItem = props => (
                                     <h4><Link to="/authors-01">{props.item.title}</Link></h4>
                                     <div className="infor">
                                         <span>Created by</span>
-                                        <span className="name"><Link to="/authors-02">{props.item.name}</Link></span>
+                                        <span className="name"><Link to="#">{props.item.name}</Link></span>
                                     </div>
                                 </div>
                             </div>

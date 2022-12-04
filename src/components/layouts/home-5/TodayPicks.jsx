@@ -194,7 +194,7 @@ const TodayPicks = props => {
                                                 }
                                                 <div className="info">
                                                     <span>Owned By</span>
-                                                    <h6> <Link to="/authors-02">{item.nameAuthor}</Link> </h6>
+                                                    <h6> <Link to="#">{item.nameAuthor}</Link> </h6>
                                                 </div>
                                             </div>
                                             <div className="price">

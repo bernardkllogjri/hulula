@@ -143,7 +143,7 @@ const TodayPicks = (props) => {
                       <div className="info">
                         <h6>
                           {" "}
-                          <Link to="/authors-02">{item.ethnicity}</Link>{" "}
+                          <Link to="#">{item.ethnicity}</Link>{" "}
                         </h6>
                       </div>
                     </div>

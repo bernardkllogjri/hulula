@@ -70,7 +70,7 @@ const LiveAuctionItem = props => (
                     </div>
                     <div className="info">
                         <span>Creator</span>
-                        <h6> <Link to="/authors-02">{props.item.nameAuthor}
+                        <h6> <Link to="#">{props.item.nameAuthor}
                         </Link> </h6>
                     </div>
                 </div>

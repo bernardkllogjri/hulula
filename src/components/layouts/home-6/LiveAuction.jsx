@@ -146,7 +146,7 @@ const LiveAuction = () => {
                                                                             }
                                                                             <div className="info">
                                                                                 <span>Creator</span>
-                                                                                <h4> <Link to="/authors-02">{item.nameAuthor}
+                                                                                <h4> <Link to="#">{item.nameAuthor}
                                                                                 </Link> </h4>
                                                                             </div>
                                                                         </div>

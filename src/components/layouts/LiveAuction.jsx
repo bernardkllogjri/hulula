@@ -99,7 +99,7 @@ const LiveAuction = props => {
                                       </div>
                                       <div className="info">
                                         {/* <span>{item.ethnicity}</span> */}
-                                        <h6> <Link to="/authors-02">{item.ethnicity}
+                                        <h6> <Link to="#">{item.ethnicity}
                                         </Link> </h6>
                                       </div>
                                     </div>
