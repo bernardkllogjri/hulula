@@ -94,8 +94,6 @@ const ItemDetails01 = () => {
         ]
     )
 
-    console.warn({ data });
-
     return (
         <div className='item-details'>
             <Header />

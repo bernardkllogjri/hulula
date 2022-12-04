@@ -1,6 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types'
-import { Link } from 'react-router-dom'
+import { Link, useNavigate } from 'react-router-dom'
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Navigation, Scrollbar, A11y } from 'swiper';
 import { t } from '../../utils';
@@ -8,7 +8,7 @@ import { t } from '../../utils';
 const PopularCollection = props => {
     const data = props.data;
     return (
-        <section className="tf-section popular-collection">
+        <section className="tf-section popular-collection" style={{ cursor: 'pointer' }}>
             <div className="themesflat-container">
                 <div className="row">
                     <div className="col-md-12">
@@ -56,49 +56,53 @@ PopularCollection.propTypes = {
     data: PropTypes.array.isRequired,
 }
 
-const PopularCollectionItem = props => (
-    <div className="swiper-container show-shadow carousel4 button-arow-style">
-        <div className="swiper-wrapper">
-            <div className="swiper-slide">
-                <div className="slider-item">										
-                    <div className="sc-card-collection style-2 home2">
-                        <div className="card-bottom">
-                            <div className="author">
-                                <div className="sc-author-box style-2">
-                                    <div className="author-avatar">
-                                        {props.item.imgAuthor && <img src={props.item.imgAuthor} alt="" className="avatar" />}
-                                        <div className="badge"><i className="ripple"></i></div>
+const PopularCollectionItem = props => {
+    const navigate = useNavigate()
+    console.warn({ props });
+    return (
+        <div className="swiper-container show-shadow carousel4 button-arow-style"  onClick={() => { navigate('/item-details-01', { state: { id: props.item.id } })  }}>
+            <div className="swiper-wrapper">
+                <div className="swiper-slide">
+                    <div className="slider-item">										
+                        <div className="sc-card-collection style-2 home2">
+                            <div className="card-bottom">
+                                <div className="author">
+                                    <div className="sc-author-box style-2">
+                                        <div className="author-avatar">
+                                            {props.item.imgAuthor && <img src={props.item.imgAuthor} alt="" className="avatar" />}
+                                            <div className="badge"><i className="ripple"></i></div>
+                                        </div>
+                                    </div>
+                                    <div className="content">
+                                        <h4>{props.item.title}</h4>
+                                        <div className="infor">
+                                            <span>{props.item.nationality}</span>
+                                        </div>
                                     </div>
                                 </div>
-                                <div className="content">
-                                    <h4>{props.item.title}</h4>
-                                    <div className="infor">
-                                        <span>{props.item.nationality}</span>
+                                <div className="tags">{props.item.tags}</div>
+                                {/* <Link to="/login" className="wishlist-button public heart"><span className="number-like"> 100</span></Link> */}
+                            </div>
+                            <div className="media-images-collection">
+                                <div className="box-left">
+                                    {props.item.imgleft && <img src={props.item.imgleft} alt="hulula" />}
+                                </div>
+                                <div className="box-right">
+                                    <div className="top-img">
+                                        {props.item.imgright1 && <img src={props.item.imgright1} alt="hulula" />}
+                                        {props.item.imgright2 && <img src={props.item.imgright2} alt="hulula" />}
+                                    </div>
+                                    <div className="bottom-img">
+                                        {props.item.imgright3 && <img src={props.item.imgright3} alt="hulula" />}
                                     </div>
                                 </div>
                             </div>
-                            <div className="tags">{props.item.tags}</div>
-                            {/* <Link to="/login" className="wishlist-button public heart"><span className="number-like"> 100</span></Link> */}
-                        </div>
-                        <div className="media-images-collection">
-                            <div className="box-left">
-                                {props.item.imgleft && <img src={props.item.imgleft} alt="hulula" />}
-                            </div>
-                            <div className="box-right">
-                                <div className="top-img">
-                                    {props.item.imgright1 && <img src={props.item.imgright1} alt="hulula" />}
-                                    {props.item.imgright2 && <img src={props.item.imgright2} alt="hulula" />}
-                                </div>
-                                <div className="bottom-img">
-                                    {props.item.imgright3 && <img src={props.item.imgright3} alt="hulula" />}
-                                </div>
-                            </div>
-                        </div>
-                    </div> 	
+                        </div> 	
+                    </div>
                 </div>
-            </div>
-        </div>                            
-    </div>
-)
+            </div>                            
+        </div>
+    )
+}
 
 export default PopularCollection;

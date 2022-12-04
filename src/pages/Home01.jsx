@@ -44,6 +44,7 @@ const Home01 = () => {
         }),
         popularCollectionData: result?.data?.data?.users?.map(item => {
           return {
+            id: item.id,
             title: item.firstName + item.lastName,
             imgAuthor: item?.Profile?.image,
             nationality: t('global.nationality'),
